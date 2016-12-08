@@ -1,0 +1,18 @@
+site_name: 3RWW Atlas Documentation
+site_description: Help documentation for the 3 Rivers Wet Weather Atlas products.
+site_favicon: img\favicon.ico
+pages:
+- Overview: index.md
+- Sewer Atlas:
+    - General Help Documentation: help_rsi.md
+    - Discharge Trace Guide: guide_rsi_trace.md
+    - Advanced Network Trace Analysis: guide_rsi_analysis.md
+- Green Infrastructure Atlas:
+    - General Help Documentation: help_rgi.md
+    - Data Contribution Guide: guide_rgi_edit.md
+    - Field Guide: guide_rgi_form.md
+
+markdown_extensions:
+    - smarty
+site_dir:  
+    D:\Dropbox\CivicMapperHQ\Projects\3RWW\Atlas\Atlas Docs\atlas_mkdocs_build
