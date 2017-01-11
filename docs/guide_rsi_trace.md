@@ -15,13 +15,13 @@ This user guide describes how to use the 3RWW Sewer Atlas in desktop and field w
 
 ### Map Window
 
-![Sewer Atlas Map Window](img/ui/Slide2.PNG)
+![Sewer Atlas Map Window](img/ui/Slide7.JPG)
 
 *For more information on the Map Window, see the complete [help documentation](help_rsi.md#map-window).*
 
 ### Information Window
 
-![Sewer Atlas Information Window](img/ui/Slide3.PNG)
+![Sewer Atlas Information Window](img/ui/Slide9.JPG)
 
 The steps in this guide refer to widgets contained in the Map and Information windows.
 
@@ -54,9 +54,6 @@ If you have the address of complaint, you can enter it into the The [Search widg
 
 	*![image: address prompt](img/rsiguide/RSIGuide_address_prompt.png)*
 
-* Click the address listed under *AC EAMS AP and ST Locator* heading, and the map will pan and zoom to that address.
-
-*Note that results under the *Esri World Geocoder* heading in the dropdown may not be as accurate, but will work outside of Allegheny County*
 
 ## Method 3: Enter the Wastewater Structure ID
 
@@ -92,7 +89,7 @@ The map ***Legend*** in the **Information Window** summarizes the symbols for wa
 ### Pipes
 So that you may quickly get a sense of the hierarchy of the wastewater network, the pipes are shown on the map in classes by diameter in inches as follows:
 
-*![image: pipe symbology](img/rsiguide/RSIGuide_legend_wwp.png)*
+*![image: pipe symbology](img/rsiguide/RSIGuide_legend_wwp2.png)*
 
 #### Virtual Laterals
 
@@ -107,7 +104,7 @@ On both Pipes and Virtual Laterals, **Arrows** indicate the direction of wastewa
 
 Wastewater structures are points on the map, illustrated with symbols that denote general function:
 
-*![image: pipe symbology](img/rsiguide/RSIGuide_legend_wws.png)*
+*![image: pipe symbology](img/rsiguide/RSIGuide_legend_wws2.png)*
 
 Structures will appear at higher zoom levels.
 
@@ -144,6 +141,8 @@ The coordinates will remain until the user clicks on the map again, or toggles t
 
 # **Step 3. Trace the Sewer Network**
 
+*This section will be receiving updates soon*
+
 *![animation: quick overview animation of tool operation and results](img/rsiguide/RSIGuide_trace_fast.gif)*
 
 Now that you have found your location of interest and identified the sewer infrastructure you are interested in, you can begin to figure out where possible illicit discharges might be coming from by tracing the sewer network. The ***Network Trace*** widget automates this analysis for you.
@@ -169,8 +168,8 @@ Now that you have found your location of interest and identified the sewer infra
 
 	* **upstream pipes** are highlighted in orange
 	* **upstream structures** are highlighted in orange
-	* **downstream pipes** are highlighted in red
-	* **downstream structures** structures are highlighted in red
+	* **downstream pipes** are highlighted in green
+	* **downstream structures** structures are highlighted in green
 
 	</br>As with the wastewater structure layers, you can click on the trace results on the map to view attributes of the infrastructure.
 
@@ -188,26 +187,7 @@ Once you've completed a trace, **upstream pipes** and **upstream structures** wi
 
 Even though **Virtual laterals** are not traced with the network trace widget, use them in conjunction with the orange upstream trace results as a visual reference, to help identify possible discharge sources. Virtual laterals are mapped from the center of buildings.
 
-## Parcels and Buildings
-
-By clicking on the **Map Layers** widget in the **Information Window**, you can access two data layers from Allegheny County:
-
-* **Allegheny County - Real Estate Reference layer**: This layer contains several sub-layers related to real estate, including parcels. If you zoom in far enough, the parcel ID will appear on the map.
-* **Allegheny County - General Reference layer**: This layer contains several general sub-layers, including building footprints. This may help you visually identify buildings for further investigation.
-
-*![image: Allegheny County layers](img/rsiguide/RSIGuide_layers_county.png)*
-
-# **Step 5. Notes and Printing**
-
-## Adding Notes to the Map
-
-The **Annotate** widget allows the user place notes on the map. Open the widget, and select the pushpin. Click on the map where you would like to make a note. A pop-up window will appear, which provides a text box for entering text.
-
-Annotations can be turned on and off in the **Map Layers** widget.
-
-## Saving an Image of the Map
-
-### Printing
+# **Step 5. Printing**
 
 ***NOTICE: The ability to print is currently offline. We are working to resolve a security issue with the printing service.***
 
@@ -232,32 +212,12 @@ The print job is sent to a remote server, and may take some time to complete. Yo
 
 ## The Base Map and other supplementary map data
 
-By default, imagery with streets and points of interest from **Microsoft Bing Maps** is displayed underneath the wastewater network data. There are a number of other supporting datasets that can be used if needed.
+By default, imagery from **Allegheny** County with streets and points of interest from **Esri** is displayed with the wastewater network data.
 
-### Switching Base Maps
+## Other reference layers
 
-In some cases other base map options may provide a better view of the other map layers, or provide better or different reference information. For example:
+Clicking the **Map Layers** widget in the **Information Window** displays all layers available to be  shown on the map. These can individually be turned on or off; transparency can also be adjusted.
 
-* The **Dark Canvas** base map provides an uncluttered view of the wastewater network, which may be useful for printing.
-* The **Open Street Map** base map is updated with extremely high frequency and may provide better indications of local landmarks for reference.
+*![image: layer list](img/rsiguide/RSIGuide_layers2.png)*
 
-Clicking the ***Base Map Gallery*** widget in the **Information Window** displays available base maps.
-
-* Open the ***Base Map Gallery*** widget in the **Information Window**
-
-	*![image: basemap gallery](img/rsiguide/RSIGuide_basemaps.png)*
-
-* Click one of the base map thumbnails. This sets it as the active base map for the application.
-* Click the `x` button in the upper right corner of the ***Base Map Gallery*** window to close it.
-
-### Allegheny County Imagery (and other reference layers)
-
-High resolution aerial imagery served up by Allegheny County is also provided for visual reference. Since this data only provides coverage in Allegheny County, it is not provided as base map like Bing, but as an additional layer that the user can turn on/off.
-
-Clicking the **Map Layers** widget in the **Information Window** displays all layers shown on the map.
-
-*![image: layer list](img/rsiguide/RSIGuide_layers.png)*
-
-Near the bottom of this list resides recent Allegheny County imagery layers, denoted as **ACGIS Aerial Imagery [year].** Click on the checkbox to the left to turn them on and off.
-
-This widget also reveals the other available data layers, which you can opt to turn on or off. See the [help documentation on Map Layers](help_rsi.md#changing-map-layers) for more information.
+See the [help documentation on Map Layers](help_rsi.md#changing-map-layers) for more information.
