@@ -87,8 +87,12 @@ Opens the Network Trace tool. See [Tracing the Wastewater Network](help_rsi.md#t
 ### *Query*
 (under the **More** icon) Provides the ability to select features from the sewer data. See [Selecting/Highlighting Features](help_rsi.md#selectinghighlighting-features) for more information.
 
+### *Basemap Gallery*
+(under the **More** icon) Displays Available basemaps for display underneath the Map Layers. See
+[Changing Basemaps](help_rsi.md#changing-basemaps) for more information.
+
 ### *About*
-Provides an introduction to the application.
+(under the **More** icon) Provides an introduction to the application.
 
 ___
 # 2. Common Tasks
@@ -113,6 +117,18 @@ Clicking the `down arrow` on the right side of a layer displays a context menu, 
 * `Move down`: Moves the layer one level down.
 * `Open attribute table`:Opens the [**Attribute Table**](help_rsi.md#using-the-attribute-table) for the feature layer. This allows the user to view all attributes for features, and provides some other filtering and export abilities described further below.
 * `Description / Show Item Details`: Opens the service description or the item details page for the service or the item associated with the layer, if available. This page includes information for linking to the feature service or downloading a static version of the data in one of several spatial or non-spatial formats. The ability to download varies by data source.
+
+---
+## Changing Basemaps
+
+Clicking the ***Basemap Gallery*** widget displays all available basemaps.
+
+The user can optionally select the base map shown underneath the map layers. By default, this is set to a high-resolution imagery map from Allegheny County with a reference layer from Esri; however, other basemap options such as 'Dark Canvas' may provide the user with higher legibility and clarity, especially when printing.
+
+Note that graphically simpler basemaps tend to have smaller tile file sizes and consequently will load faster.
+
+Clicking one of the basemap thumbnails sets it as the active basemap for the application. Click the `x` button in the upper right corner of the Basemap Gallery window to close it.
+
 ___
 ## Searching for Locations
 
@@ -128,6 +144,7 @@ To search for locations, in the Search widget enter either:
 * Wastewater Structure ID Number; this looks like, for example:
 	* manhole IDs: **MH049K010**
 	* outfall IDs: **A-20Z**
+* Municipalities in the ALCOSAN service area
 
 Once you've entered the information you want to search for, Click the *Search* Button (the magnifying glass icon). A dropdown will appear with search results.
 
@@ -143,11 +160,8 @@ By default, the Atlas will attempt to figure out what you're trying to search fo
 
 *![image: coordinates prompt](img/rsiguide/RSIGuide_search_sources.png)*
 
-Specifically for street addresses, the arrow on the left side of the search box allows you to use a specific geocoding service:
+Specifically for street addresses, the arrow on the left side of the search box allows you to specify which service you want to search.
 
-* *AC EAMS AP and ST Locator:* a geolocation service provided by Allegheny County, which uses up-to-date addressing maintained by the County for supporting 911 emergency service dispatching. Also supports X/Y coordinate searches.
-* *Esri World Geocoder:* a geolocation service with worldwide coverage that includes place names and some points of interest; address accuracy in Allegheny County may not be as refined as the AC EAMS AP and ST Locator. Also supports X/Y coordinate searches.
-* *Wastewater Structures:* this will only search the sewer structures database.
 ___
 ## Identifying Coordinates
 
@@ -204,20 +218,61 @@ The `Options menu` provides an *Export to CSV* tool, which creates a file that c
 If records are selected and/or a filter is applied, only the selected and/or filtered records are exported. If no records are selected or filtered, all the records are exported.
 
 ___
-## Selecting/Highlighting Features
+## Querying Features
 
-The ***Select Features*** widget displays a list of predefined queries that you can run to highlight specific features on the map and simultaneously highlight the corresponding records in the attribute table.
+The ***Query*** widget provides a way to run predefined and custom queries to highlight specific features on the map--these features can then be summarized and exported in multiple formats.
 
-Two options are provided when running queries:
+Currently, two predefined queries are setup:
 
-* `Use spatial filter`: One of two spatial filters is applied on top of the query definition.
-	* `Use current map extent`: Only features falling within the current map extent and meeting the query definition return.
-	* `Draw a graphic on the map`: Only features falling within the graphic and meeting the query definition return.
-* `Add result as operational layer`: When this option is checked, query results remain on the map until the Clear Results button is clicked.
+* Highlight by Point of Connection (POC)
+* Highlight by Owner
 
-Selected features will also be selected in the ***Attribute Table***.
+*Note: these can easily be expanded/modified to meet user requirements based on available data - just ask!*
 
-*Note: several queries have been predefined for the application to start with; these can easily be expanded/modified to meet user requirements based on available data - just ask!*
+Selecting one of these options in the Query window will take you to an  options screen, where you are presented with two options: **Attribute criteria** and **Spatial Filter**. Minimally, you need to select an attribute criterion, and leave the spatial filter set to its default option.
+
+*![image: query filter options](img/rsiguide/RSIGuide_query_filteroptions.png)*
+
+### Attribute criteria
+
+This lets you select the attribute you are looking for. For POC, this is the POC code (e.g., M-44); For Owner, it is the owner name.
+
+You can enter text--it will attempt to guess what you're looking for--or use the drop-down to select available values to search for.
+
+### Spatial Filter (optional)
+
+This lets you pick a way to spatially filter the data returned by the selected attribute criteria.
+
+* `Return features within full extent of the map` (Default): All features meeting attribute criteria will be returned, regardless of whether you can see them currently in the map window.
+* `Only return features within current map extent`: Returns only features meeting the attribute criteria that you can see within the map window currently. 
+* `Only return features that intersect with shape drawn on the map`: This lets you draw a polygon on the map. Only features that meet your attribute criteria and intersect that polygon will be returned.
+
+    *![image: query filter by drawing intersect](img/rsiguide/RSIGuide_query_filter_draw.png)*
+
+* `Only return features that have a spatial relationship with features in another layer` (under development): Similiar to the drawing option above, this lets you use another feature in addition to your attribute criteria to select features. The difference here is that it takes a feature you have selected from another layer. For example, you could select a sewershed in the sewersheds layer, specify that layer here, and it will be used to narrow the query results.
+
+    *![image: query filter by layer intersect](img/rsiguide/RSIGuide_query_filter_layer.png)*
+
+### Running and Query and Using the Results
+
+Once you've set up the query options, hit the **Execute** button.
+
+*![image: query results](img/rsiguide/RSIGuide_query_results.png)*
+
+A list of pipes selected in the query will appear in the info window. Clicking on one of the list items will focus the map on that pipe.
+
+At the top right of the results is a ". . .' button. This provides further options for using the results. Of note:
+
+* `Export to CSV` file: exports results as a table, for use in spreadsheet programs
+* `Export to Feature Colletion`: exports results as a `GeoJSON` file, for use on a web map
+* `Export to Shapefile`: exports results as a shapefile, which is is used
+in GIS and CAD software.
+* `Statistics...`: Performs basic statistics (e.g., sum, average, etc.) on the queried features. By default this is performed using the *length* field.
+
+*![image: query results](img/rsiguide/RSIGuide_query_results_stats.png)*
+
+* `View in Attribute Table`: Creates a view of just the queried records and select fields in the **Attribute Table**.
+
 ___
 ## Filtering Map Features
 See *Using the Attribute Table >>> Selecting and Filtering records and features* for instructions on how to filter features.
