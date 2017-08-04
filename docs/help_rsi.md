@@ -96,7 +96,7 @@ Opens the Network Trace tool. See [Tracing the Wastewater Network](help_rsi.md#t
 
 ___
 # 2. Common Tasks
-___
+
 ## Changing Map Layers
 
 Clicking the **Map Layers** widget displays all layers shown on the map (except for the basemap)
@@ -118,7 +118,7 @@ Clicking the `down arrow` on the right side of a layer displays a context menu, 
 * `Open attribute table`:Opens the [**Attribute Table**](help_rsi.md#using-the-attribute-table) for the feature layer. This allows the user to view all attributes for features, and provides some other filtering and export abilities described further below.
 * `Description / Show Item Details`: Opens the service description or the item details page for the service or the item associated with the layer, if available. This page includes information for linking to the feature service or downloading a static version of the data in one of several spatial or non-spatial formats. The ability to download varies by data source.
 
----
+
 ## Changing Basemaps
 
 Clicking the ***Basemap Gallery*** widget displays all available basemaps.
@@ -129,7 +129,7 @@ Note that graphically simpler basemaps tend to have smaller tile file sizes and 
 
 Clicking one of the basemap thumbnails sets it as the active basemap for the application. Click the `x` button in the upper right corner of the Basemap Gallery window to close it.
 
-___
+
 ## Searching for Locations
 
 The Search widget is located in the upper left hand corner of the map; it enables end users to find locations on the map.
@@ -162,7 +162,7 @@ By default, the Atlas will attempt to figure out what you're trying to search fo
 
 Specifically for street addresses, the arrow on the left side of the search box allows you to specify which service you want to search.
 
-___
+
 ## Identifying Coordinates
 
 There are two ways to quickly identify real-world coordinates in the application:
@@ -172,7 +172,7 @@ There are two ways to quickly identify real-world coordinates in the application
 * The ***Measurement*** widget, located in the top right corner of the map window, provides the ability to place a temporary flag on the map. The coordinates are reported for this flag in the Measurement widget window.
 
 Note that the Sewer Atlas displays data in the WGS 1984 Web Mercator Auxilary Sphere coordinate reference system (CRS). All coordinates reported in the application are in this CRS.
-___
+
 ## Using the Attribute Table
 
 The **Attribute Table** displays a tabular view of the map data and its attributes at the bottom of the map window. It is a powerful tool for searching, selecting, sorting, and exporting data from the map.
@@ -217,7 +217,7 @@ The `Options menu` provides an *Export to CSV* tool, which creates a file that c
 
 If records are selected and/or a filter is applied, only the selected and/or filtered records are exported. If no records are selected or filtered, all the records are exported.
 
-___
+
 ## Querying Features
 
 The ***Query*** widget provides a way to run predefined and custom queries to highlight specific features on the map--these features can then be summarized and exported in multiple formats.
@@ -273,11 +273,11 @@ in GIS and CAD software.
 
 * `View in Attribute Table`: Creates a view of just the queried records and select fields in the **Attribute Table**.
 
-___
+
 ## Filtering Map Features
 See *Using the Attribute Table >>> Selecting and Filtering records and features* for instructions on how to filter features.
 
-___
+
 ## Tracing the Wastewater Network
 The **Network Trace** widget allows the user to identify upstream and downstream wastewater pipes and structures from any given point. It automatically runs both upstream and downstream traces, returning connected wastewater pipes and structures in both directions. It provides a basic summary of these features along with the ability to download the complete results.
 

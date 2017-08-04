@@ -25,7 +25,7 @@ This user guide describes how to use the 3RWW Sewer Atlas in desktop and field w
 
 The steps in this guide refer to widgets contained in the Map and Information windows.
 
-
+<hr>
 # **Step 1. Get to your location of interest on the map**
 
 To move the map to your current location, you can use one of several methods:
@@ -54,7 +54,6 @@ If you have the address of complaint, you can enter it into the The [Search widg
 
 	*![image: address prompt](img/rsiguide/RSIGuide_address_prompt.png)*
 
-
 ## Method 3: Enter the Wastewater Structure ID
 
 If the ID for the wastewater structure related to the complaint is known, such as for a manhole or outfall, you can enter that into the search bar instead of the address.
@@ -74,7 +73,7 @@ The [Search widget](help_rsi.md#searching-for-locations) located in the upper le
 
 	*![image: structure id prompt 2](img/rsiguide/RSIGuide_ws2_prompt.png)*
 
-
+<hr>
 # **Step 2. View and Interact with Sewer Data**
 
 Once you have found the location of interest, you may need to identify specific pieces of infrastructure nearby. There are a few ways to make sure the map allows you to see the infrastructure you're looking for.
@@ -139,9 +138,8 @@ The coordinates are updated based on the position of the mouse over the map. To 
 
 The coordinates will remain until the user clicks on the map again, or toggles the button.
 
+<hr>
 # **Step 3. Trace the Sewer Network**
-
-*This section will be receiving updates soon*
 
 *![animation: quick overview animation of tool operation and results](img/rsiguide/RSIGuide_trace_fast.gif)*
 
@@ -175,6 +173,7 @@ Now that you have found your location of interest and identified the sewer infra
 
 4. By clicking the `Clear` button in the widget, the network trace results and any `Flag` inputs will be removed from the map.
 
+<hr>
 # **Step 4. Identify sample points upstream**
 
 Once you can see results of the trace on the map, you can go back and use available layers to help identify potential sample points and discharge sources.
@@ -187,13 +186,12 @@ Once you've completed a trace, **upstream pipes** and **upstream structures** wi
 
 Even though **Virtual laterals** are not traced with the network trace widget, use them in conjunction with the orange upstream trace results as a visual reference, to help identify possible discharge sources. Virtual laterals are mapped from the center of buildings.
 
+<hr>
 # **Step 5. Printing**
-
-***NOTICE: The ability to print is currently offline. We are working to resolve a security issue with the printing service.***
 
 Instead of taking screenshots to capture the current map view, using the ***Print*** widget. This widget allows you to "print" your current map view direct to a `.pdf` file or one of several image file formats, with the added benefit of providing a complete map layout with legend, scale, and title. By default the widget will generate an 8.5 x 11 inch `.pdf` map.
 
-To print
+To print:
 
 * simply adjust the view of the map to the view you would like to save.
 * select
@@ -208,6 +206,7 @@ The print job is sent to a remote server, and may take some time to complete. Yo
 
 *to be completed after testing the workflow on a field device*
 
+<hr>
 # Supporting Functionality
 
 ## The Base Map and other supplementary map data
