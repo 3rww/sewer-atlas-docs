@@ -6,7 +6,8 @@ pages:
 - Sewer Atlas:
     - General Help Documentation: help_rsi.md
     - Discharge Trace Guide: guide_rsi_trace.md
-    - Advanced Network Trace Analysis: guide_rsi_analysis.md
+    - Analyzing Trace Results: guide_rsi_analysis.md
+    - One Overall Map Dataset Changelog: changelog.md
 - Green Infrastructure Atlas:
     - General Help Documentation: help_rgi.md
     - Data Contribution Guide: guide_rgi_edit.md
@@ -16,3 +17,5 @@ markdown_extensions:
     - smarty
 site_dir:  
     D:\Dropbox (CivicMapper)\Projects\3RWW\Atlas\Atlas Docs\atlas_mkdocs_build
+extra_css:
+    - extra.css
