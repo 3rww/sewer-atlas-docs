@@ -1,11 +1,11 @@
-# Table of Contents
+# Contents
 
 ## General Documentation
 
 ### [Interface &rarr;](help_rsi_ui.md)
 This describes the basic layout and tools available in Sewer Atlas.
 ### [Common Tasks &rarr;](help_rsi_tasks.md)
-This describes the Sewer Atlas in terms of common tasks that the user might need to perform, such as viewing layers on and off, printing the map, or tracing the sewer network. Start here if you're already comfortable with using web GIS.
+This describes the Sewer Atlas in terms of common tasks that the user might need to perform, such as turning layers on and off, printing the map, or tracing the sewer network. Start here if you're already comfortable with using web GIS.
 ### [Demo &rarr; ](https://www.youtube.com/watch?v=UO1S4CFOxdI)
 For an overview of the functionality of the Sewer Atlas, with Q/A from users, watch our [November 2015 Sewer Atlas webinar on Youtube](https://www.youtube.com/watch?v=UO1S4CFOxdI).
 

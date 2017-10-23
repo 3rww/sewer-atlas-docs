@@ -1,5 +1,7 @@
 # Common Tasks
 
+This describes the Sewer Atlas in terms of common tasks that the user might need to perform, such as turning layers on and off, printing the map, or tracing the sewer network.
+
 ## Changing Map Layers
 
 Clicking the **Map Layers** widget displays all layers shown on the map (except for the basemap)

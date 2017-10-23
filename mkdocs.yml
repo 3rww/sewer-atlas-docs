@@ -1,15 +1,17 @@
-site_name: 3RWW Sewer Atlas Documentation
+site_name: 3RWW Sewer Atlas
 site_description: Help documentation for the 3 Rivers Wet Weather Atlas products.
 site_favicon: img\favicon.ico
 pages:
 - Overview: index.md
 - Documentation:
+    - Contents: help_rsi.md
     - Interface:  help_rsi_ui.md
     - Common Tasks:  help_rsi_tasks.md
 - Guides:
     - Discharge Analysis: guide_rsi_trace.md
 - Data:
     - Changelog: changelog.md
+    - Downloads and Services: services_and_downloads.md
 markdown_extensions:
     - smarty
 site_dir:  

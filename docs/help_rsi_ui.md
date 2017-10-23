@@ -1,4 +1,7 @@
 # The Sewer Atlas **Interface**
+
+This describes the basic layout and tools available in Sewer Atlas.
+
 ![Sewer Atlas interface](img/ui/Slide6.JPG)
 
 The application's interface is comprised of two main components:
