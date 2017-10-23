@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
 
 #trww-brand {
     font-family: 'Palatino Linotype','Libre Baskerville', serif !important;
@@ -20,7 +21,7 @@ img.logo {
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,body,h1,h2,h3,h4,h5,h6 {
-    font-family: Verdana,Arial,sans-serif;
+    font-family: 'Source Sans Pro',Verdana,Arial,Helvetica,sans-serif;
 }
 
 .h2,.h3,h2,h3 {
@@ -33,14 +34,20 @@ img.logo {
     margin-bottom: 1em;*/
 }
 
+.h2,h2 {
+    border-top: 0.5px solid rgb(170, 170, 170);
+    padding-top: 0.25em;
+}
+
 hr {
     margin-top: 4em;
 }
 
 body {
     color: #555;
-    font-size: 14px;
-    letter-spacing: 0.05em;
+    font-size: 16px;
+    /*letter-spacing: 0.05em;*/
+    /*font-weight: lighter;*/
 }
 
 p {

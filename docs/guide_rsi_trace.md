@@ -1,6 +1,6 @@
 # 3RWW Sewer Atlas:<br> **Discharge Tracing Guide**
 
-*This documentation is in active development*
+*![animation: quick overview animation of tool operation and results](img/rsiguide/RSIGuide_trace_fast.gif)*
 
 This user guide describes how to use the 3RWW Sewer Atlas in desktop and field workflows for identifying potential discharges into the sewer system. With this guide, users will learn to:
 
@@ -17,7 +17,7 @@ This user guide describes how to use the 3RWW Sewer Atlas in desktop and field w
 
 ![Sewer Atlas Map Window](img/ui/Slide7.JPG)
 
-*For more information on the Map Window, see the complete [help documentation](help_rsi.md#map-window).*
+*For more information on the Map Window, see the complete [help documentation](help_rsi_ui.md#map-window).*
 
 ### Information Window
 
@@ -45,7 +45,7 @@ The **My Location** button will automatically map ***your physical location***. 
 
 ## Method 2: Enter the address
 
-If you have the address of complaint, you can enter it into the The [Search widget](help_rsi.md#searching-for-locations), located in the upper left hand corner of the map window.
+If you have the address of complaint, you can enter it into the The [Search widget](help_rsi_tasks.md#searching-for-locations), located in the upper left hand corner of the map window.
 
 * In the Search Widget, enter the address as: `street-number street-name, city, state (optional) zip code (optional).`
 	* For example, you would enter the address for 3 Rivers Wet Weather as `3901 Penn Avenue, Pittsburgh, PA 15224`
@@ -58,7 +58,7 @@ If you have the address of complaint, you can enter it into the The [Search widg
 
 If the ID for the wastewater structure related to the complaint is known, such as for a manhole or outfall, you can enter that into the search bar instead of the address.
 
-The [Search widget](help_rsi.md#searching-for-locations) located in the upper left hand corner of the map window also allows you to enter the **wastewater structure ID number**. To search by ID:
+The [Search widget](help_rsi_tasks.md#searching-for-locations) located in the upper left hand corner of the map window also allows you to enter the **wastewater structure ID number**. To search by ID:
 
 * In the Search Widget, enter the ID number. This could include, for example:
 	* manhole IDs: **MH049K010**
@@ -202,11 +202,6 @@ The print window includes an advanced options button that allows the user to cus
 
 The print job is sent to a remote server, and may take some time to complete. You can use the rest of the Atlas while waiting - the job will complete in the background and notify you when ready.
 
-### Making a screenshot
-
-*to be completed after testing the workflow on a field device*
-
-<hr>
 # Supporting Functionality
 
 ## The Base Map and other supplementary map data
@@ -218,5 +213,3 @@ By default, imagery from **Allegheny** County with streets and points of interes
 Clicking the **Map Layers** widget in the **Information Window** displays all layers available to be  shown on the map. These can individually be turned on or off; transparency can also be adjusted.
 
 *![image: layer list](img/rsiguide/RSIGuide_layers2.png)*
-
-See the [help documentation on Map Layers](help_rsi.md#changing-map-layers) for more information.
