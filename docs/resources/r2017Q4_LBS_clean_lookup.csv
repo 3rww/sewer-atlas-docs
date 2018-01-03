@@ -1,0 +1,713 @@
+source_field,target_field,source_code,target_code,target_desc
+ALCOSAN,ALCOSAN, ,,
+ALCOSAN,ALCOSAN,N,N,No
+ALCOSAN,ALCOSAN,0,UK,Unknown
+ALCOSAN,ALCOSAN,UNK,UK,Unknown
+ALCOSAN,ALCOSAN,Y,Y,Yes
+ALCOSAN,ALCOSAN,yes,Y,Yes
+ALCOSAN,ALCOSAN,,,
+GEO_TYP_PT,GEO_TYP_PT,,,
+GEO_TYP_PT,GEO_TYP_PT,AccessPt,AccessPt,manhole/access
+GEO_TYP_PT,GEO_TYP_PT,CrownPt,CrownPt,crown
+GEO_TYP_PT,GEO_TYP_PT,DischargePt,DischargePt,outfall/discharge point
+GEO_TYP_PT,GEO_TYP_PT,FlowSplitPt,FlowSplitPt,flow split
+GEO_TYP_PT,GEO_TYP_PT,OverflowPt,OverflowPt,overflow
+GEO_TYP_PT,GEO_TYP_PT,PumpPt,PumpPt,pump/facility
+GEO_TYP_PT,GEO_TYP_PT,UntreatedPathPt,UntreatedPathPt,manhole/access (untreated)
+MAINTAINED,MAINTAINED, ,,
+MAINTAINED,MAINTAINED,AuthorityM,AUTH,Authority Maintenance
+MAINTAINED,MAINTAINED,AuthorityMaintenance,AUTH,Authority Maintenance
+MAINTAINED,MAINTAINED,MUNI,MUNI,Municipal Maintenance
+MAINTAINED,MAINTAINED,MunicipalM,MUNI,Municipal Maintenance
+MAINTAINED,MAINTAINED,MunicipalMaintnenace,MUNI,Municipal Maintenance
+MAINTAINED,MAINTAINED,Municpal,MUNI,Municipal Maintenance
+MAINTAINED,MAINTAINED,na,NA,Not Applicable
+MAINTAINED,MAINTAINED,unknown,UK,Unknown
+MAINTAINED,MAINTAINED,,,
+MDEL_EXT,MDEL_EXT, ,,
+MDEL_EXT,MDEL_EXT,,,
+MDEL_EXT,MDEL_EXT,NA,NA,Not Applicable
+MDEL_EXT,MDEL_EXT,UNK,UK,Unknown
+MDEL_EXT,MDEL_EXT,ME,Y,Yes
+MDEL_EXT,MDEL_EXT,Y,Y,Yes
+MUN_SUB_PT,MUN_SUB_PT, ,,
+MUN_SUB_PT,MUN_SUB_PT,ACC (access tee only,ATC,tee connection
+MUN_SUB_PT,MUN_SUB_PT,AEP,AEP,end of pipe
+MUN_SUB_PT,MUN_SUB_PT,AJB,AJB,junction box
+MUN_SUB_PT,MUN_SUB_PT,AM,AM,Meter
+MUN_SUB_PT,MUN_SUB_PT,AMH,AMH,Manhole
+MUN_SUB_PT,MUN_SUB_PT,ANG,ANG,ANG
+MUN_SUB_PT,MUN_SUB_PT,AR,AR,air release
+MUN_SUB_PT,MUN_SUB_PT,AR (air release),AR,air release
+MUN_SUB_PT,MUN_SUB_PT,ATC,ATC,tee connection
+MUN_SUB_PT,MUN_SUB_PT,Beginning,BOP,beginning of pipe
+MUN_SUB_PT,MUN_SUB_PT,BeginPt,BOP,beginning of pipe
+MUN_SUB_PT,MUN_SUB_PT,Begin-Pt,BOP,beginning of pipe
+MUN_SUB_PT,MUN_SUB_PT,BEND,BEND,BEND
+MUN_SUB_PT,MUN_SUB_PT,Chamber,CH,chamber
+MUN_SUB_PT,MUN_SUB_PT,CO,ACO,cleanout
+MUN_SUB_PT,MUN_SUB_PT,CO (cleanout),ACO,cleanout
+MUN_SUB_PT,MUN_SUB_PT,COL,COL,collector
+MUN_SUB_PT,MUN_SUB_PT,CP,CP,concrete pipe
+MUN_SUB_PT,MUN_SUB_PT,Crown,CRWN,crown
+MUN_SUB_PT,MUN_SUB_PT,Crown-A,CRWN-A,crown-A
+MUN_SUB_PT,MUN_SUB_PT,Crown-A FT,CRWN-AFT,crown-AFT
+MUN_SUB_PT,MUN_SUB_PT,"Crown-A, FT",CRWN-AFT,crown-AFT
+MUN_SUB_PT,MUN_SUB_PT,Crown-A; FT,CRWN-AFT,crown-AFT
+MUN_SUB_PT,MUN_SUB_PT,Crown-V,CRWN-V,crown-V
+MUN_SUB_PT,MUN_SUB_PT,CSO,CSO,combined sewer overflow
+MUN_SUB_PT,MUN_SUB_PT,CSO (combined sewer,CSO,combined sewer overflow
+MUN_SUB_PT,MUN_SUB_PT,DC,DC,direct connection
+MUN_SUB_PT,MUN_SUB_PT,DCE (end of pipe),DCE,"direct connection, end of pipe"
+MUN_SUB_PT,MUN_SUB_PT,"DCE (end of pipe, no",DCE,"direct connection, end of pipe"
+MUN_SUB_PT,MUN_SUB_PT,DCE (End with access,DCE,"direct connection, end of pipe"
+MUN_SUB_PT,MUN_SUB_PT,DCM (direct connecti,DCM,"direct connection, mainline"
+MUN_SUB_PT,MUN_SUB_PT,DCM (Direct Mainline,DCM,"direct connection, mainline"
+MUN_SUB_PT,MUN_SUB_PT,DFT (double flush ta,DFT,double flush tank
+MUN_SUB_PT,MUN_SUB_PT,Direct Connection,DC,direct connection
+MUN_SUB_PT,MUN_SUB_PT,Diversion,DS,diversion structure
+MUN_SUB_PT,MUN_SUB_PT,Diversion Structure,DS,diversion structure
+MUN_SUB_PT,MUN_SUB_PT,Drop,D,drop
+MUN_SUB_PT,MUN_SUB_PT,DS,DS,diversion structure
+MUN_SUB_PT,MUN_SUB_PT,DS (diversion struct,DS,diversion structure
+MUN_SUB_PT,MUN_SUB_PT,EBP,EBP,Emergency Bypass
+MUN_SUB_PT,MUN_SUB_PT,END,EOP,end of pipe
+MUN_SUB_PT,MUN_SUB_PT,End of Pipe,EOP,end of pipe
+MUN_SUB_PT,MUN_SUB_PT,EOP,EOP,end of pipe
+MUN_SUB_PT,MUN_SUB_PT,EQ,EQ,Equlization Facility
+MUN_SUB_PT,MUN_SUB_PT,FD_,FD,Flow Divider
+MUN_SUB_PT,MUN_SUB_PT,FD_Inter,FDIR,Flow Divider (intermunicipal)
+MUN_SUB_PT,MUN_SUB_PT,FD_Intra,FDIA,Flow Divider (intramunicipal)
+MUN_SUB_PT,MUN_SUB_PT,Flow Split,FS,flow split
+MUN_SUB_PT,MUN_SUB_PT,FLOWMETER MANHOL,AM,Meter
+MUN_SUB_PT,MUN_SUB_PT,Flush Tank,FT,flush tank
+MUN_SUB_PT,MUN_SUB_PT,FT,FT,flush tank
+MUN_SUB_PT,MUN_SUB_PT,FT (flush Tank),FT,flush tank
+MUN_SUB_PT,MUN_SUB_PT,IMC (intermunicipal,IMC,intermunicipal connection
+MUN_SUB_PT,MUN_SUB_PT,IMC (inter-municipal,IMC,intermunicipal connection
+MUN_SUB_PT,MUN_SUB_PT,IMC (inter-municpal,IMC,intermunicipal connection
+MUN_SUB_PT,MUN_SUB_PT,IMO_CBF,IMO_CBF,Inter Municipal Overflow_Surcharge Discharge Point
+MUN_SUB_PT,MUN_SUB_PT,IMO_SDP,IMO_SDP,Inter Municipal Overflow_Chronic Basement Flooding
+MUN_SUB_PT,MUN_SUB_PT,IRO,IR,Interceptor Relief
+MUN_SUB_PT,MUN_SUB_PT,JCT,JT,junction
+MUN_SUB_PT,MUN_SUB_PT,JUN (junction),JT,junction
+MUN_SUB_PT,MUN_SUB_PT,Junction,JT,junction
+MUN_SUB_PT,MUN_SUB_PT,Lamphole,LH,lamphole
+MUN_SUB_PT,MUN_SUB_PT,LAMPHOLE,LH,lamphole
+MUN_SUB_PT,MUN_SUB_PT,LH,LH,lamphole
+MUN_SUB_PT,MUN_SUB_PT,Manhole,MH,manhole
+MUN_SUB_PT,MUN_SUB_PT,MANHOLE,MH,manhole
+MUN_SUB_PT,MUN_SUB_PT,MH,MH,manhole
+MUN_SUB_PT,MUN_SUB_PT,NOMH,NOMH,NOMH
+MUN_SUB_PT,MUN_SUB_PT,Private,PRIV,Private
+MUN_SUB_PT,MUN_SUB_PT,PS,PS,pump/facility
+MUN_SUB_PT,MUN_SUB_PT,PumpStation,PS,pump/facility
+MUN_SUB_PT,MUN_SUB_PT,REG (regulator),RG,Regulator
+MUN_SUB_PT,MUN_SUB_PT,REG_GRP,REG_GRP,Regulator Group
+MUN_SUB_PT,MUN_SUB_PT,Regulator,RG,Regulator
+MUN_SUB_PT,MUN_SUB_PT,SFT (single flush ta,FT,flush tank
+MUN_SUB_PT,MUN_SUB_PT,Split,FS,flow split
+MUN_SUB_PT,MUN_SUB_PT,Split - Overflow,FSO,"flow split, overflow"
+MUN_SUB_PT,MUN_SUB_PT,STD,STD,Standard
+MUN_SUB_PT,MUN_SUB_PT,STORM,STM,stormwater
+MUN_SUB_PT,MUN_SUB_PT,TEE,ATC,tee connection
+MUN_SUB_PT,MUN_SUB_PT,Trunkline,TRU,trunk
+MUN_SUB_PT,MUN_SUB_PT,Type 11,TY11,TY11
+MUN_SUB_PT,MUN_SUB_PT,UNK,UK,Unknown
+MUN_SUB_PT,MUN_SUB_PT,VAL,VAL,VAL
+MUN_SUB_PT,MUN_SUB_PT,Wet Well,AWW,Wet Well
+MUN_SUB_PT,MUN_SUB_PT,WYE,WYE,WYE connection
+MUN_SUB_PT,MUN_SUB_PT,zz,ZZ,Other
+MUN_SUB_PT,MUN_SUB_PT,,,
+MUNI_TYP_P,MUNI_TYP_P, ,,
+MUNI_TYP_P,MUNI_TYP_P,ACO,ACO,cleanout
+MUNI_TYP_P,MUNI_TYP_P,ACOM,ACOM,Clean Out Mainline
+MUNI_TYP_P,MUNI_TYP_P,ADP,ADP,outfall/discharge point
+MUNI_TYP_P,MUNI_TYP_P,AEP,AEP,end of pipe
+MUNI_TYP_P,MUNI_TYP_P,AJB,AJB,Junction Box
+MUNI_TYP_P,MUNI_TYP_P,AMH,AMH,Manhole
+MUNI_TYP_P,MUNI_TYP_P,AOC,AOC,Other Special Chamber
+MUNI_TYP_P,MUNI_TYP_P,AS,AS,Access Shaft
+MUNI_TYP_P,MUNI_TYP_P,ATC,ATC,tee connection
+MUNI_TYP_P,MUNI_TYP_P,Beginning,BOP,beginning of pipe
+MUNI_TYP_P,MUNI_TYP_P,Beginning Point,BOP,beginning of pipe
+MUNI_TYP_P,MUNI_TYP_P,Capped End of Pipe,EOP,end of pipe
+MUNI_TYP_P,MUNI_TYP_P,CB,CB,catch basin
+MUNI_TYP_P,MUNI_TYP_P,CH,CH,chamber
+MUNI_TYP_P,MUNI_TYP_P,Chamber,CH,chamber
+MUNI_TYP_P,MUNI_TYP_P,Clean Out,ACO,cleanout
+MUNI_TYP_P,MUNI_TYP_P,Clean-Out,ACO,cleanout
+MUNI_TYP_P,MUNI_TYP_P,CO,ACO,cleanout
+MUNI_TYP_P,MUNI_TYP_P,COM,COM,combined
+MUNI_TYP_P,MUNI_TYP_P,Crown,CRWN,crown
+MUNI_TYP_P,MUNI_TYP_P,CSO,CSO,combined sewer overflow
+MUNI_TYP_P,MUNI_TYP_P,DC,DC,direct connection
+MUNI_TYP_P,MUNI_TYP_P,Dc,DC,direct connection
+MUNI_TYP_P,MUNI_TYP_P,Diversion,DS,diversion structure
+MUNI_TYP_P,MUNI_TYP_P,Diversion Structure,DS,diversion structure
+MUNI_TYP_P,MUNI_TYP_P,DP,DP,Outfall/Discharge Point
+MUNI_TYP_P,MUNI_TYP_P,DS,DS,diversion structure
+MUNI_TYP_P,MUNI_TYP_P,Dual Chamber MH,DCHM,dual chamber manhole
+MUNI_TYP_P,MUNI_TYP_P,EOP,EOP,end of pipe
+MUNI_TYP_P,MUNI_TYP_P,EP,EOP,end of pipe
+MUNI_TYP_P,MUNI_TYP_P,EQ,EQ,Equlization Facility
+MUNI_TYP_P,MUNI_TYP_P,ES,EST,Estimated
+MUNI_TYP_P,MUNI_TYP_P,Flow Split,FS,flow split
+MUNI_TYP_P,MUNI_TYP_P,FT,FT,flush tank
+MUNI_TYP_P,MUNI_TYP_P,HDW,HDW,headwall
+MUNI_TYP_P,MUNI_TYP_P,Inlet,SI,storm inlet
+MUNI_TYP_P,MUNI_TYP_P,Interconnection,INTC,Interconnection
+MUNI_TYP_P,MUNI_TYP_P,JCT,JT,junction
+MUNI_TYP_P,MUNI_TYP_P,Junction,JT,junction
+MUNI_TYP_P,MUNI_TYP_P,Lamphole,LH,lamphole
+MUNI_TYP_P,MUNI_TYP_P,LH,LH,lamphole
+MUNI_TYP_P,MUNI_TYP_P,LH (lamphole),LH,lamphole
+MUNI_TYP_P,MUNI_TYP_P,M EQ,EQ,Equlization Facility
+MUNI_TYP_P,MUNI_TYP_P,M FD,FD,flow divider
+MUNI_TYP_P,MUNI_TYP_P,Manhole,MH,manhole
+MUNI_TYP_P,MUNI_TYP_P,MH,MH,manhole
+MUNI_TYP_P,MUNI_TYP_P,Null,UK,Unknown
+MUNI_TYP_P,MUNI_TYP_P,OF,OVF,overflow
+MUNI_TYP_P,MUNI_TYP_P,Overflow,OVF,overflow
+MUNI_TYP_P,MUNI_TYP_P,OVF,OVF,overflow
+MUNI_TYP_P,MUNI_TYP_P,PS,PS,pump/facility
+MUNI_TYP_P,MUNI_TYP_P,PS (pump station),PS,pump/facility
+MUNI_TYP_P,MUNI_TYP_P,Pump Station,PS,pump/facility
+MUNI_TYP_P,MUNI_TYP_P,REG,RG,Regulator
+MUNI_TYP_P,MUNI_TYP_P,SCH,SCH,Schematic
+MUNI_TYP_P,MUNI_TYP_P,TC,ATC,tee connection
+MUNI_TYP_P,MUNI_TYP_P,TEE,ATC,tee connection
+MUNI_TYP_P,MUNI_TYP_P,Trap,TR,trap
+MUNI_TYP_P,MUNI_TYP_P,UNK,UK,Unknown
+MUNI_TYP_P,MUNI_TYP_P,,,
+TYPE_PT,TYPE_PT, ,,
+TYPE_PT,TYPE_PT,AS,AS,Access Shaft
+TYPE_PT,TYPE_PT,DP,DP,Outfall/Discharge Point
+TYPE_PT,TYPE_PT,EQ,EQ,Equlization Facility
+TYPE_PT,TYPE_PT,ES,EST,Estimated
+TYPE_PT,TYPE_PT,MH,MH,Manhole
+TYPE_PT,TYPE_PT,PS,PS,Pump Station
+TYPE_PT,TYPE_PT,REG,RG,Regulator
+TYPE_PT,TYPE_PT,UNK,UK,Unknown
+TYPE_PT,TYPE_PT,zz,ZZ,Other
+TYPE_PT,TYPE_PT,,,
+OWNER_NAME,OWNER_NAME, ,,
+OWNER_NAME,OWNER_NAME,,,
+OWNER_NAME,OWNER_NAME,AlleghenyCountyParks,ACPA,Allegheny County Parks
+OWNER_NAME,OWNER_NAME,Alcosan,ACSA,Allegheny County Sanitary Authority
+OWNER_NAME,OWNER_NAME,ALCOSAN,ACSA,Allegheny County Sanitary Authority
+OWNER_NAME,OWNER_NAME,AlleghenyCountySanitaryAuthority,ACSA,Allegheny County Sanitary Authority
+OWNER_NAME,OWNER_NAME,Alcosan; BenAvon,ACSA/ BAVH,Allegheny County Sanitary Authority/ Ben Avon Heights Borough
+OWNER_NAME,OWNER_NAME,Alcosan/PWSA,ACSA/ PWSA,Allegheny County Sanitary Authority/ Pittsburgh Water and Sewer Authority
+OWNER_NAME,OWNER_NAME,Alcosan; PWSA,ACSA/ PWSA,Allegheny County Sanitary Authority/ Pittsburgh Water and Sewer Authority
+OWNER_NAME,OWNER_NAME,Aspinwall,ASPI,Aspinwall Borough
+OWNER_NAME,OWNER_NAME,Aspinwall Borough,ASPI,Aspinwall Borough
+OWNER_NAME,OWNER_NAME,Avalon,AVAL,Avalon Borough
+OWNER_NAME,OWNER_NAME,Avalon Borough,AVAL,Avalon Borough
+OWNER_NAME,OWNER_NAME,Baldwin,BALB,Baldwin Borough
+OWNER_NAME,OWNER_NAME,BaldwinBoro,BALB,Baldwin Borough
+OWNER_NAME,OWNER_NAME,BaldwinTwp,BALT,Baldwin Township
+OWNER_NAME,OWNER_NAME,Ben Avon Heights Borough,BAVH,Ben Avon Heights Borough
+OWNER_NAME,OWNER_NAME,BenAvon,BAVH,Ben Avon Heights Borough
+OWNER_NAME,OWNER_NAME,BenAvonHts,BAVH,Ben Avon Heights Borough
+OWNER_NAME,OWNER_NAME,Bellevue,BELL,Bellevue Borough
+OWNER_NAME,OWNER_NAME,Bellevue Borough,BELL,Bellevue Borough
+OWNER_NAME,OWNER_NAME,BELLEVUEMH,BELL,Bellevue Borough
+OWNER_NAME,OWNER_NAME,BethelPark,BETH,Bethel Park Municipality
+OWNER_NAME,OWNER_NAME,BethelParkAuthority,BETH,Bethel Park Municipality
+OWNER_NAME,OWNER_NAME,Braddock Hills Borough,BHIL,Braddock Hills Borough
+OWNER_NAME,OWNER_NAME,BraddockHills,BHIL,Braddock Hills Borough
+OWNER_NAME,OWNER_NAME,Blano,BLAW,Blawnox Borough
+OWNER_NAME,OWNER_NAME,Blawnox,BLAW,Blawnox Borough
+OWNER_NAME,OWNER_NAME,Bethel Park Municipal Authority,BPMA,Bethel Park Municipal Authority
+OWNER_NAME,OWNER_NAME,Braddock Borough,BRAD,Braddock Borough
+OWNER_NAME,OWNER_NAME,BraddockBoro,BRAD,Braddock Borough
+OWNER_NAME,OWNER_NAME,Brentwood,BREN,Brentwood Borough
+OWNER_NAME,OWNER_NAME,Brentwood Borough,BREN,Brentwood Borough
+OWNER_NAME,OWNER_NAME,Bridgeville,BRID,Bridgeville Borough
+OWNER_NAME,OWNER_NAME,Bridgeville Borough,BRID,Bridgeville Borough
+OWNER_NAME,OWNER_NAME,Carnegie,CARN,Carnegie Borough
+OWNER_NAME,OWNER_NAME,Carnegie Borough,CARN,Carnegie Borough
+OWNER_NAME,OWNER_NAME,Chalfant,CHAL,Chalfant Borough
+OWNER_NAME,OWNER_NAME,Chalfant Borough,CHAL,Chalfant Borough
+OWNER_NAME,OWNER_NAME,Churchill,CHUR,Churchill Borough
+OWNER_NAME,OWNER_NAME,Churchill Borough,CHUR,Churchill Borough
+OWNER_NAME,OWNER_NAME,Churhcill Borough,CHUR,Churchill Borough
+OWNER_NAME,OWNER_NAME,COLL,COLL,Collier Township
+OWNER_NAME,OWNER_NAME,Crafton,CRAF,Crafton Borough
+OWNER_NAME,OWNER_NAME,Crafton Borough,CRAF,Crafton Borough
+OWNER_NAME,OWNER_NAME,CastleShannon,CSHA,Castle Shannon Borough
+OWNER_NAME,OWNER_NAME,CTMA,CTMA,Collier Township Municipal Authority
+OWNER_NAME,OWNER_NAME,Dormont,DORM,Dormont Borough
+OWNER_NAME,OWNER_NAME,Dormont Borough,DORM,Dormont Borough
+OWNER_NAME,OWNER_NAME,Edgewood,EDGE,Edgewood Borough
+OWNER_NAME,OWNER_NAME,East_McKeesport_Borough,EMCK,East McKeesport Borough
+OWNER_NAME,OWNER_NAME,EastMcKeesport,EMCK,East McKeesport Borough
+OWNER_NAME,OWNER_NAME,Emsworth,EMSW,Emsworth Borough
+OWNER_NAME,OWNER_NAME,Emsworth Borough,EMSW,Emsworth Borough
+OWNER_NAME,OWNER_NAME,East Pittsburgh Borough,EPIT,East Pittsburgh Borough
+OWNER_NAME,OWNER_NAME,EastPittsburgh,EPIT,East Pittsburgh Borough
+OWNER_NAME,OWNER_NAME,EastPittsburghBorough,EPIT,East Pittsburgh Borough
+OWNER_NAME,OWNER_NAME,Borough of Etn,ETNA,Etna Borough
+OWNER_NAME,OWNER_NAME,Etna,ETNA,Etna Borough
+OWNER_NAME,OWNER_NAME,Fox Chapel Borough,FCHA,Fox Chapel Borough
+OWNER_NAME,OWNER_NAME,FoxChapel,FCHA,Fox Chapel Borough
+OWNER_NAME,OWNER_NAME,Borough of Forest Hills,FHIL,Forest Hills Borough
+OWNER_NAME,OWNER_NAME,Falls Run Multi-Ownership,FRMO,Falls Run Multi-Ownership
+OWNER_NAME,OWNER_NAME,FallsRunMulti-Ownership,FRMO,Falls Run Multi-Ownership
+OWNER_NAME,OWNER_NAME,Girtys Run Authority,GRJS,Girty's Run Joint Sewer Authority
+OWNER_NAME,OWNER_NAME,GirtysRun,GRJS,Girty's Run Joint Sewer Authority
+OWNER_NAME,OWNER_NAME,Greentree,GTRE,Green Tree Borough
+OWNER_NAME,OWNER_NAME,HousingAuthorityOfPgh,HAPI,Housing Authority of Pittsburgh
+OWNER_NAME,OWNER_NAME,HousingAuthorityPgh,HAPI,Housing Authority of Pittsburgh
+OWNER_NAME,OWNER_NAME,Heidelberg,HEID,Heidelberg Borough
+OWNER_NAME,OWNER_NAME,Heidelberg Borough,HEID,Heidelberg Borough
+OWNER_NAME,OWNER_NAME,Homestead,HOMS,Homestead Borough
+OWNER_NAME,OWNER_NAME,Homestead Borough,HOMS,Homestead Borough
+OWNER_NAME,OWNER_NAME,Indiana,INDI,Indiana Township
+OWNER_NAME,OWNER_NAME,Ingram,INGR,Ingram Borough
+OWNER_NAME,OWNER_NAME,Ingram Borogh,INGR,Ingram Borough
+OWNER_NAME,OWNER_NAME,Ingram Borough,INGR,Ingram Borough
+OWNER_NAME,OWNER_NAME,Kennedy,KENN,Kennedy Township
+OWNER_NAME,OWNER_NAME,Kilbuck,KILB,Kilbuck Township
+OWNER_NAME,OWNER_NAME,KILBUCK TOWNSHIP,KILB,Kilbuck Township
+OWNER_NAME,OWNER_NAME,Kilbuck Township,KILB,Kilbuck Township
+OWNER_NAME,OWNER_NAME,LoweriesRunInterceptor,LRJO,Lowries Run Joint Operating Committee
+OWNER_NAME,OWNER_NAME,McCandless,MCCA,McCandless Township
+OWNER_NAME,OWNER_NAME,McDonald,MCDO,McDonald Borough
+OWNER_NAME,OWNER_NAME,Millvale,MILL,Millvale Borough
+OWNER_NAME,OWNER_NAME,MILLVALE,MILL,Millvale Borough
+OWNER_NAME,OWNER_NAME,Mt. Lebanon,MLEB,Mount Lebanon Municipality
+OWNER_NAME,OWNER_NAME,MtLebanon,MLEB,Mount Lebanon Municipality
+OWNER_NAME,OWNER_NAME,Municipality of Mount Lebanon,MLEB,Mount Lebanon Municipality
+OWNER_NAME,OWNER_NAME,Municipality of Mt Lebanon,MLEB,Mount Lebanon Municipality
+OWNER_NAME,OWNER_NAME,Municipality of Mt. Lebanon,MLEB,Mount Lebanon Municipality
+OWNER_NAME,OWNER_NAME,Municipality of Mt.Llebanon,MLEB,Mount Lebanon Municipality
+OWNER_NAME,OWNER_NAME,MMA,MMAU,Monroeville Municipal Authority
+OWNER_NAME,OWNER_NAME,Mount Oliver Borough,MOLI,Mount Oliver Borough
+OWNER_NAME,OWNER_NAME,MtOliver,MOLI,Mount Oliver Borough
+OWNER_NAME,OWNER_NAME,Monroeville,MONR,Monroeville Municipality
+OWNER_NAME,OWNER_NAME,McKeesRocks,MROC,McKees Rocks Borough
+OWNER_NAME,OWNER_NAME,MckeesRocks,MROC,McKees Rocks Borough
+OWNER_NAME,OWNER_NAME,McDonald Sewage Authority,MSAU,McDonald Sewage Authority
+OWNER_NAME,OWNER_NAME,McCandless Township Sanitary Authority,MTSA,McCandless Township Sanitary Authority
+OWNER_NAME,OWNER_NAME,MTSA,MTSA,McCandless Township Sanitary Authority
+OWNER_NAME,OWNER_NAME,SFMA,MTSF,"South Fayette, Municipal Authority of the Township of"
+OWNER_NAME,OWNER_NAME,South Fayette Municipal Authority,MTSF,"South Fayette, Municipal Authority of the Township of"
+OWNER_NAME,OWNER_NAME,SouthFayetteAuthority,MTSF,"South Fayette, Municipal Authority of the Township of"
+OWNER_NAME,OWNER_NAME,Munhall,MUNH,Munhall Borough
+OWNER_NAME,OWNER_NAME,Munhall Borough,MUNH,Munhall Borough
+OWNER_NAME,OWNER_NAME,N/A,NA,Not Applicable
+OWNER_NAME,OWNER_NAME,NA,NA,Not Applicable
+OWNER_NAME,OWNER_NAME,North Braddock Borough,NBRA,North Braddock Borough
+OWNER_NAME,OWNER_NAME,NorthBraddock,NBRA,North Braddock Borough
+OWNER_NAME,OWNER_NAME,Neville,NEVI,Neville Township
+OWNER_NAME,OWNER_NAME,Neville Township,NEVI,Neville Township
+OWNER_NAME,OWNER_NAME,Newville Township,NEVI,Neville Township
+OWNER_NAME,OWNER_NAME,NFT,NFAY,North Fayette Township
+OWNER_NAME,OWNER_NAME,North Fayette Township,NFAY,North Fayette Township
+OWNER_NAME,OWNER_NAME,NorthFayette,NFAY,North Fayette Township
+OWNER_NAME,OWNER_NAME,NorthVersailles,NVER,North Versailles Township
+OWNER_NAME,OWNER_NAME,North Versailles Township Sanitary Authority,NVTS,North Versailles Township Sanitary Authority
+OWNER_NAME,OWNER_NAME,Oakdale,OAKD,Oakdale Borough
+OWNER_NAME,OWNER_NAME,Oakdale Borough,OAKD,Oakdale Borough
+OWNER_NAME,OWNER_NAME,Ohara,OHAR,O'Hara Township
+OWNER_NAME,OWNER_NAME,O'Hara Township,OHAR,O'Hara Township
+OWNER_NAME,OWNER_NAME,Ohio,OHIO,Ohio Township
+OWNER_NAME,OWNER_NAME,Ohio Township,OHIO,Ohio Township
+OWNER_NAME,OWNER_NAME,Dugan,PCOM-DUGN,Private - Commercial - Dugan
+OWNER_NAME,OWNER_NAME,LincolnProperty,PCOM-LPCO,Private - Commercial - Lincoln Property Co
+OWNER_NAME,OWNER_NAME,LincolnPropertyCompany,PCOM-LPCO,Private - Commercial - Lincoln Property Co
+OWNER_NAME,OWNER_NAME,PennDOT,PDOT,Pennsylvania Department of Transportation
+OWNER_NAME,OWNER_NAME,Penn Hills,PENH,Penn Hills Municipality
+OWNER_NAME,OWNER_NAME,Penn Hills Borough,PENH,Penn Hills Municipality
+OWNER_NAME,OWNER_NAME,PennHills,PENH,Penn Hills Municipality
+OWNER_NAME,OWNER_NAME,Peters,PETE,Peters Township
+OWNER_NAME,OWNER_NAME,Peters Township,PETE,Peters Township
+OWNER_NAME,OWNER_NAME,PleasantHills,PHIL,Pleasant Hills Borough
+OWNER_NAME,OWNER_NAME,Penn Hills Water Pollution Control Department,PHWP,Penn Hills Water Pollution Control Department
+OWNER_NAME,OWNER_NAME,PennHills_WaterPollutionCtlDept,PHWP,Penn Hills Water Pollution Control Department
+OWNER_NAME,OWNER_NAME,Water Pollution Control Department,PHWP,Penn Hills Water Pollution Control Department
+OWNER_NAME,OWNER_NAME,J&Lsteel,PIND-JLST,Private - Industrial - J&L Steel
+OWNER_NAME,OWNER_NAME,Private - RIDC,PIND-RIDC,Private - Industrial - RIDC
+OWNER_NAME,OWNER_NAME,RIDC,PIND-RIDC,Private - Industrial - RIDC
+OWNER_NAME,OWNER_NAME,Pitcairn,PITC,Pitcairn Borough
+OWNER_NAME,OWNER_NAME,City of Pittsburgh,PITT,"Pittsburgh, City of"
+OWNER_NAME,OWNER_NAME,City Of Pittsburgh,PITT,"Pittsburgh, City of"
+OWNER_NAME,OWNER_NAME,Plum,PLUM,Plum Borough
+OWNER_NAME,OWNER_NAME,Plum Borough,PLUM,Plum Borough
+OWNER_NAME,OWNER_NAME,PRES,PRES,Private - Residential
+OWNER_NAME,OWNER_NAME,Private - Housing Association,PRES-HA,Private - Residential - Housing Association
+OWNER_NAME,OWNER_NAME,PRIV,PRIV,Private
+OWNER_NAME,OWNER_NAME,PRIVATE,PRIV,Private
+OWNER_NAME,OWNER_NAME,Private,PRIV,Private
+OWNER_NAME,OWNER_NAME,Private ? ? ?,PRIV,Private
+OWNER_NAME,OWNER_NAME,Private Owner,PRIV,Private
+OWNER_NAME,OWNER_NAME,PVT,PRIV,Private
+OWNER_NAME,OWNER_NAME,Pittsburgh Water and Sewer Authority,PWSA,Pittsburgh Water and Sewer Authority
+OWNER_NAME,OWNER_NAME,PWSA,PWSA,Pittsburgh Water and Sewer Authority
+OWNER_NAME,OWNER_NAME,Railroad,RAIL,Railroad
+OWNER_NAME,OWNER_NAME,CSXrailroad,RAIL-CSX,Railroad - CSX
+OWNER_NAME,OWNER_NAME,Rankin,RANK,Rankin Borough
+OWNER_NAME,OWNER_NAME,Reserve,RESE,Reserve Township
+OWNER_NAME,OWNER_NAME,RESERVE,RESE,Reserve Township
+OWNER_NAME,OWNER_NAME,RosslynFarms,RFAR,Rosslyn Farms Borough
+OWNER_NAME,OWNER_NAME,Rossyln Farms,RFAR,Rosslyn Farms Borough
+OWNER_NAME,OWNER_NAME,Rossyln Farms Boroug,RFAR,Rosslyn Farms Borough
+OWNER_NAME,OWNER_NAME,Rossyln Farms Borough,RFAR,Rosslyn Farms Borough
+OWNER_NAME,OWNER_NAME,RossylnFarms,RFAR,Rosslyn Farms Borough
+OWNER_NAME,OWNER_NAME,Robinson,ROBI,Robinson Township
+OWNER_NAME,OWNER_NAME,Robinson Township,ROBI,Robinson Township
+OWNER_NAME,OWNER_NAME,ROSS,ROSS,Ross Township
+OWNER_NAME,OWNER_NAME,Ross,ROSS,Ross Township
+OWNER_NAME,OWNER_NAME,RossMH,ROSS,Ross Township
+OWNER_NAME,OWNER_NAME,RossTwp,ROSS,Ross Township
+OWNER_NAME,OWNER_NAME,RobinsonRunInterceptor,RRAG,Robinson Run Advisory Group
+OWNER_NAME,OWNER_NAME,Scott,SCOT,Scott Township
+OWNER_NAME,OWNER_NAME,SCOTT TWP,SCOT,Scott Township
+OWNER_NAME,OWNER_NAME,PF OFF,SFAY,South Fayette Township
+OWNER_NAME,OWNER_NAME,South Fayette Township,SFAY,South Fayette Township
+OWNER_NAME,OWNER_NAME,SouthFayette,SFAY,South Fayette Township
+OWNER_NAME,OWNER_NAME,Shaler,SHAL,Shaler Township
+OWNER_NAME,OWNER_NAME,SHALER,SHAL,Shaler Township
+OWNER_NAME,OWNER_NAME,Shaler Township,SHAL,Shaler Township
+OWNER_NAME,OWNER_NAME,Sharpsburg,SHAR,Sharpsburg Borough
+OWNER_NAME,OWNER_NAME,Sharpsburg Borough,SHAR,Sharpsburg Borough
+OWNER_NAME,OWNER_NAME,Stowe,STOW,Stowe Township
+OWNER_NAME,OWNER_NAME,Swissvale,SWIS,Swissvale Borough
+OWNER_NAME,OWNER_NAME,Swissvale Borough,SWIS,Swissvale Borough
+OWNER_NAME,OWNER_NAME,Turtle Creek Borough,TCRE,Turtle Creek Borough
+OWNER_NAME,OWNER_NAME,TurtleCreek,TCRE,Turtle Creek Borough
+OWNER_NAME,OWNER_NAME,Thornburg,THOR,Thornburg Borough
+OWNER_NAME,OWNER_NAME,Thornburg Borough,THOR,Thornburg Borough
+OWNER_NAME,OWNER_NAME,Thornburgh,THOR,Thornburg Borough
+OWNER_NAME,OWNER_NAME,Thornburgh Borough,THOR,Thornburg Borough
+OWNER_NAME,OWNER_NAME,Trafford,TRAF,Trafford Borough
+OWNER_NAME,OWNER_NAME,Trafford Borough,TRAF,Trafford Borough
+OWNER_NAME,OWNER_NAME,UNKN,UNKN,Unknown Owner
+OWNER_NAME,OWNER_NAME,Unknown,UNKN,Unknown Owner
+OWNER_NAME,OWNER_NAME,URA,URAU,Urban Redevelopment Authority
+OWNER_NAME,OWNER_NAME,Upper St. Clair Township,USCL,Upper St. Clair Township
+OWNER_NAME,OWNER_NAME,UpperStClair,USCL,Upper St. Clair Township
+OWNER_NAME,OWNER_NAME,Verona,VERO,Verona Borough
+OWNER_NAME,OWNER_NAME,Wall,WALL,Wall Borough
+OWNER_NAME,OWNER_NAME,Wall Borough,WALL,Wall Borough
+OWNER_NAME,OWNER_NAME,Boiough of Whitehall,WHAL,Whitehall Borough
+OWNER_NAME,OWNER_NAME,Borough of Whitehall,WHAL,Whitehall Borough
+OWNER_NAME,OWNER_NAME,Whitehall,WHAL,Whitehall Borough
+OWNER_NAME,OWNER_NAME,Whitehall Borough,WHAL,Whitehall Borough
+OWNER_NAME,OWNER_NAME,Whitaker Borough,WHIT,Whitaker Borough
+OWNER_NAME,OWNER_NAME,West Homestead Borough,WHOM,West Homestead Borough
+OWNER_NAME,OWNER_NAME,WestHomestead,WHOM,West Homestead Borough
+OWNER_NAME,OWNER_NAME,Wilkinsburg,WILK,Wilkinsburg Borough
+OWNER_NAME,OWNER_NAME,Wilkinsburg Borough,WILK,Wilkinsburg Borough
+OWNER_NAME,OWNER_NAME,Wilmerding,WILM,Wilmerding Borough
+OWNER_NAME,OWNER_NAME,Wilmerding Borough,WILM,Wilmerding Borough
+OWNER_NAME,OWNER_NAME,Wilkins,WILT,Wilkins Township
+OWNER_NAME,OWNER_NAME,West Mifflin Borough,WMIF,West Mifflin Borough
+OWNER_NAME,OWNER_NAME,WestMifflin,WMIF,West Mifflin Borough
+OWNER_NAME,OWNER_NAME,WMIF,WMIF,West Mifflin Borough
+OWNER_NAME,OWNER_NAME,WestMifflinSewerAuthority,WMMA,West Mifflin Sanitary Sewer Municipal Authority
+OWNER_NAME,OWNER_NAME,WMMA,WMMA,West Mifflin Sanitary Sewer Municipal Authority
+OWNER_NAME,OWNER_NAME,WMSSMA,WMMA,West Mifflin Sanitary Sewer Municipal Authority
+OWNER_NAME,OWNER_NAME,West View Borough,WVIE,West View Borough
+OWNER_NAME,OWNER_NAME,WestView,WVIE,West View Borough
+OWNER_NAME,OWNER_NAME,WesternWestmoreland,WWMA,Western Westmoreland Municipal Authority
+PIPE_MATL,PIPE_MATL, ,,
+PIPE_MATL,PIPE_MATL,,,
+PIPE_MATL,PIPE_MATL,AC,AC,asbestos cement
+PIPE_MATL,PIPE_MATL,ACP,AC,asbestos cement
+PIPE_MATL,PIPE_MATL,BR,BR,brick
+PIPE_MATL,PIPE_MATL,Brick,BR,brick
+PIPE_MATL,PIPE_MATL,BR/SN,BR-SN,brick-segmented panel
+PIPE_MATL,PIPE_MATL,CAS,CAS,cast iron
+PIPE_MATL,PIPE_MATL,CIP,CIP,Cured in Place
+PIPE_MATL,PIPE_MATL,CIPP,CIP,Cured in Place
+PIPE_MATL,PIPE_MATL,CM,CMP,corrugated metal pipe
+PIPE_MATL,PIPE_MATL,CMP,CMP,corrugated metal pipe
+PIPE_MATL,PIPE_MATL,CO/ST,CO/ST,concrete/steel
+PIPE_MATL,PIPE_MATL,Conc.,CP,concrete pipe (non-reinforced)
+PIPE_MATL,PIPE_MATL,Concrete,CP,concrete pipe (non-reinforced)
+PIPE_MATL,PIPE_MATL,CP,CP,concrete pipe (non-reinforced)
+PIPE_MATL,PIPE_MATL,CPP,CP,concrete pipe (non-reinforced)
+PIPE_MATL,PIPE_MATL,CO/BR,CP/BR,concrete/brick
+PIPE_MATL,PIPE_MATL,CP/BRICK,CP/BR,concrete/brick
+PIPE_MATL,PIPE_MATL,CSU,CSU,Concrete Segments (unbolted)
+PIPE_MATL,PIPE_MATL,ClayTile,CT,clay tile
+PIPE_MATL,PIPE_MATL,CT,CT,clay tile
+PIPE_MATL,PIPE_MATL,DIP,DIP,ductile iron pipe
+PIPE_MATL,PIPE_MATL,FRP,FRP,fiberglass  reinforced pipe
+PIPE_MATL,PIPE_MATL,GUN,GUN,GUN
+PIPE_MATL,PIPE_MATL,HDP,HDP,HDP
+PIPE_MATL,PIPE_MATL,HDPE,HDPE,HDPE
+PIPE_MATL,PIPE_MATL,sch 17 hdpe,HDPE-SCH17,sch 17 hdpe
+PIPE_MATL,PIPE_MATL,LCP,LCP,LCP
+PIPE_MATL,PIPE_MATL,LFF,LFF,LFF
+PIPE_MATL,PIPE_MATL,LINR,LINR,LINR
+PIPE_MATL,PIPE_MATL,PE,PE,polyethylene
+PIPE_MATL,PIPE_MATL,PP,PP ,polypropylene
+PIPE_MATL,PIPE_MATL,PSC,PSC,plastic/steel composite
+PIPE_MATL,PIPE_MATL,PVC,PVC ,polyvinyl chloride
+PIPE_MATL,PIPE_MATL,PVC-VCP,PVC-VCP,polyvinyl chloride / vitrified clay pipe
+PIPE_MATL,PIPE_MATL,RCC,RCC,RCC
+PIPE_MATL,PIPE_MATL,RCP,RCP ,reinforced concrete pipe
+PIPE_MATL,PIPE_MATL,abs truss,RPM  ,reinforced plastic pipe - truss pipe
+PIPE_MATL,PIPE_MATL,RPM,RPM  ,reinforced plastic pipe -Truss pipe
+PIPE_MATL,PIPE_MATL,SDR,SDR,SDR
+PIPE_MATL,PIPE_MATL,SDR 21,SDR21,SDR21
+PIPE_MATL,PIPE_MATL,SDR21,SDR21,SDR21
+PIPE_MATL,PIPE_MATL,SDR 35,SDR35,SDR35
+PIPE_MATL,PIPE_MATL,SP,SP ,steel pipe
+PIPE_MATL,PIPE_MATL,STL,STL,steel pipe
+PIPE_MATL,PIPE_MATL,STL-VC,STL-VC,steel / vitrified clay pipe
+PIPE_MATL,PIPE_MATL,TCP,TCP,TCP
+PIPE_MATL,PIPE_MATL,TR*,TR*,TR*
+PIPE_MATL,PIPE_MATL,TRU,TRU,trunk
+PIPE_MATL,PIPE_MATL,TTE,TTE ,transite pipe
+PIPE_MATL,PIPE_MATL,UCP,UCP,UCP
+PIPE_MATL,PIPE_MATL,UNK,UK,Unknown
+PIPE_MATL,PIPE_MATL,VCP,VCP ,vitrified clay pipe
+PIPE_MATL,PIPE_MATL,VCP/CIPP,VCP-CIP,VCP-CIP
+PIPE_MATL,PIPE_MATL,VCP-CIP,VCP-CIP,VCP-CIP
+PIPE_MATL,PIPE_MATL,VCP-DIP-CIP,VCP-DIP-CIP,VCP-DIP-CIP
+PIPE_MATL,PIPE_MATL,VYLON,VYLON,VYLON
+PIPE_MATL,PIPE_MATL,WIP,WIP,WIP
+PIPE_MATL,PIPE_MATL,XXX,XXX,Unknown
+PIPE_MATL,PIPE_MATL,ZZZ,ZZZ,Other
+PIPE_SHAPE,PIPE_SHAPE, ,,
+PIPE_SHAPE,PIPE_SHAPE,,,
+PIPE_SHAPE,PIPE_SHAPE,arched,A,Arched
+PIPE_SHAPE,PIPE_SHAPE,barrel,B,Barrel
+PIPE_SHAPE,PIPE_SHAPE,C,C,Circular
+PIPE_SHAPE,PIPE_SHAPE,circular,C,Circular
+PIPE_SHAPE,PIPE_SHAPE,Circular,C,Circular
+PIPE_SHAPE,PIPE_SHAPE,est_Circular,C,Circular
+PIPE_SHAPE,PIPE_SHAPE,channel,CH,Channel
+PIPE_SHAPE,PIPE_SHAPE,egg-shaped,E,Egg Shaped
+PIPE_SHAPE,PIPE_SHAPE,elliptical,EL,Elliptical
+PIPE_SHAPE,PIPE_SHAPE,est_Elliptical,EL,Elliptical
+PIPE_SHAPE,PIPE_SHAPE,horseshoe,H,Horseshoe
+PIPE_SHAPE,PIPE_SHAPE,oval,O,Oval
+PIPE_SHAPE,PIPE_SHAPE,rectangular,R,Rectangular
+PIPE_SHAPE,PIPE_SHAPE,square,S,Square
+PIPE_SHAPE,PIPE_SHAPE,u-shaped,U,U-Shaped
+PIPETYPE,PIPETYPE, ,,
+PIPETYPE,PIPETYPE,,,
+PIPETYPE,PIPETYPE,force main,FM,Force Main
+PIPETYPE,PIPETYPE,gravity,G,Gravity Main
+PRMTSTATUS,PRMTSTATUS, ,,
+PRMTSTATUS,PRMTSTATUS,,,
+PRMTSTATUS,PRMTSTATUS,N,N,No
+PRMTSTATUS,PRMTSTATUS,NA,NA,Not Applicable
+PRMTSTATUS,PRMTSTATUS,UNK,UK,Unknown
+PRMTSTATUS,PRMTSTATUS,Y,Y,Yes
+REL_GRADE,REL_GRADE,Above,Above,Above
+REL_GRADE,REL_GRADE,Adjusted,Adjusted,Adjusted
+REL_GRADE,REL_GRADE,Below,Below,Below
+REL_GRADE,REL_GRADE,Buried,Buried,Buried
+REL_GRADE,REL_GRADE,Flush,Flush,Flush
+REL_GRADE,REL_GRADE,5,UK,Unknown
+REL_GRADE,REL_GRADE, ,,
+REL_GRADE,REL_GRADE,Level,Level,Level
+REL_GRADE,REL_GRADE,,,
+SEWERTYPE,SEWERTYPE, ,,
+SEWERTYPE,SEWERTYPE,COM,COM,combined
+SEWERTYPE,SEWERTYPE,FM,FM,force
+SEWERTYPE,SEWERTYPE,SAN,SAN,sanitary
+SEWERTYPE,SEWERTYPE,Separate Sanitary,SAN,sanitary
+SEWERTYPE,SEWERTYPE,SS,SS,separate
+SEWERTYPE,SEWERTYPE,STM,STM,stormwater
+SEWERTYPE,SEWERTYPE,0,UK,Unknown
+SEWERTYPE,SEWERTYPE,UNK,UK,Unknown
+SEWERTYPE,SEWERTYPE,,,
+SRC_AREA,SRC_AREA,Cecil,CECL,Cecil Township
+SRC_AREA,SRC_AREA,,,
+SRC_AREA,SRC_AREA,Aspinwall,ASPI,Aspinwall Borough
+SRC_AREA,SRC_AREA,Avalon,AVAL,Avalon Borough
+SRC_AREA,SRC_AREA,BaldwinBoro,BALB,Baldwin Borough
+SRC_AREA,SRC_AREA,BaldwinTwp,BALT,Baldwin Township
+SRC_AREA,SRC_AREA,BenAvon,BAVH,Ben Avon Heights Borough
+SRC_AREA,SRC_AREA,BenAvonHts,BAVH,Ben Avon Heights Borough
+SRC_AREA,SRC_AREA,Bellevue,BELL,Bellevue Borough
+SRC_AREA,SRC_AREA,BethelPark,BETH,Bethel Park Municipality
+SRC_AREA,SRC_AREA,BraddockHills,BHIL,Braddock Hills Borough
+SRC_AREA,SRC_AREA,Blawnox,BLAW,Blawnox Borough
+SRC_AREA,SRC_AREA,BraddockBoro,BRAD,Braddock Borough
+SRC_AREA,SRC_AREA,Brentwood,BREN,Brentwood Borough
+SRC_AREA,SRC_AREA,Bridgeville,BRID,Bridgeville Borough
+SRC_AREA,SRC_AREA,Carnegie,CARN,Carnegie Borough
+SRC_AREA,SRC_AREA,Chalfant,CHAL,Chalfant Borough
+SRC_AREA,SRC_AREA,Churchill,CHUR,Churchill Borough
+SRC_AREA,SRC_AREA,Collier,COLL,Collier Township
+SRC_AREA,SRC_AREA,Crafton,CRAF,Crafton Borough
+SRC_AREA,SRC_AREA,CastleShannon,CSHA,Castle Shannon Borough
+SRC_AREA,SRC_AREA,Dormont,DORM,Dormont Borough
+SRC_AREA,SRC_AREA,Edgewood,EDGE,Edgewood Borough
+SRC_AREA,SRC_AREA,EastMcKeesport,EMCK,East McKeesport Borough
+SRC_AREA,SRC_AREA,Emsworth,EMSW,Emsworth Borough
+SRC_AREA,SRC_AREA,EastPittsburgh,EPIT,East Pittsburgh Borough
+SRC_AREA,SRC_AREA,Etna,ETNA,Etna Borough
+SRC_AREA,SRC_AREA,FoxChapel,FCHA,Fox Chapel Borough
+SRC_AREA,SRC_AREA,ForestHills,FHIL,Forest Hills Borough
+SRC_AREA,SRC_AREA,GirtysRun-McCandless,GRJS-MCCA,GirtysRun-McCandless
+SRC_AREA,SRC_AREA,GirtysRun-Millvale,GRJS-MILL,GirtysRun-Millvale
+SRC_AREA,SRC_AREA,GirtysRun-pwsa,GRJS-PWSA,GirtysRun-PWSA
+SRC_AREA,SRC_AREA,GirtysRun-Reserve,GRJS-RESE,GirtysRun-Reserve
+SRC_AREA,SRC_AREA,GirtysRun-Ross,GRJS-ROSS,GirtysRun-Ross
+SRC_AREA,SRC_AREA,GirtysRun-Shaler,GRJS-SHAL,GirtysRun-Shaler
+SRC_AREA,SRC_AREA,Greentree,GTRE,Green Tree Borough
+SRC_AREA,SRC_AREA,Heidelberg,HEID,Heidelberg Borough
+SRC_AREA,SRC_AREA,Homestead,HOMS,Homestead Borough
+SRC_AREA,SRC_AREA,Indiana,INDI,Indiana Township
+SRC_AREA,SRC_AREA,Ingram,INGR,Ingram Borough
+SRC_AREA,SRC_AREA,Kennedy,KENN,Kennedy Township
+SRC_AREA,SRC_AREA,Kilbuck,KILB,Kilbuck Township
+SRC_AREA,SRC_AREA,McDonald,MCDO,McDonald Borough
+SRC_AREA,SRC_AREA,McDonaldWashington,MCDO-WASH,McDonald-Washington
+SRC_AREA,SRC_AREA,Millvale,MILL,Millvale Borough
+SRC_AREA,SRC_AREA,MtLebanon,MLEB,Mount Lebanon Municipality
+SRC_AREA,SRC_AREA,MtOliver,MOLI,Mount Oliver Borough
+SRC_AREA,SRC_AREA,Monroeville,MONR,Monroeville Municipality
+SRC_AREA,SRC_AREA,McKeesRocks,MROC,McKees Rocks Borough
+SRC_AREA,SRC_AREA,Murrysville,MRVL,Murrysville
+SRC_AREA,SRC_AREA,MTSA-FranklinPark,MTSA-FRPK,MTSA-FranklinPark
+SRC_AREA,SRC_AREA,MTSA-McCandless,MTSA-MCCA,MTSA-McCandless
+SRC_AREA,SRC_AREA,Munhall,MUNH,Munhall Borough
+SRC_AREA,SRC_AREA,NorthBraddock,NBRA,North Braddock Borough
+SRC_AREA,SRC_AREA,Neville,NEVI,Neville Township
+SRC_AREA,SRC_AREA,NorthFayette,NFAY,North Fayette Township
+SRC_AREA,SRC_AREA,NorthHuntingdon,NHUN,North Huntingdon Township
+SRC_AREA,SRC_AREA,NorthVersailles,NVER,North Versailles Township
+SRC_AREA,SRC_AREA,Oakdale,OAKD,Oakdale Borough
+SRC_AREA,SRC_AREA,Ohara,OHAR,O'Hara Township
+SRC_AREA,SRC_AREA,Ohio,OHIO,Ohio Township
+SRC_AREA,SRC_AREA,PennHills,PENH,Penn Hills Municipality
+SRC_AREA,SRC_AREA,Peters,PETE,Peters Township
+SRC_AREA,SRC_AREA,PleasantHills,PHIL,Pleasant Hills Borough
+SRC_AREA,SRC_AREA,Pitcairn,PITC,Pitcairn Borough
+SRC_AREA,SRC_AREA,Plum,PLUM,Plum Borough
+SRC_AREA,SRC_AREA,PennTwp,PTWP,Penn Township
+SRC_AREA,SRC_AREA,PWSA,PWSA,Pittsburgh Water and Sewer Authority
+SRC_AREA,SRC_AREA,Rankin,RANK,Rankin Borough
+SRC_AREA,SRC_AREA,Reserve,RESE,Reserve Township
+SRC_AREA,SRC_AREA,RosslynFarms,RFAR,Rosslyn Farms Borough
+SRC_AREA,SRC_AREA,Robinson,ROBI,Robinson Township
+SRC_AREA,SRC_AREA,Ross,ROSS,Ross Township
+SRC_AREA,SRC_AREA,Scott,SCOT,Scott Township
+SRC_AREA,SRC_AREA,SouthFayette,SFAY,South Fayette Township
+SRC_AREA,SRC_AREA,Shaler,SHAL,Shaler Township
+SRC_AREA,SRC_AREA,Sharpsburg,SHAR,Sharpsburg Borough
+SRC_AREA,SRC_AREA,Stowe,STOW,Stowe Township
+SRC_AREA,SRC_AREA,Swissvale,SWIS,Swissvale Borough
+SRC_AREA,SRC_AREA,TurtleCreek,TCRE,Turtle Creek Borough
+SRC_AREA,SRC_AREA,Thornburg,THOR,Thornburg Borough
+SRC_AREA,SRC_AREA,Trafford,TRAF,Trafford Borough
+SRC_AREA,SRC_AREA,UpperStClair,USCL,Upper St. Clair Township
+SRC_AREA,SRC_AREA,Verona,VERO,Verona Borough
+SRC_AREA,SRC_AREA,Wall,WALL,Wall Borough
+SRC_AREA,SRC_AREA,Whitehall,WHAL,Whitehall Borough
+SRC_AREA,SRC_AREA,Whitaker,WHIT,Whitaker Borough
+SRC_AREA,SRC_AREA,WestHomestead,WHOM,West Homestead Borough
+SRC_AREA,SRC_AREA,Wilkinsburg,WILK,Wilkinsburg Borough
+SRC_AREA,SRC_AREA,Wilmerding,WILM,Wilmerding Borough
+SRC_AREA,SRC_AREA,WilkinsTwp,WILT,Wilkins Township
+SRC_AREA,SRC_AREA,WestMifflin,WMIF,West Mifflin Borough
+SRC_AREA,SRC_AREA,WestView,WVIE,West View Borough
+SRC_AREA,SRC_AREA,WestView-GirtysRun,WVIE-GRJS,WestView-GirtysRun
+SRC_BASIN,SRC_BASIN, ,,
+SRC_BASIN,SRC_BASIN,,,
+SRC_BASIN,SRC_BASIN,CC,CC,Chartiers Creek
+SRC_BASIN,SRC_BASIN,LOGR,LOGR,Lower Ohio River / Girty's Run
+SRC_BASIN,SRC_BASIN,MR,MR,Main Rivers
+SRC_BASIN,SRC_BASIN,SMR,SMR,Saw Mill Run
+SRC_BASIN,SRC_BASIN,TT,TC,Turtle Creek
+SRC_BASIN,SRC_BASIN,UA,UA,Upper Allegheny / Pine Creek
+SRC_BASIN,SRC_BASIN,UM,UM,Upper Monogehela
+STATUS_LN,STATUS_LN,? ? ? ? ?,UK,Unknown
+STATUS_LN,STATUS_LN,ABN,ABND,Abandoned
+STATUS_LN,STATUS_LN,ABN?,UK,Unknown
+STATUS_LN,STATUS_LN,ACT,ACTV,Active
+STATUS_LN,STATUS_LN,ACT?,UK,Unknown
+STATUS_LN,STATUS_LN,Active,ACTV,Active
+STATUS_LN,STATUS_LN,EST,EST,Estimated
+STATUS_LN,STATUS_LN,estimated line,EST,Estimated
+STATUS_LN,STATUS_LN,In-Active,INAC,Inactive
+STATUS_LN,STATUS_LN,Lateral,UK,Unknown
+STATUS_LN,STATUS_LN,SCH,SCH,Schematic
+STATUS_LN,STATUS_LN,used?,UK,Unknown
+STATUS_LN,STATUS_LN,,,
+STATUS_PT,STATUS_PT, ,,
+STATUS_PT,STATUS_PT,Abandoned,ABND,Abandoned
+STATUS_PT,STATUS_PT,abandoned,ABND,Abandoned
+STATUS_PT,STATUS_PT,ABN,ABND,Abandoned
+STATUS_PT,STATUS_PT,ACT,ACTV,Active
+STATUS_PT,STATUS_PT,active,ACTV,Active
+STATUS_PT,STATUS_PT,Active,ACTV,Active
+STATUS_PT,STATUS_PT,active-sealed,ACTV,Active
+STATUS_PT,STATUS_PT,buried,UK,Unknown
+STATUS_PT,STATUS_PT,Buried,UK,Unknown
+STATUS_PT,STATUS_PT,Camera Verified,ACTV,Active
+STATUS_PT,STATUS_PT,EOL,UK,Unknown
+STATUS_PT,STATUS_PT,estimated,EST,Estimated
+STATUS_PT,STATUS_PT,estimated location,EST,Estimated
+STATUS_PT,STATUS_PT,estimated point,EST,Estimated
+STATUS_PT,STATUS_PT,inaccessible,UK,Unknown
+STATUS_PT,STATUS_PT,Incomplete,INC,Incomplete
+STATUS_PT,STATUS_PT,Inlet,ACTV,Active
+STATUS_PT,STATUS_PT,New,PROP,Proposed (New)
+STATUS_PT,STATUS_PT,No InvertElev or MaxDep,UK,Unknown
+STATUS_PT,STATUS_PT,No InvertElev or MaxDepth,UK,Unknown
+STATUS_PT,STATUS_PT,No MaxDepth,UK,Unknown
+STATUS_PT,STATUS_PT,notFound,UK,Unknown
+STATUS_PT,STATUS_PT,Previously Modeled,UK,Unknown
+STATUS_PT,STATUS_PT,schematic,SCH,Schematic
+STATUS_PT,STATUS_PT,WWTP Discharge,ACTV,Active
+STATUS_PT,STATUS_PT,,,
+SUBTYPE_LN,SUBTYPE_LN,TRU,TRU,trunk
+SUBTYPE_LN,SUBTYPE_LN, ,,
+SUBTYPE_LN,SUBTYPE_LN,XCON,,
+SUBTYPE_LN,SUBTYPE_LN,,,
+SUBTYPE_PT,SUBTYPE_PT, ,,
+SUBTYPE_PT,SUBTYPE_PT,Lamphole,LH,lamphole
+SUBTYPE_PT,SUBTYPE_PT,,,
+SUBTYPE_PT,SUBTYPE_PT,EBP,EBP,EBP
+SUBTYPE_PT,SUBTYPE_PT,FD,FD,FD
+SUBTYPE_PT,SUBTYPE_PT,IMO_CBF,IMO_CBF,IMO_CBF
+SUBTYPE_PT,SUBTYPE_PT,IMO_SDP,IMO_SDP,IMO_SDP
+SUBTYPE_PT,SUBTYPE_PT,IRO,IR,IR
+SUBTYPE_PT,SUBTYPE_PT,JCT,JT,JT
+SUBTYPE_PT,SUBTYPE_PT,Laamphole,LH,lamphole
+SUBTYPE_PT,SUBTYPE_PT,Manhole,MH,manhole
+SUBTYPE_PT,SUBTYPE_PT,MH,MH,MH
+SUBTYPE_PT,SUBTYPE_PT,REG_GRP,REG_GRP,Regulator Group
+SUBTYPE_PT,SUBTYPE_PT,STD,STD,Standard
+SUBTYPE_PT,SUBTYPE_PT,UNK,UK,Unknown
+SUBTYPE_PT,SUBTYPE_PT,zz,ZZ,ZZ
+TREAT_FAC,TREAT_FAC,Alcosan,ACSA,Allegheny County Sanitary Authority
+TREAT_FAC,TREAT_FAC,unknown,UK,Unknown
+TREAT_FAC,TREAT_FAC, ,,
+TREAT_FAC,TREAT_FAC,notTreated,NONE,Untreated
+TREAT_FAC,TREAT_FAC,PA0025984,,
+TREAT_FAC,TREAT_FAC,,,
+TYPE_LN,TYPE_LN, ,,
+TYPE_LN,TYPE_LN,,,
+TYPE_LN,TYPE_LN,Abandoned,ABND,Abandoned
+TYPE_LN,TYPE_LN,COL,COL,Collector Pipe
+TYPE_LN,TYPE_LN,Collector,COL,Collector Pipe
+TYPE_LN,TYPE_LN,connector,CP,Connector Pipe
+TYPE_LN,TYPE_LN,CP,CP,Connector Pipe
+TYPE_LN,TYPE_LN,CUL,CUL,Culvert
+TYPE_LN,TYPE_LN,D_INT,D_INT,Deep Tunnel Interceptor
+TYPE_LN,TYPE_LN,estimated line,EST,Estimated
+TYPE_LN,TYPE_LN,FM,FM,Force Main
+TYPE_LN,TYPE_LN,Interceptor,INT,Interceptor
+TYPE_LN,TYPE_LN,LAT,LAT,Lateral
+TYPE_LN,TYPE_LN,Lateral,LAT,Lateral
+TYPE_LN,TYPE_LN,OVF,OVF,Overflow
+TYPE_LN,TYPE_LN,pumpOVF,OVF,Overflow
+TYPE_LN,TYPE_LN,Pool Drain,PD,Pool Drain
+TYPE_LN,TYPE_LN,S_INT,S_INT,Shallow Cut Interceptor
+TYPE_LN,TYPE_LN,chamber,SCH,Chamber
+TYPE_LN,TYPE_LN,SIP,SIP,Siphon
+TYPE_LN,TYPE_LN,Trunkline,TRU,trunk
+TYPE_LN,TYPE_LN,ZZ,ZZ,Other
