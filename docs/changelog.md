@@ -117,4 +117,4 @@ The next update will focus on additional QAQC for some communities edited during
 
 
 <br><br><hr>
-The changelog is maintained on [Github](https://github.com/civicmapper/3rww-sewers/blob/master/changelog.md).
+The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).
