@@ -22,6 +22,9 @@ This user guide describes how to use the 3RWW Sewer Atlas in desktop and field w
 ### [Sewer Atlas Data Changelog &rarr;](changelog.md)
 An ongoing summary of general changes made to the data behind the Sewer Atlas, starting with the 2017 quarterly updates.
 
+### [Data Downloads and Services &rarr;](services_and_downloads.md)
+Instructions for accessing Sewer Atlas resoures.
+
 ## Software
 
 The Sewer Atlas is a custom Esri-powered web application hosted by 3RWW that provides full interactivity with regional sewer infrastructure data, including network tracing. The Sewer Atlas is currently in active development, with improvements to the applications and data being made on regular basis.
