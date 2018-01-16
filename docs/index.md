@@ -3,7 +3,7 @@
 <br>
 # Sewer Atlas Documentation and User Guides
 
-The **[3RWW Sewer Atlas](http://mds.3riverswetweather.org/atlas/rsi)** represents the next generation of mapping products from [3 Rivers Wet Weather (3RWW)](www.3riverswetweather.org).
+The **[3RWW Sewer Atlas](http://mds.3riverswetweather.org/atlas/rsi)** represents the next generation of mapping products from [3 Rivers Wet Weather (3RWW)](http://www.3riverswetweather.org).
 
 ![Sewer Atlas interface](img/ui/Slide6.JPG)
 
@@ -28,3 +28,6 @@ This user guide describes how to use the 3RWW Sewer Atlas in desktop and field w
 
 ### [Sewer Atlas Data Changelog &rarr;](changelog.md)
 An ongoing summary of general changes made to the data behind the Sewer Atlas, starting with the 2017 quarterly updates.
+
+### [Data Downloads and Services &rarr;](services_and_downloads.md)
+Instructions for accessing Sewer Atlas resoures.
