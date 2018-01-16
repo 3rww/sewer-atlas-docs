@@ -18,7 +18,7 @@ The goal of this effort was to clean-up the way that data classifications are re
 
 > *EXAMPLE: the values `Yes`, `YES`, `Y`, `True`, `1` were all found in the `ALCOSAN` field, which is a simple boolean-esque field indicating whether or not ALCOSAN owns the infrastructure; such values all become re-coded as `Y`.*
 
-Where possible, the cleaned-up values were made to conform to the data model in use for ALCOSAN's RI initiative (developed by AECOM). In cases where values present in the Sewer Atlas database did not have a corresponding code/value in the ALCOSAN RI data model, we fell back to the original Landbase Systems data dictionary for the old One Overall Map. In the few remaining cases, we left the values as-is, and anticipate addressing them as we continue to make updates are made. Overall, the Sewer Atlas database schema is now better aligned with the RI database schema.
+Where possible, the cleaned-up values were made to conform to the data model in use for ALCOSAN's RI initiative (developed by AECOM). In cases where values present in the Sewer Atlas database did not have a corresponding code/value in the ALCOSAN RI data model, we fell back to the original Landbase Systems data dictionary for the old One Overall Map. In the few remaining cases, we left the values as-is, and anticipate addressing them as we continue to make updates. Overall, the Sewer Atlas database schema is now better aligned with the RI database schema.
 
 You can see the complete field and value mappings table [here](./resources/r2017Q4_LBS_clean_lookup.csv), which was used to crosswalk values in the previous version of the data model to a new, cleaned-up version.
 
