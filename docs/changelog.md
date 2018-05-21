@@ -2,6 +2,46 @@
 
 This page contains the cumulative data release notes for the Sewer Atlas.
 
+## 2018-Q1 (v6.1.0)
+
+### Summary
+
+This release is a continuation of 2017Q4 updates using data provided by Glenn Engineering.
+
+## Data Updates in the 20181 Release
+
+This release covered these municipalities:
+
+  * Aspinwall
+  * Braddock
+  * Chalfant
+  * Homestead
+  * North Braddock
+  * Sharpsburg
+  * Turtle Creek
+  * Trafford
+  * East Pittsburgh
+  * East McKeesport
+  * North Versailes
+  * Wall
+  * Wilmerding
+
+It also revisted the municipalities from the 2017Q4 release, and tightened up the edits made there.
+
+As always, our emphasis was on geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology. 
+
+As with past releases that utilized data from Glenn Engineering, we addressed specific request from data maintainer that the Sewer Atlas use the "local infrastructure ID" provided in the submission in the Sewer Atlas' structure ID field (`STRUCT_ID`). We conducted in-person review of edits with the data maintainer on 21 March 2018.
+
+### Geometry
+
+* Updates reflect major infrastructure upgrades in Trafford, North Versailles/East McKeesport (5th Ave).
+* Geometry matching or attribute updates was not explicitly performed on pipes/structures within the RI Extents (referencing November 2017 RI Extent data); note though that in several edge cases where connectivity issues cropped up with submitted data, we did make minor geometry edits merely to ensure geometric network connectivity was maintained.
+
+### Attributes
+
+* Correction to ownership: Pipes classified as `NVER` in the last release were done by mistake. North Versailles Township (`NVER`) does not own wastewater infrastructure. It is all owned/maintained by the municipal authority (`NVTS`). This has been corrected.
+* Some submitted wastewater data included separate stormwater infrastructure, misclassified as `SAN`, which came up during review. We reclassified these as `STM` and changed `disabled` to `false`. The records are retained in this way, but won't show on the Sewer Atlas and won't be included in the network trace.
+
 ## 2017-Q4 (v6.0.0)
 
 ### Summary
