@@ -10,7 +10,7 @@ pages:
 - Guides:
     - Discharge Analysis: guide_rsi_trace.md
 - Data:
-    - Changelog: changelog.md
+    - Data Release Change Log: changelog.md
     - Downloads and Services: services_and_downloads.md
 markdown_extensions:
     - smarty

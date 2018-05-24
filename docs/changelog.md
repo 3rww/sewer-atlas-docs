@@ -6,11 +6,7 @@ This page contains the cumulative data release notes for the Sewer Atlas.
 
 ### Summary
 
-This release is a continuation of 2017Q4 updates using data provided by Glenn Engineering.
-
-## Data Updates in the 20181 Release
-
-This release covered these municipalities:
+This release is a continuation of 2017Q4 updates using data provided by Glenn Engineering. This release covers these municipalities:
 
   * Aspinwall
   * Braddock
@@ -28,7 +24,7 @@ This release covered these municipalities:
 
 It also revisted the municipalities from the 2017Q4 release, and tightened up the edits made there.
 
-As always, our emphasis was on geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology. 
+As always, our emphasis was on geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology.
 
 As with past releases that utilized data from Glenn Engineering, we addressed specific request from data maintainer that the Sewer Atlas use the "local infrastructure ID" provided in the submission in the Sewer Atlas' structure ID field (`STRUCT_ID`). We conducted in-person review of edits with the data maintainer on 21 March 2018.
 
