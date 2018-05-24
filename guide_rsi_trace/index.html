@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img\favicon.ico">
+        
+        <title>Discharge Analysis - 3RWW SEWER ATLAS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">3RWW SEWER ATLAS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Overview</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../help_rsi/">Contents</a>
+</li>
+                            
+<li >
+    <a href="../help_rsi_ui/">Interface</a>
+</li>
+                            
+<li >
+    <a href="../help_rsi_tasks/">Common Tasks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">Discharge Analysis</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../changelog/">Changelog</a>
+</li>
+                            
+<li >
+    <a href="../services_and_downloads/">Downloads and Services</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../help_rsi_tasks/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../changelog/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#3rww-sewer-atlas-discharge-tracing-guide">3RWW Sewer Atlas: Discharge Tracing Guide</a></li>
+            <li><a href="#the-atlas-interface">The Atlas Interface</a></li>
+        <li class="main "><a href="#step-1-get-to-your-location-of-interest-on-the-map">Step 1. Get to your location of interest on the map</a></li>
+            <li><a href="#method-1-use-the-my-location-widget">Method 1: Use the My Location widget</a></li>
+            <li><a href="#method-2-enter-the-address">Method 2: Enter the address</a></li>
+            <li><a href="#method-3-enter-the-wastewater-structure-id">Method 3: Enter the Wastewater Structure ID</a></li>
+        <li class="main "><a href="#step-2-view-and-interact-with-sewer-data">Step 2. View and Interact with Sewer Data</a></li>
+            <li><a href="#wastewater-infrastructure-layers">Wastewater Infrastructure Layers</a></li>
+            <li><a href="#get-the-xy-coordinates-of-a-specific-wastewater-structure">Get the X/Y coordinates of a specific wastewater structure</a></li>
+        <li class="main "><a href="#step-3-trace-the-sewer-network">Step 3. Trace the Sewer Network</a></li>
+        <li class="main "><a href="#step-4-identify-sample-points-upstream">Step 4. Identify sample points upstream</a></li>
+            <li><a href="#upstream-wastewater-structures-and-pipes">Upstream wastewater structures and pipes</a></li>
+            <li><a href="#virtual-laterals_1">Virtual Laterals</a></li>
+        <li class="main "><a href="#step-5-printing">Step 5. Printing</a></li>
+        <li class="main "><a href="#supporting-functionality">Supporting Functionality</a></li>
+            <li><a href="#the-base-map-and-other-supplementary-map-data">The Base Map and other supplementary map data</a></li>
+            <li><a href="#other-reference-layers">Other reference layers</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="3rww-sewer-atlas-discharge-tracing-guide">3RWW Sewer Atlas:<br> <strong>Discharge Tracing Guide</strong></h1>
+<p><em><img alt="animation: quick overview animation of tool operation and results" src="../img/rsiguide/RSIGuide_trace_fast.gif" /></em></p>
+<p>This user guide describes how to use the 3RWW Sewer Atlas in desktop and field workflows for identifying potential discharges into the sewer system. With this guide, users will learn to:</p>
+<ol>
+<li>find the location of interest on the map</li>
+<li>identify wastewater infrastructure on the map</li>
+<li>trace upstream from the nearest infrastructure</li>
+<li>use available reference map layers to help identify potential discharge sources</li>
+</ol>
+<h2 id="the-atlas-interface">The Atlas Interface</h2>
+<p>The Atlas is comprised of two parts:</p>
+<h3 id="map-window">Map Window</h3>
+<p><img alt="Sewer Atlas Map Window" src="../img/ui/Slide7.JPG" /></p>
+<p><em>For more information on the Map Window, see the complete <a href="../help_rsi_ui/#map-window">help documentation</a>.</em></p>
+<h3 id="information-window">Information Window</h3>
+<p><img alt="Sewer Atlas Information Window" src="../img/ui/Slide9.JPG" /></p>
+<p>The steps in this guide refer to widgets contained in the Map and Information windows.</p>
+<hr>
+
+<h1 id="step-1-get-to-your-location-of-interest-on-the-map"><strong>Step 1. Get to your location of interest on the map</strong></h1>
+<p>To move the map to your current location, you can use one of several methods:</p>
+<h2 id="method-1-use-the-my-location-widget">Method 1: Use the <strong>My Location</strong> widget</h2>
+<p><em>&hellip;when using mobile devices in the field</em></p>
+<p><em><img alt="Animation: Using the My Location Button" src="../img/rsiguide/RSIGuide_Locate.gif" /></em></p>
+<p>The <strong>My Location</strong> button will automatically map <strong><em>your physical location</em></strong>. This is useful if you are using a mobile device in the field, and need to quickly figure out what infrastructure is nearby your location.</p>
+<p><em>Note: this works only if your web  browser and/or device has the necessary geo-location capabilities enabled. These capabilities vary by device; tablets and smartphones typically have this capability. The web browser on your device may prompt you to allow the Sewer Atlas to access your device&rsquo;s location:</em></p>
+<p><em><img alt="image: location prompt" src="../img/rsiguide/RSIGuide_Locate_prompt.png" /></em></p>
+<p><em>By selecting <strong>Allow</strong>, the Atlas will shift the map to your location.</em></p>
+<h2 id="method-2-enter-the-address">Method 2: Enter the address</h2>
+<p>If you have the address of complaint, you can enter it into the The <a href="../help_rsi_tasks/#searching-for-locations">Search widget</a>, located in the upper left hand corner of the map window.</p>
+<ul>
+<li>In the Search Widget, enter the address as: <code>street-number street-name, city, state (optional) zip code (optional).</code><ul>
+<li>For example, you would enter the address for 3 Rivers Wet Weather as <code>3901 Penn Avenue, Pittsburgh, PA 15224</code></li>
+</ul>
+</li>
+<li>Click the <em>Search</em> Button (the magnifying glass icon).</li>
+<li>
+<p>A dropdown will appear with search results:</p>
+<p><em><img alt="image: address prompt" src="../img/rsiguide/RSIGuide_address_prompt.png" /></em></p>
+</li>
+</ul>
+<h2 id="method-3-enter-the-wastewater-structure-id">Method 3: Enter the Wastewater Structure ID</h2>
+<p>If the ID for the wastewater structure related to the complaint is known, such as for a manhole or outfall, you can enter that into the search bar instead of the address.</p>
+<p>The <a href="../help_rsi_tasks/#searching-for-locations">Search widget</a> located in the upper left hand corner of the map window also allows you to enter the <strong>wastewater structure ID number</strong>. To search by ID:</p>
+<ul>
+<li>In the Search Widget, enter the ID number. This could include, for example:<ul>
+<li>manhole IDs: <strong>MH049K010</strong></li>
+<li>outfall IDs: <strong>A-20Z</strong></li>
+</ul>
+</li>
+<li>Click the <em>Search</em> Button (the magnifying glass icon).</li>
+<li>
+<p>A dropdown will appear with search results:</p>
+<p><em><img alt="image: structure id prompt" src="../img/rsiguide/RSIGuide_ws_prompt.png" /></em></p>
+</li>
+<li>
+<p>By clicking the result in the dropdown, the map will pan and zoom to that location.</p>
+</li>
+<li>
+<p>Note that if you enter a partial ID number, the search will return related results:</p>
+<p><em><img alt="image: structure id prompt 2" src="../img/rsiguide/RSIGuide_ws2_prompt.png" /></em></p>
+</li>
+</ul>
+<hr>
+
+<h1 id="step-2-view-and-interact-with-sewer-data"><strong>Step 2. View and Interact with Sewer Data</strong></h1>
+<p>Once you have found the location of interest, you may need to identify specific pieces of infrastructure nearby. There are a few ways to make sure the map allows you to see the infrastructure you&rsquo;re looking for.</p>
+<h2 id="wastewater-infrastructure-layers">Wastewater Infrastructure Layers</h2>
+<p>This being a sewer infrastructure atlas, the map by default shows the key elements of the regional wastewater infrastructure: pipes, structures, and virtual laterals.</p>
+<p>The map <strong><em>Legend</em></strong> in the <strong>Information Window</strong> summarizes the symbols for wastewater infrastructure features that are visible on the map. The legend will change dynamically depending on the layers shown on the map.</p>
+<h3 id="pipes">Pipes</h3>
+<p>So that you may quickly get a sense of the hierarchy of the wastewater network, the pipes are shown on the map in classes by diameter in inches as follows:</p>
+<p><em><img alt="image: pipe symbology" src="../img/rsiguide/RSIGuide_legend_wwp2.png" /></em></p>
+<h4 id="virtual-laterals">Virtual Laterals</h4>
+<p>Zooming in far enough on the map will reveal <em>virtual laterals.</em> Note that virtual laterals do not represent actual pipes, but indicate likely connections from buildings to the nearest municipal pipe.</p>
+<h4 id="flow-direction">Flow Direction</h4>
+<p>On both Pipes and Virtual Laterals, <strong>Arrows</strong> indicate the direction of wastewater flow.</p>
+<h3 id="structures">Structures</h3>
+<p>Wastewater structures are points on the map, illustrated with symbols that denote general function:</p>
+<p><em><img alt="image: pipe symbology" src="../img/rsiguide/RSIGuide_legend_wws2.png" /></em></p>
+<p>Structures will appear at higher zoom levels.</p>
+<h3 id="get-information-about-wastewater-infrastructure-layers">Get information about Wastewater Infrastructure Layers</h3>
+<p>The wastewater infrastructure data shown on the map has numerous informational attributes about the infrastructure. To see these attributes, simply click on a feature. A pop-up window will appear.</p>
+<p><em><img alt="image: pipe symbology" src="../img/rsiguide/RSIGuide_popup2.png" /></em></p>
+<p>This window contains key attributes, such as the wastewater structure ID, the X/Y coordinates, and pipe sizes, and the ALCOSAN point of connection ID.</p>
+<p><em>Note: coordinates in the pop-up for wastewater structures are currently shown in the</em> <strong>NAD 1983 - State Plane - Pennsylvania South FIPS 3702 Feet reference system (EPSG: 2272).</strong> <em>This differs from the global mercator coordinates use in the search widget described above</em></p>
+<p>Text at the very top of the window will indicate if one or more features have been selected.</p>
+<p><em><img alt="image: popup bar" src="../img/rsiguide/RSIGuide_popup_bar.png" /></em></p>
+<p>This will often happen if you select, for example, a manhole, which will have one or more pipes attached to it, or any other features in very close proximity to one another. Use the arrows on the top right side of the pop-up window to quickly cycle through the attributes of nearby infrastructure.</p>
+<h2 id="get-the-xy-coordinates-of-a-specific-wastewater-structure">Get the X/Y coordinates of a specific wastewater structure</h2>
+<p><em>Note: currently the coordinates in the pop-up for wastewater structures are shown in the</em> <strong>NAD 1983 - State Plane - Pennsylvania South FIPS 3702 Feet reference system (EPSG: 2272).</strong> <em>This differs from the global mercator coordinates use in the search widget. While both systems are accurately used to show data on this map, a future release will provide the wastewater structure coordinates in a manner consistent with other coordinates displayed on the map</em></p>
+<p>To get the coordinates for a specific wastewater structure, use the coordinate display at the bottom of the map window.</p>
+<p><em><img alt="image: coord display" src="../img/rsiguide/RSIGuide_coordinates.png" /></em></p>
+<p>The coordinates are updated based on the position of the mouse over the map. To get the coordinates for a specific location (and keep them from changing when the pointer moves):</p>
+<ul>
+<li>click the button shown to the left of the coordinates (noted in the image above with a red arrow).</li>
+<li>click the location on the map (such as on the wastewater structure) that you need the coordinates for.</li>
+</ul>
+<p>The coordinates will remain until the user clicks on the map again, or toggles the button.</p>
+<hr>
+
+<h1 id="step-3-trace-the-sewer-network"><strong>Step 3. Trace the Sewer Network</strong></h1>
+<p><em><img alt="animation: quick overview animation of tool operation and results" src="../img/rsiguide/RSIGuide_trace_fast.gif" /></em></p>
+<p>Now that you have found your location of interest and identified the sewer infrastructure you are interested in, you can begin to figure out where possible illicit discharges might be coming from by tracing the sewer network. The <strong><em>Network Trace</em></strong> widget automates this analysis for you.
+</br></br></br></p>
+<ol>
+<li>
+<p>Open the <strong><em>Network Trace</em></strong> widget in the <strong>Information Window</strong>.</p>
+<p><em><img alt="animation: open network trace" src="../img/rsiguide/RSIGuide_trace_open.gif" /></em></p>
+</li>
+<li>
+<p>Click the <code>Flag</code> button in the widget, and then click on the map on top of the infrastructure at the location from which you want to trace. You will likely want to place the flag directly on the manhole or other structure from which you are conducting the analysis, but the trace can run from any location on the pipe.</p>
+<p><em><img alt="animation: add flag to and results" src="../img/rsiguide/RSIGuide_trace_flag.gif" /></em></p>
+<p><em>Note that the flag you place will be automatically snapped to the nearest pipe or structure for the analysis, so it is OK if you don&rsquo;t place it precisely!</em></p>
+</li>
+<li>
+<p>In the widget window, click the <code>Trace</code> button, and the analysis will start. Depending on how many pipes are traced, the analysis may take anywhere from a few seconds to a minute or two to complete.</p>
+<p>You can continue to do other things with Atlas, such as pan and zoom or turn layers on and off, while the trace analysis runs.</p>
+<p>When the analysis is complete, the results of the trace are added to the map.</p>
+<p><em><img alt="animation: trace and show results" src="../img/rsiguide/RSIGuide_trace_results.gif" /></em></p>
+<ul>
+<li><strong>upstream pipes</strong> are highlighted in orange</li>
+<li><strong>upstream structures</strong> are highlighted in orange</li>
+<li><strong>downstream pipes</strong> are highlighted in green</li>
+<li><strong>downstream structures</strong> structures are highlighted in green</li>
+</ul>
+<p></br>As with the wastewater structure layers, you can click on the trace results on the map to view attributes of the infrastructure.</p>
+</li>
+<li>
+<p>By clicking the <code>Clear</code> button in the widget, the network trace results and any <code>Flag</code> inputs will be removed from the map.</p>
+</li>
+</ol>
+<hr>
+
+<h1 id="step-4-identify-sample-points-upstream"><strong>Step 4. Identify sample points upstream</strong></h1>
+<p>Once you can see results of the trace on the map, you can go back and use available layers to help identify potential sample points and discharge sources.</p>
+<h2 id="upstream-wastewater-structures-and-pipes">Upstream wastewater structures and pipes</h2>
+<p>Once you&rsquo;ve completed a trace, <strong>upstream pipes</strong> and <strong>upstream structures</strong> will be shown on the map highlighted in orange. You can click on the orange pipes and orange structure to get the same pop-up information you could see without the trace, as described above.</p>
+<h2 id="virtual-laterals_1">Virtual Laterals</h2>
+<p>Even though <strong>Virtual laterals</strong> are not traced with the network trace widget, use them in conjunction with the orange upstream trace results as a visual reference, to help identify possible discharge sources. Virtual laterals are mapped from the center of buildings.</p>
+<hr>
+
+<h1 id="step-5-printing"><strong>Step 5. Printing</strong></h1>
+<p>Instead of taking screenshots to capture the current map view, using the <strong><em>Print</em></strong> widget. This widget allows you to &ldquo;print&rdquo; your current map view direct to a <code>.pdf</code> file or one of several image file formats, with the added benefit of providing a complete map layout with legend, scale, and title. By default the widget will generate an 8.5 x 11 inch <code>.pdf</code> map.</p>
+<p>To print:</p>
+<ul>
+<li>simply adjust the view of the map to the view you would like to save.</li>
+<li>select</li>
+</ul>
+<p>The print window includes an advanced options button that allows the user to customize the map title, author, image resolution, and other details.</p>
+<p><em><img alt="image: print window" src="../img/rsiguide/RSIGuide_print.png" /></em></p>
+<p>The print job is sent to a remote server, and may take some time to complete. You can use the rest of the Atlas while waiting - the job will complete in the background and notify you when ready.</p>
+<h1 id="supporting-functionality">Supporting Functionality</h1>
+<h2 id="the-base-map-and-other-supplementary-map-data">The Base Map and other supplementary map data</h2>
+<p>By default, imagery from <strong>Allegheny</strong> County with streets and points of interest from <strong>Esri</strong> is displayed with the wastewater network data.</p>
+<h2 id="other-reference-layers">Other reference layers</h2>
+<p>Clicking the <strong>Map Layers</strong> widget in the <strong>Information Window</strong> displays all layers available to be  shown on the map. These can individually be turned on or off; transparency can also be adjusted.</p>
+<p><em><img alt="image: layer list" src="../img/rsiguide/RSIGuide_layers2.png" /></em></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

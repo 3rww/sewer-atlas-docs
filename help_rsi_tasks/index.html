@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img\favicon.ico">
+        
+        <title>Common Tasks - 3RWW SEWER ATLAS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">3RWW SEWER ATLAS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Overview</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../help_rsi/">Contents</a>
+</li>
+                            
+<li >
+    <a href="../help_rsi_ui/">Interface</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Common Tasks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../guide_rsi_trace/">Discharge Analysis</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../changelog/">Changelog</a>
+</li>
+                            
+<li >
+    <a href="../services_and_downloads/">Downloads and Services</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../help_rsi_ui/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../guide_rsi_trace/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#common-tasks">Common Tasks</a></li>
+            <li><a href="#changing-map-layers">Changing Map Layers</a></li>
+            <li><a href="#changing-basemaps">Changing Basemaps</a></li>
+            <li><a href="#searching-for-locations">Searching for Locations</a></li>
+            <li><a href="#identifying-coordinates">Identifying Coordinates</a></li>
+            <li><a href="#using-the-attribute-table">Using the Attribute Table</a></li>
+            <li><a href="#querying-features">Querying Features</a></li>
+            <li><a href="#filtering-map-features">Filtering Map Features</a></li>
+            <li><a href="#tracing-the-wastewater-network">Tracing the Wastewater Network</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="common-tasks">Common Tasks</h1>
+<p>This describes the Sewer Atlas in terms of common tasks that the user might need to perform, such as turning layers on and off, printing the map, or tracing the sewer network.</p>
+<h2 id="changing-map-layers">Changing Map Layers</h2>
+<p>Clicking the <strong>Map Layers</strong> widget displays all layers shown on the map (except for the basemap)</p>
+<p>A number of data layers are available for viewing on the map in addition to the sewer data. This includes</p>
+<ul>
+<li>regional flow monitoring points and their estimated catchment areas</li>
+<li>several map services provided by Allegheny County, which include geodata ranging from parcel boundaries to recent aerial imagery</li>
+<li>&ldquo;Virtual laterals&rdquo; to help identify the pipe to which a given parcel is linked in the wastewater network (note that improvements to this data is ongoing)</li>
+</ul>
+<p>The user can opt to turn layers and sub-layers on or off as needed by clicking the <code>checkbox</code> to the right of each item.</p>
+<p>Clicking the <code>down arrow</code> on the right side of a layer displays a context menu, which includes the following functions:</p>
+<ul>
+<li><code>Zoom to</code>: Sets the map extent to the extent of the layer.</li>
+<li><code>Transparency</code>: Sets the transparency for the layer.</li>
+<li><code>Move up</code>: Moves the layer one level up.</li>
+<li><code>Move down</code>: Moves the layer one level down.</li>
+<li><code>Open attribute table</code>:Opens the <a href="../help_rsi_ui/#using-the-attribute-table"><strong>Attribute Table</strong></a> for the feature layer. This allows the user to view all attributes for features, and provides some other filtering and export abilities described further below.</li>
+<li><code>Description / Show Item Details</code>: Opens the service description or the item details page for the service or the item associated with the layer, if available. This page includes information for linking to the feature service or downloading a static version of the data in one of several spatial or non-spatial formats. The ability to download varies by data source.</li>
+</ul>
+<h2 id="changing-basemaps">Changing Basemaps</h2>
+<p>Clicking the <strong><em>Basemap Gallery</em></strong> widget displays all available basemaps.</p>
+<p>The user can optionally select the base map shown underneath the map layers. By default, this is set to a high-resolution imagery map from Allegheny County with a reference layer from Esri; however, other basemap options such as &lsquo;Dark Canvas&rsquo; may provide the user with higher legibility and clarity, especially when printing.</p>
+<p>Note that graphically simpler basemaps tend to have smaller tile file sizes and consequently will load faster.</p>
+<p>Clicking one of the basemap thumbnails sets it as the active basemap for the application. Click the <code>x</code> button in the upper right corner of the Basemap Gallery window to close it.</p>
+<h2 id="searching-for-locations">Searching for Locations</h2>
+<p>The Search widget is located in the upper left hand corner of the map; it enables end users to find locations on the map.</p>
+<p>To search for locations, in the Search widget enter either:</p>
+<ul>
+<li>Coordinates, entered as Longitude, Latitude (i.e., <em>X, Y</em>); in Allegheny County:<ul>
+<li>the first coordinate will generally be between <strong>-80.36</strong> and <strong>-79.69</strong>.</li>
+<li>the second coordinate will generally be between <strong>40.67</strong> and <strong>40.19</strong>.</li>
+</ul>
+</li>
+<li>Addresses (e.g., 3901 Penn Avenue, Pittsburgh, PA 15224)</li>
+<li>Place Names (e.g., Pittsburgh)</li>
+<li>Wastewater Structure ID Number; this looks like, for example:<ul>
+<li>manhole IDs: <strong>MH049K010</strong></li>
+<li>outfall IDs: <strong>A-20Z</strong></li>
+</ul>
+</li>
+<li>Municipalities in the ALCOSAN service area</li>
+</ul>
+<p>Once you&rsquo;ve entered the information you want to search for, Click the <em>Search</em> Button (the magnifying glass icon). A dropdown will appear with search results.</p>
+<p><em><img alt="image: coordinates prompt" src="../img/rsiguide/RSIGuide_xy_prompt.png" /></em></p>
+<p>Note that for Wastewater Structure IDs, entering a partial number will return similar results:</p>
+<p><em><img alt="image: structure prompt" src="../img/rsiguide/RSIGuide_ws2_prompt.png" /></em></p>
+<h3 id="advanced-searches">Advanced Searches</h3>
+<p>By default, the Atlas will attempt to figure out what you&rsquo;re trying to search for, and return the relevant results. However, occassionally it won&rsquo;t be able to do this. In those instances, specify which database you need to search using the drop-down on the left-hand side of the search box:</p>
+<p><em><img alt="image: coordinates prompt" src="../img/rsiguide/RSIGuide_search_sources.png" /></em></p>
+<p>Specifically for street addresses, the arrow on the left side of the search box allows you to specify which service you want to search.</p>
+<h2 id="identifying-coordinates">Identifying Coordinates</h2>
+<p>There are two ways to quickly identify real-world coordinates in the application:</p>
+<ul>
+<li>
+<p>The coordinates of the location of the mouse on the map are displayed in real-time in the bottom left-hand corner of the map window. A button to the left of these values acts as a toggle; when clicked, it allows the user to click a point on the map, and see the coordinates for that point in the lower left. The coordinates will not update until the user clicks on the map again or toggles the button.</p>
+</li>
+<li>
+<p>The <strong><em>Measurement</em></strong> widget, located in the top right corner of the map window, provides the ability to place a temporary flag on the map. The coordinates are reported for this flag in the Measurement widget window.</p>
+</li>
+</ul>
+<p>Note that the Sewer Atlas displays data in the WGS 1984 Web Mercator Auxilary Sphere coordinate reference system (CRS). All coordinates reported in the application are in this CRS.</p>
+<h2 id="using-the-attribute-table">Using the Attribute Table</h2>
+<p>The <strong>Attribute Table</strong> displays a tabular view of the map data and its attributes at the bottom of the map window. It is a powerful tool for searching, selecting, sorting, and exporting data from the map.</p>
+<p>Please note that the wastewater network contains over 125,000 features. Certain operations conducted on the entire dataset in the <strong>Attribute Table</strong>, such as sorting, will take time to complete.</p>
+<h3 id="opening-the-table">Opening the table</h3>
+<p>The attribute table can be opened two ways:</p>
+<ul>
+<li>clicking the arrow/tab at the bottom of the map window</li>
+<li>though the <strong>Map Layers</strong> widget in the information window, clicking the down arrow on the right side of a layer, which will open a context menu with an <em>Open attribute table</em> option.</li>
+</ul>
+<p>When more than one layer&rsquo;s attributes display, multiple tabs automatically generate in the attribute panel allowing you to switch among the attribute tables.</p>
+<h3 id="using-the-table">Using the table</h3>
+<p><em>Clicking a record</em> in the table selects it and highlights the corresponding feature in the map with the color specified in the Attribute Table widget configuration window. Press the Shift or Ctrl key to select multiple records.</p>
+<p>By <em>Clicking a field heading</em>, the table will sort the records by the field.</p>
+<p>Buttons at the top of table help manage the selection and the way the table displays:</p>
+<ul>
+<li>An <em>Options</em> menu provides advanced selection, filtering, and exporting options. More on this later.</li>
+<li><em>Zoom to selected:</em> features—Clicking Zoom to resets the map extent to center around selected features.</li>
+<li><em>Clear selections:</em>—Clicking the Clear Selection button clears all selections.</li>
+<li><em>Refresh</em>—Clicking Refresh refreshes the tables.</li>
+<li><em>Show or hide columns:</em>—Clicking the <strong>+</strong> icon on the right side of the Attribute Table panel opens the field visibility window. Check or uncheck the fields to set them to visible or invisible in the table.
+Number of selected records—Shown on the lower left of the table. Can also be accessed from the <em>Options</em> menu.</li>
+</ul>
+<h3 id="selecting-and-filtering-records-and-features">Selecting and Filtering records and features</h3>
+<p>The Attribute Table provides the user to dig deep into the data and manipulate what data is shown on the map. Through the <code>Options menu</code> on the table, you can select or filter records in the table, which in turn highlights or filters, respectively, the corresponding features on the map. The available options</p>
+<ul>
+<li><em>Show Selected Records:</em> Only displays selected records. By hiding records you haven&rsquo;t selected, it may be easier to visually browse the table.</li>
+<li><em>Show Related Records:</em> <em>Note: the Sewer Atlas does not currently have related tables.</em> Displays related records if a selected record has related table.</li>
+<li><em>Filter:</em> Allows the user to specify a query that will filter records in the table.</li>
+<li><em>Filter by Map Extent:</em> This option only displays attributes in the table for features within the current map extent.</li>
+</ul>
+<h3 id="exporting-records-from-the-table">Exporting records from the table</h3>
+<p>The <code>Options menu</code> provides an <em>Export to CSV</em> tool, which creates a file that can be opened in Microsoft Excel, other spreadsheet software, or a text editor.</p>
+<p>If records are selected and/or a filter is applied, only the selected and/or filtered records are exported. If no records are selected or filtered, all the records are exported.</p>
+<h2 id="querying-features">Querying Features</h2>
+<p>The <strong><em>Query</em></strong> widget provides a way to run predefined and custom queries to highlight specific features on the map&ndash;these features can then be summarized and exported in multiple formats.</p>
+<p>Currently, two predefined queries are setup:</p>
+<ul>
+<li>Highlight by Point of Connection (POC)</li>
+<li>Highlight by Owner</li>
+</ul>
+<p><em>Note: these can easily be expanded/modified to meet user requirements based on available data - just ask!</em></p>
+<p>Selecting one of these options in the Query window will take you to an  options screen, where you are presented with two options: <strong>Attribute criteria</strong> and <strong>Spatial Filter</strong>. Minimally, you need to select an attribute criterion, and leave the spatial filter set to its default option.</p>
+<p><em><img alt="image: query filter options" src="../img/rsiguide/RSIGuide_query_filteroptions.png" /></em></p>
+<h3 id="attribute-criteria">Attribute criteria</h3>
+<p>This lets you select the attribute you are looking for. For POC, this is the POC code (e.g., M-44); For Owner, it is the owner name.</p>
+<p>You can enter text&ndash;it will attempt to guess what you&rsquo;re looking for&ndash;or use the drop-down to select available values to search for.</p>
+<h3 id="spatial-filter-optional">Spatial Filter (optional)</h3>
+<p>This lets you pick a way to spatially filter the data returned by the selected attribute criteria.</p>
+<ul>
+<li><code>Return features within full extent of the map</code> (Default): All features meeting attribute criteria will be returned, regardless of whether you can see them currently in the map window.</li>
+<li><code>Only return features within current map extent</code>: Returns only features meeting the attribute criteria that you can see within the map window currently. </li>
+<li>
+<p><code>Only return features that intersect with shape drawn on the map</code>: This lets you draw a polygon on the map. Only features that meet your attribute criteria and intersect that polygon will be returned.</p>
+<p><em><img alt="image: query filter by drawing intersect" src="../img/rsiguide/RSIGuide_query_filter_draw.png" /></em></p>
+</li>
+<li>
+<p><code>Only return features that have a spatial relationship with features in another layer</code> (under development): Similiar to the drawing option above, this lets you use another feature in addition to your attribute criteria to select features. The difference here is that it takes a feature you have selected from another layer. For example, you could select a sewershed in the sewersheds layer, specify that layer here, and it will be used to narrow the query results.</p>
+<p><em><img alt="image: query filter by layer intersect" src="../img/rsiguide/RSIGuide_query_filter_layer.png" /></em></p>
+</li>
+</ul>
+<h3 id="running-and-query-and-using-the-results">Running and Query and Using the Results</h3>
+<p>Once you&rsquo;ve set up the query options, hit the <strong>Execute</strong> button.</p>
+<p><em><img alt="image: query results" src="../img/rsiguide/RSIGuide_query_results.png" /></em></p>
+<p>A list of pipes selected in the query will appear in the info window. Clicking on one of the list items will focus the map on that pipe.</p>
+<p>At the top right of the results is a &ldquo;. . .&rsquo; button. This provides further options for using the results. Of note:</p>
+<ul>
+<li><code>Export to CSV</code> file: exports results as a table, for use in spreadsheet programs</li>
+<li><code>Export to Feature Colletion</code>: exports results as a <code>GeoJSON</code> file, for use on a web map</li>
+<li><code>Export to Shapefile</code>: exports results as a shapefile, which is is used
+in GIS and CAD software.</li>
+<li><code>Statistics...</code>: Performs basic statistics (e.g., sum, average, etc.) on the queried features. By default this is performed using the <em>length</em> field.</li>
+</ul>
+<p><em><img alt="image: query results" src="../img/rsiguide/RSIGuide_query_results_stats.png" /></em></p>
+<ul>
+<li><code>View in Attribute Table</code>: Creates a view of just the queried records and select fields in the <strong>Attribute Table</strong>.</li>
+</ul>
+<h2 id="filtering-map-features">Filtering Map Features</h2>
+<p>See <em>Using the Attribute Table &gt;&gt;&gt; Selecting and Filtering records and features</em> for instructions on how to filter features.</p>
+<h2 id="tracing-the-wastewater-network">Tracing the Wastewater Network</h2>
+<p>The <strong>Network Trace</strong> widget allows the user to identify upstream and downstream wastewater pipes and structures from any given point. It automatically runs both upstream and downstream traces, returning connected wastewater pipes and structures in both directions. It provides a basic summary of these features along with the ability to download the complete results.</p>
+<h3 id="tracing-from-a-point-on-the-network">Tracing from a point on the network</h3>
+<ol>
+<li>
+<p>Tracing is initiated from one (or more) <code>Flag</code> inputs that the user places on the map. Open the widget, click the <code>Flag</code> button, and select the desired location(s) on the map. Note that the location you pick does not need to be ultra-precise; the point you place will be automatically snapped to the nearest pipe once the trace is initiated.</p>
+</li>
+<li>
+<p>Click <code>Run</code> and the trace will commence.</p>
+</li>
+<li>
+<p>The results of the trace are added to the map in 4 new layers: upstream pipes, upstream structures, downstream pipes, and downstream structures. These new layers are effectively copies of the traced pipes and structures from the wastewater network dataset. Each layer is accessible in the both the <strong>Map Layers</strong> widget and the <strong>Attribute Table</strong>, and contains all attributes of the wastewater network dataset.</p>
+</li>
+<li>
+<p>By clicking the <code>Clear' button, the result layers and any</code>Flag` inputs will be removed from the map.</p>
+</li>
+</ol>
+<h3 id="viewing-and-using-tracing-results">Viewing and using tracing results</h3>
+<p>The tracing results are shown in the widget window in a series of expandable tabs. The first tab provides a summary count of upstream pipes, upstream structures, downstream pipes, and downstream structures for quick reference. The tabs that follow list pipes and structures that were traced upstream and downstream. Clicking on any item will highlight the item on the map.</p>
+<p>The results can be downloaded by clicking the <code>download .csv</code> button.</p>
+<p><br>
+<br>
+<br>
+<hr></p>
+<p>This documentation draws heavily from ArcGIS Online documentation: <a href="http://doc.arcgis.com/en/web-appbuilder/create-apps/widget-overview.htm">Overview-Web AppBuilder for ArcGIS - Create Apps - Widget Overview</a>. Accessed September 2015. Source documentation © Copyright 2015 Environmental Systems Research Institute, Inc.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

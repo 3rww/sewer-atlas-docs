@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img\favicon.ico">
+        
+        <title>Interface - 3RWW SEWER ATLAS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">3RWW SEWER ATLAS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Overview</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../help_rsi/">Contents</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Interface</a>
+</li>
+                            
+<li >
+    <a href="../help_rsi_tasks/">Common Tasks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../guide_rsi_trace/">Discharge Analysis</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../changelog/">Changelog</a>
+</li>
+                            
+<li >
+    <a href="../services_and_downloads/">Downloads and Services</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../help_rsi/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../help_rsi_tasks/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#the-sewer-atlas-interface">The Sewer Atlas Interface</a></li>
+            <li><a href="#map-window">Map Window</a></li>
+            <li><a href="#information-window">Information Window</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="the-sewer-atlas-interface">The Sewer Atlas <strong>Interface</strong></h1>
+<p>This describes the basic layout and tools available in Sewer Atlas.</p>
+<p><img alt="Sewer Atlas interface" src="../img/ui/Slide6.JPG" /></p>
+<p>The application&rsquo;s interface is comprised of two main components:</p>
+<ul>
+<li>
+<p><strong>Map Window:</strong> The right side of the interface displays the map. Tools for navigating and interacting with the map and data overlay the map.</p>
+</li>
+<li>
+<p><strong>Information Window:</strong> The left side of the interface displays information about the map or widgets used to interact with the data. The Information Window can be collapsed by clicking the close arrows (&ldquo;&lt;&lt;&rdquo;) at the bottom of the window.</p>
+</li>
+</ul>
+<h2 id="map-window">Map Window</h2>
+<p><img alt="Sewer Atlas Map Window" src="../img/ui/Slide7.JPG" /></p>
+<p><em>Above: elements of the the Sewer Atlas interface Map Window</em></p>
+<p>By default, drag the map to pan; use a scroll wheel if available to zoom.
+Clicking on wastewater pipes and structures will reveal a pop-up window containing more information about the infrastructure.</p>
+<p>Three buttons located in the top left corner of the map window provide additional control:</p>
+<ul>
+<li>
+<p><strong>Zoom</strong> buttons zoom the map near and far.</p>
+</li>
+<li>
+<p>The <strong>Home</strong> button resets the map to its inital zoom and location</p>
+</li>
+<li>
+<p>The <strong>My Location</strong> button will set the map to your location, if your browser and/or device has the necessary geo-location capabilities enabled. These capabilities vary by device.</p>
+</li>
+</ul>
+<p>Adjacent to the <strong>Zoom</strong>, <strong>Home</strong>, and <strong>My Location</strong> buttons is a <strong>Search Box</strong>. See <a href="../help_rsi_tasks/#searching-for-locations">Searching for Locations</a> for mor information.</p>
+<p>Two widgets are located at the bottom of the window:</p>
+<ul>
+<li>
+<p>the coordinates of the map cursor, reported as longitude and latitude (X and Y) in decimal degrees. See <a href="../help_rsi_tasks/#identifying-coordinates">Identifying Coordinates</a> for more information.</p>
+</li>
+<li>
+<p>a tab, which when clicked will reveal the <strong>Attribute Table</strong>. See <a href="../help_rsi_tasks/#using-the-attribute-table">Using the Attribute Table</a> for more information.</p>
+</li>
+</ul>
+<p>Three widgets are located in the top-right corner of the map window:</p>
+<h3 id="measure"><em>Measure</em></h3>
+<p>This widget allows you to quickly measure distance and/or area on the map. Select the <code>Area</code> or <code>Distance</code> button in the widget, and then click on the map at desired locations. The length or area of the drawing will be displayed in the widget.</p>
+<p>This tool will also identify the longitude and latitude (X and Y) of a point placed on the map. See <a href="../help_rsi_tasks/#identifying-coordinates">Identifying Coordinates</a> for more information.</p>
+<h3 id="print"><em>Print</em></h3>
+<p>This widget allows you to print your current map view to a <code>.pdf</code> or one of several image formats.</p>
+<h2 id="information-window">Information Window</h2>
+<p><img alt="Sewer Atlas Information Window" src="../img/ui/Slide9.JPG" />
+<em>Above: elements of the the Sewer Atlas interface Information Window</em></p>
+<p>The left side of the screen contains a collapsible window that displays several types of information and/or options for configuring the map. Along the top of this window you can find icons for the following &lsquo;widgets&rsquo;:</p>
+<h3 id="legend"><em>Legend</em></h3>
+<p>Summarizes the symbols for features currently shown on the map. This window will change dynamically depending on the layers shown on the map.</p>
+<h3 id="map-layers"><em>Map Layers</em></h3>
+<p>Shows all data layers available for viewing on the map, and allows the user to select layers See <a href="../help_rsi_tasks/#changing-map-layers">Changing Map Layers</a> for more information.</p>
+<h3 id="network-trace"><em>Network Trace</em></h3>
+<p>Opens the Network Trace tool. See <a href="../help_rsi_tasks/#tracing-the-wastewater-network">Tracing the Wastewater Network</a> below for more information.</p>
+<h3 id="query"><em>Query</em></h3>
+<p>(under the <strong>More</strong> icon) Provides the ability to select features from the sewer data. See <a href="../help_rsi_tasks/#selectinghighlighting-features">Selecting/Highlighting Features</a> for more information.</p>
+<h3 id="basemap-gallery"><em>Basemap Gallery</em></h3>
+<p>(under the <strong>More</strong> icon) Displays Available basemaps for display underneath the Map Layers. See
+<a href="../help_rsi_tasks/#changing-basemaps">Changing Basemaps</a> for more information.</p>
+<h3 id="about"><em>About</em></h3>
+<p>(under the <strong>More</strong> icon) Provides an introduction to the application.</p>
+<p><br>
+<br>
+<br>
+<hr></p>
+<p>This documentation draws heavily from ArcGIS Online documentation: <a href="http://doc.arcgis.com/en/web-appbuilder/create-apps/widget-overview.htm">Overview-Web AppBuilder for ArcGIS - Create Apps - Widget Overview</a>. Accessed September 2015. Source documentation © Copyright 2015 Environmental Systems Research Institute, Inc.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
