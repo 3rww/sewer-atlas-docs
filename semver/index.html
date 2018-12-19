@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
         
-        <title>Downloads and Services - 3RWW SEWER ATLAS</title>
+        <title>**Semantic Versioning for the Sewer Atlas ** - 3RWW SEWER ATLAS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -77,7 +77,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -85,8 +85,8 @@
     <a href="../changelog/">Data Release Change Log</a>
 </li>
                                     
-<li class="active">
-    <a href="./">Downloads and Services</a>
+<li >
+    <a href="../services_and_downloads/">Downloads and Services</a>
 </li>
                                 </ul>
                             </li>
@@ -98,16 +98,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../changelog/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="disabled">
-                                <a rel="prev" >
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -116,34 +106,64 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#sewer-atlas-data-downloads-and-services">Sewer Atlas Data Downloads and Services</a></li>
-            <li><a href="#downloads">Downloads</a></li>
-            <li><a href="#web-services">Web Services</a></li>
+        <li class="main active"><a href="#semantic-versioning-for-the-sewer-atlas">Semantic Versioning for the Sewer Atlas</a></li>
+            <li><a href="#the-semver-concept">The SemVer Concept</a></li>
+            <li><a href="#semver-as-adapted-for-sewer-atlas-data-versioning">SemVer as adapted for Sewer Atlas data versioning</a></li>
+            <li><a href="#semver-and-year-quarter-release-tagging">SemVer and Year-Quarter release tagging</a></li>
+            <li><a href="#epilogue">Epilogue</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="sewer-atlas-data-downloads-and-services">Sewer Atlas Data Downloads and Services</h1>
-<p><em>Note: The Sewer Atlas&rsquo; composite regional wastewater infrastructure dataset is not publicly available. If you would like to request access to this data, please contact <a href="mailto:bdutton@3rww.org">Beth Dutton @ 3 Rivers Wet Weather</a>.</em></p>
-<h2 id="downloads">Downloads</h2>
-<p>For registered 3RWW MDS users, all Sewer Atlas data is available for download in multiple GIS formats on the <a href="http://mds.3riverswetweather.org/downloads.aspx">MDS Downloads page</a>. This includes:</p>
+<h1 id="semantic-versioning-for-the-sewer-atlas"><strong>Semantic Versioning for the Sewer Atlas </strong></h1>
+<p>Since beginning the quarterly update cycle in 2017Q2, we&rsquo;ve used a <a href="https://semver.org/"><em>semantic versioning</em> (&ldquo;SemVer&rdquo;)</a> approach for tagging each data release&mdash;e.g., <em>v6.1.0</em>  for 2018-Q1.</p>
+<p>SemVer was originally developed for software versioning as a way to indicate major, minor, and patch changes to software. With the Sewer Atlas, we use it o indicate the nature of changes to both the schema and the data itself.</p>
+<h2 id="the-semver-concept">The SemVer Concept</h2>
+<p>The <a href="https://semver.org/">Semantic Versioning</a> website provides a quick summary:</p>
+<blockquote>
+<p>Given a version number MAJOR.MINOR.PATCH, increment the:</p>
 <ul>
-<li>Geopackage</li>
-<li>Open FileGDB-spec file geodatabase (includes a geometric network class that supports tracing in Esri ArcGIS Desktop)</li>
-<li>Esri Shapefile</li>
+<li>MAJOR version when you make incompatible API changes,</li>
+<li>MINOR version when you add functionality in a backwards-compatible manner, and</li>
+<li>PATCH version when you make backwards-compatible bug fixes.</li>
 </ul>
-<p>Additionaly, two map packages (<code>.mpk</code>) files for ArcGIS Desktop are available:</p>
+<p>Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.</p>
+</blockquote>
+<h2 id="semver-as-adapted-for-sewer-atlas-data-versioning">SemVer as adapted for Sewer Atlas data versioning</h2>
+<p>In the context of a <em>data</em> versioning, we&rsquo;ve adapted to concept of Semver to mean the following</p>
+<h3 id="major-version-when-the-database-schema-changes"><em>MAJOR version</em>: when the database schema changes</h3>
+<blockquote>
+<p>e.g. <strong>6</strong>.2.1</p>
+</blockquote>
+<p>If the change requires a database migration, it&rsquo;s a major version change.</p>
+<p>Most likely, software utilizing the database will need to be adjusted to handle the different data schema (e.g., ensuring that a web map is using the correct column in the table for renderning a label).</p>
+<h3 id="minor-version-when-records-in-the-database-are-addedupdated"><em>MINOR version</em>: when records in the database are added/updated</h3>
+<blockquote>
+<p>e.g. 6.<strong>2</strong>.1</p>
+</blockquote>
+<p>Planned changes to signifcant portions of records in the database, as is done in quarterly release cycles, represent MINOR version changes.</p>
+<p>Software utilizing the database should continue to function as it would; no changes to schema occur in a MINOR version change.</p>
+<h3 id="patch-version-when-edits-are-needed-to-address-a-problem-with-the-data"><em>PATCH version</em>: when edits are needed to address a problem with the data</h3>
+<blockquote>
+<p>e.g. 6.2.<strong>1</strong></p>
+</blockquote>
+<p>Problems with the data that cannot wait for a quarterly release cycle are addressed with patch changes. The types of problems addressed with a <em>PATCH</em> version might include:</p>
 <ul>
-<li>data embedded (as file geodatabase) and symbolized</li>
-<li>data linked to the live ArcGIS Server endpoints (same as used by the Sewer Atlas)</li>
+<li>fixing issues with geometric network connectivity (i.e., the topology of pipe network was not maintained in error, and needs to be fixed for tracing to work);</li>
+<li>incorporating timely changes to specific locations of interest to 3RWW partners between releases</li>
 </ul>
-<p>(Need another format? Let us know at <a href="mailto:3rww@civicmapper.com">3rww@civicmapper.com</a>)</p>
-<h2 id="web-services">Web Services</h2>
-<h3 id="via-arcgis-online">via ArcGIS Online</h3>
-<p>Esri ArcGIS Online Users can request access to 3RWW&rsquo;s Municipal Data Support Group, where downloads and links to live Sewer Atlas map and feature service layers (the same used by the Sewer Atlas web mapping application) are available.</p>
-<p>If you are a 3RWW MDS user would like access to this ArcGIS Online group, please contact <a href="mailto:bdutton@3rww.org">Beth Dutton @ 3 Rivers Wet Weather</a> with your ArcGIS Online username.</p>
-<h3 id="via-mds">via MDS</h3>
-<p>Web geodata services endpoints&mdash;links to the live data through OGC-compliant service endpoints&mdash;are currently not available via 3RWW&rsquo;s MDS Single Sign-On system. We plan to make them available in the future with that user login system.</p></div>
+<p>The semi-automated QAQC process during the quarterly release cycle (typically MINOR version changes) largely lets us identify problems between releases, which is why these types of versions are rare.</p>
+<h2 id="semver-and-year-quarter-release-tagging">SemVer and Year-Quarter release tagging</h2>
+<p>We label releases with a Year-Quarter tag following a <code>YYYY-Q*n*</code> pattern, e.g., 2018-Q1.</p>
+<p>How does this differ from SemVer, and why do we do both?</p>
+<ul>
+<li>The quarterly release tag merely indicates <em>when</em> updated data will be or was released</li>
+<li>SemVer indicates the <em>nature of the changes</em> since the last version at a high level</li>
+</ul>
+<h2 id="epilogue">Epilogue</h2>
+<p>Our use of SemVer for tagging database releases is largely experimental.</p>
+<p>Our eventual goal is evolve the &ldquo;standard&rdquo; conveyed above into our editing post-processing toolchain, such that we can qualify changes in a semi-automated way.</p>
+<p>For now, our use of SemVer within the context of database editing is a largely qualitative effort.</p></div>
         </div>
 
         <footer class="col-md-12">
