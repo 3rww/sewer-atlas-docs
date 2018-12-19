@@ -2,8 +2,6 @@
 
 This page contains the cumulative data release notes for the Sewer Atlas.
 
-# Release Notes
-
 ## 2018-Q3 (v6.2.0)
 
 ### Summary
@@ -34,13 +32,13 @@ For Swissvale wastewater infrastructure data, which is maintained by Glenn Engin
 * The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q3_crosswalk_pwsa.csv).
 * The complete field and value mappings table used to translate Glenn Engineering records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q1_crosswalk_glenneng.csv).
 
-## Meta
+### Meta
 
-### Tooling development
+#### Tooling development
 
 If you're following along, you'll note that we've skipped 2018-Q2 and that 2018-Q3 is coming a bit late. To support integrating PWSA data into the database, we invested more time in 2018 in building more robust tooling that supports semi-automated editing workflows.
 
-### Stormwater Infrastructure Data
+#### Stormwater Infrastructure Data
 
 In addition to updating wastewater data, we also extracted separate stormwater infrastructure records from PWSA's submission and hosted those in a separate "Stormwater Atlas" layer. This data is provided as-is.
 
