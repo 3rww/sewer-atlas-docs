@@ -19,8 +19,13 @@ Additionaly, two map packages (`.mpk`) files for ArcGIS Desktop are available:
 
 ## Web Services
 
-Web geodata services endpoints&mdash;links to the live data through OGC-compliant service endpoints&mdash;are currently not available via 3RWW's MDS Single Sign-On system. We plan to make them available in the future with that user login system.
+### via ArcGIS Online
 
-In the meantime, Esri ArcGIS Online Users can request access to 3RWW's Municipal Data Support Group, where downloads and links to live Sewer Atlas map and feature service layers (the same used by the Sewer Atlas web mapping application) are available.
+Esri ArcGIS Online Users can request access to 3RWW's Municipal Data Support Group, where downloads and links to live Sewer Atlas map and feature service layers (the same used by the Sewer Atlas web mapping application) are available.
 
 If you are a 3RWW MDS user would like access to this ArcGIS Online group, please contact [Beth Dutton @ 3 Rivers Wet Weather](mailto:bdutton@3rww.org) with your ArcGIS Online username.
+
+### via MDS
+
+Web geodata services endpoints&mdash;links to the live data through OGC-compliant service endpoints&mdash;are currently not available via 3RWW's MDS Single Sign-On system. We plan to make them available in the future with that user login system.
+
