@@ -11,10 +11,11 @@ pages:
     - Discharge Analysis: guide_rsi_trace.md
 - Data:
     - Data Release Change Log: changelog.md
+    - Semantic Versioning: semver.md
     - Downloads and Services: services_and_downloads.md
 markdown_extensions:
     - smarty
-site_dir:  
+site_dir:
     D:\Dropbox (CivicMapper)\Projects\3RWW\projects\docs\atlas_mkdocs_build\
 extra_css:
     - extra.css
