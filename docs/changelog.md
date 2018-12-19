@@ -2,6 +2,50 @@
 
 This page contains the cumulative data release notes for the Sewer Atlas.
 
+# Release Notes
+
+## 2018-Q3 (v6.2.0)
+
+### Summary
+
+This release focused on beginning to integrate updated wastewater data from PWSA, along with additional edits for communities in previous releases.
+
+* PWSA: the `M-29` sewershed, a.k.a., 4-Mile Run.
+* Swissvale
+
+Additionally, stormwater data from PWSA was added into a separate prototype "Stormwater Atlas" layer, which is available on the Sewer Atlas.
+
+As always, the editing emphasis was on geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology.
+
+### Submitted Data
+
+PWSA's data submission included complete exports of point and polyline datasets, `in_node` and `in_pipe`, respectively, as Esri shapefiles. Additionally, thematic extracts of those datasets were provided; e.g., `Sewers` and `Abandoned Sewers` were provided representing mutually-exclusive subsets of the `in_pipe` dataset derived from values in that table's `Status` field.
+
+While PWSA's submission included separate stormwater infrastructure, we *did not* (at this time) integrate it into the the connected geometric network in the Sewer Atlas.
+
+For Swissvale wastewater infrastructure data, which is maintained by Glenn Engineering, we used data that was submitted for but not incorporated into the 2018Q1 release.
+
+### Geometry
+
+* Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM).
+
+### Attributes
+
+* The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q3_crosswalk_pwsa.csv).
+* The complete field and value mappings table used to translate Glenn Engineering records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q1_crosswalk_glenneng.csv).
+
+## Meta
+
+### Tooling development
+
+If you're following along, you'll note that we've skipped 2018-Q2 and that 2018-Q3 is coming a bit late. To support integrating PWSA data into the database, we invested more time in 2018 in building more robust tooling that supports semi-automated editing workflows.
+
+### Stormwater Infrastructure Data
+
+In addition to updating wastewater data, we also extracted separate stormwater infrastructure records from PWSA's submission and hosted those in a separate "Stormwater Atlas" layer. This data is provided as-is.
+
+In the future this data is planned to be tightly coupled with the wastewater data to better reflect the real-world connectivity and relationship between the systems. That change will be accompanied by a major update to the database schema as we adapt it to better represent non-wastewater pipe infrastructure.
+
 ## 2018-Q1 (v6.1.0)
 
 ### Summary
@@ -144,7 +188,7 @@ The next update will focus on additional QAQC for some communities edited during
 
 ### Attributes: Ownership
 
-* Owner field cleaned up to standardize names in the owner field for both segments and nodes.  The data submission included datasets for both CTMA owned and private structures.  The private structure data included information on the owners as well. The current datamodel is focued on government and authority ownership, so the owner field focused on four categories: 
+* Owner field cleaned up to standardize names in the owner field for both segments and nodes.  The data submission included datasets for both CTMA owned and private structures.  The private structure data included information on the owners as well. The current datamodel is focued on government and authority ownership, so the owner field focused on four categories:
     * CTMA – coincident features with the CTMA submission
     * COLL – Collier Township owned infrastructure as indicated in the Private structure data
     * Private – all other owners in the Private structure submission.
