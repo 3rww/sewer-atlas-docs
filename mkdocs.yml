@@ -13,6 +13,7 @@ pages:
     - Data Release Change Log: changelog.md
     - Semantic Versioning: semver.md
     - Downloads and Services: services_and_downloads.md
+    - Strategy: strategy.md
 markdown_extensions:
     - smarty
 site_dir:
