@@ -8,8 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        
-        <title>Semantic Versioning - 3RWW SEWER ATLAS</title>
+        <title>Data Versioning Primer - 3RWW SEWER ATLAS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -82,15 +81,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
+    <a href="../services_and_downloads/">Downloads and Services</a>
+</li>
+                                    
+<li >
     <a href="../changelog/">Data Release Change Log</a>
 </li>
                                     
 <li class="active">
-    <a href="./">Semantic Versioning</a>
-</li>
-                                    
-<li >
-    <a href="../services_and_downloads/">Downloads and Services</a>
+    <a href="./">Data Versioning Primer</a>
 </li>
                                 </ul>
                             </li>
@@ -107,8 +106,8 @@
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../services_and_downloads/">
+                            <li class="disabled">
+                                <a rel="prev" >
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -131,7 +130,7 @@
 
 <h1 id="semantic-versioning-for-the-sewer-atlas"><strong>Semantic Versioning for the Sewer Atlas </strong></h1>
 <p>Since beginning the quarterly update cycle in 2017Q2, we&rsquo;ve used a <a href="https://semver.org/"><em>semantic versioning</em> (&ldquo;SemVer&rdquo;)</a> approach for tagging each data release&mdash;e.g., <em>v6.1.0</em>  for 2018-Q1.</p>
-<p>SemVer was originally developed for software versioning as a way to indicate major, minor, and patch changes to software. With the Sewer Atlas, we use it o indicate the nature of changes to both the schema and the data itself.</p>
+<p>SemVer was originally developed for software versioning as a way to indicate major, minor, and patch changes to software. With the Sewer Atlas, we use it to indicate the nature of changes to both the schema and the data itself.</p>
 <h2 id="the-semver-concept">The SemVer Concept</h2>
 <p>The <a href="https://semver.org/">Semantic Versioning</a> website provides a quick summary:</p>
 <blockquote>
@@ -141,7 +140,6 @@
 <li>MINOR version when you add functionality in a backwards-compatible manner, and</li>
 <li>PATCH version when you make backwards-compatible bug fixes.</li>
 </ul>
-<p>Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.</p>
 </blockquote>
 <h2 id="semver-as-adapted-for-sewer-atlas-data-versioning">SemVer as adapted for Sewer Atlas data versioning</h2>
 <p>In the context of a <em>data</em> versioning, we&rsquo;ve adapted to concept of Semver to mean the following</p>
@@ -151,7 +149,7 @@
 </blockquote>
 <p>If the change requires a database migration, it&rsquo;s a major version change.</p>
 <p>Most likely, software utilizing the database will need to be adjusted to handle the different data schema (e.g., ensuring that a web map is using the correct column in the table for renderning a label).</p>
-<h3 id="minor-version-when-records-in-the-database-are-addedupdated"><em>MINOR version</em>: when records in the database are added/updated</h3>
+<h3 id="minor-version-when-records-in-the-database-are-addedupdated-during-a-regular-quarterly-release-cycle"><em>MINOR version</em>: when records in the database are added/updated (during a regular quarterly release cycle)</h3>
 <blockquote>
 <p>e.g. 6.<strong>2</strong>.1</p>
 </blockquote>

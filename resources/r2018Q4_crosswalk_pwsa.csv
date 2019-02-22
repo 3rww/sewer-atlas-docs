@@ -1,0 +1,225 @@
+source_table,source_field,source_code,target_table,target_field,target_code,target_desc,target_domain
+nodes,Node_ID,,SewerStormwater_Nodes,STRUCT_ID,,,
+nodes,Critical, ,SewerStormwater_Nodes,CRIT_STRCT,,,domain_trww_yn
+nodes,Critical,Critical Modeled,SewerStormwater_Nodes,CRIT_STRCT,Y,,domain_trww_yn
+nodes,Owner, ,SewerStormwater_Nodes,OWNER_NAME,,,domain_trww_owners
+nodes,Owner,ACSA,SewerStormwater_Nodes,OWNER_NAME,ACSA,,domain_trww_owners
+nodes,Owner,ACSA/PWSA,SewerStormwater_Nodes,OWNER_NAME,ACSA/ PWSA,,domain_trww_owners
+nodes,Owner,Allegheny County,SewerStormwater_Nodes,OWNER_NAME,ALCO,,domain_trww_owners
+nodes,Owner,Allegheny County Port Authority,SewerStormwater_Nodes,OWNER_NAME,ACPA,,domain_trww_owners
+nodes,Owner,Allegheny General Hospital,SewerStormwater_Nodes,OWNER_NAME,PINT-AGH,,domain_trww_owners
+nodes,Owner,Aspinwall,SewerStormwater_Nodes,OWNER_NAME,ASPI,,domain_trww_owners
+nodes,Owner,Baldwin Borough,SewerStormwater_Nodes,OWNER_NAME,BALB,,domain_trww_owners
+nodes,Owner,Baldwin Township,SewerStormwater_Nodes,OWNER_NAME,BALT,,domain_trww_owners
+nodes,Owner,Bellevue and Ross,SewerStormwater_Nodes,OWNER_NAME,BELL-ROSS,,domain_trww_owners
+nodes,Owner,Bellevue Borough,SewerStormwater_Nodes,OWNER_NAME,BELL,,domain_trww_owners
+nodes,Owner,Bellevue Ross PWSA ALCOSAN,SewerStormwater_Nodes,OWNER_NAME,,,domain_trww_owners
+nodes,Owner,Borough of Ingram,SewerStormwater_Nodes,OWNER_NAME,INGR,,domain_trww_owners
+nodes,Owner,Brentwood Borough,SewerStormwater_Nodes,OWNER_NAME,BREN,,domain_trww_owners
+nodes,Owner,Crafton Borough,SewerStormwater_Nodes,OWNER_NAME,CRAF,,domain_trww_owners
+nodes,Owner,Dormont Borough,SewerStormwater_Nodes,OWNER_NAME,DORM,,domain_trww_owners
+nodes,Owner,DPW,SewerStormwater_Nodes,OWNER_NAME,PITT,,domain_trww_owners
+nodes,Owner,Edgewood Borough,SewerStormwater_Nodes,OWNER_NAME,EDGE,,domain_trww_owners
+nodes,Owner,Etna Borough,SewerStormwater_Nodes,OWNER_NAME,ETNA,,domain_trww_owners
+nodes,Owner,Fox Chapel,SewerStormwater_Nodes,OWNER_NAME,FCHA,,domain_trww_owners
+nodes,Owner,Green Tree Borough,SewerStormwater_Nodes,OWNER_NAME,GTRE,,domain_trww_owners
+nodes,Owner,Housing Authority of Pittsburgh,SewerStormwater_Nodes,OWNER_NAME,HAPI,,domain_trww_owners
+nodes,Owner,J&L Steel,SewerStormwater_Nodes,OWNER_NAME,PIND-JLST,,domain_trww_owners
+nodes,Owner,Lincoln Property Company,SewerStormwater_Nodes,OWNER_NAME,PCOM-LPCO,,domain_trww_owners
+nodes,Owner,Morewood Heights Associates,SewerStormwater_Nodes,OWNER_NAME,PRES-HA,,domain_trww_owners
+nodes,Owner,Mount Oliver Borough,SewerStormwater_Nodes,OWNER_NAME,MOLI,,domain_trww_owners
+nodes,Owner,Mt. Lebanon,SewerStormwater_Nodes,OWNER_NAME,MLEB,,domain_trww_owners
+nodes,Owner,Munhall Borough,SewerStormwater_Nodes,OWNER_NAME,MUNH,,domain_trww_owners
+nodes,Owner,PA American Water,SewerStormwater_Nodes,OWNER_NAME,PAAW,,domain_trww_owners
+nodes,Owner,Penn Hills,SewerStormwater_Nodes,OWNER_NAME,PHWP,,domain_trww_owners
+nodes,Owner,PENNDOT,SewerStormwater_Nodes,OWNER_NAME,PDOT,,domain_trww_owners
+nodes,Owner,PennDOT,SewerStormwater_Nodes,OWNER_NAME,PDOT,,domain_trww_owners
+nodes,Owner,Pittsburgh and West Virginia Railroad,SewerStormwater_Nodes,OWNER_NAME,RAIL-PWVR,,domain_trww_owners
+nodes,Owner,Pittsburgh Public Schools,SewerStormwater_Nodes,OWNER_NAME,PINT-PPS,,domain_trww_owners
+nodes,Owner,Point Park University,SewerStormwater_Nodes,OWNER_NAME,PINT-PPU,,domain_trww_owners
+nodes,Owner,PWSA,SewerStormwater_Nodes,OWNER_NAME,PWSA,,domain_trww_owners
+nodes,Owner,PWSA to ACSA,SewerStormwater_Nodes,OWNER_NAME,PWSA,,domain_trww_owners
+nodes,Owner,PWSA to ACSA Add,SewerStormwater_Nodes,OWNER_NAME,PWSA,,domain_trww_owners
+nodes,Owner,PWSA to ACSA Verify,SewerStormwater_Nodes,OWNER_NAME,PWSA,,domain_trww_owners
+nodes,Owner,Reserve Township,SewerStormwater_Nodes,OWNER_NAME,RESE,,domain_trww_owners
+nodes,Owner,Swissvale Borough,SewerStormwater_Nodes,OWNER_NAME,SWIS,,domain_trww_owners
+nodes,Owner,University of Pittsburgh,SewerStormwater_Nodes,OWNER_NAME,PINT-PITT,,domain_trww_owners
+nodes,Owner,West Homestead Borough,SewerStormwater_Nodes,OWNER_NAME,WHOM,,domain_trww_owners
+nodes,Owner,West Mifflin Borough,SewerStormwater_Nodes,OWNER_NAME,WMIF,,domain_trww_owners
+nodes,Owner,Whitehall Borough,SewerStormwater_Nodes,OWNER_NAME,WHAL,,domain_trww_owners
+nodes,Owner,Wilkinsburg Borough,SewerStormwater_Nodes,OWNER_NAME,WILK,,domain_trww_owners
+nodes,Placed_By, ,SewerStormwater_Nodes,SRC_NOTE, ,,
+nodes,Placed_By,CCTV,SewerStormwater_Nodes,SRC_NOTE,CCTV,,
+nodes,Placed_By,Field Observation,SewerStormwater_Nodes,SRC_NOTE,Field Observation,,
+nodes,Placed_By,GPS,SewerStormwater_Nodes,SRC_NOTE,GPS,,
+nodes,Placed_By,Record Drawing,SewerStormwater_Nodes,SRC_NOTE,Record Drawing,,
+nodes,Sewer_Use,ABN,SewerStormwater_Nodes,SEWERTYPE,UK,,domain_trww_sewertype
+nodes,Sewer_Use,COM,SewerStormwater_Nodes,SEWERTYPE,COM,,domain_trww_sewertype
+nodes,Sewer_Use,FM,SewerStormwater_Nodes,SEWERTYPE,FM,,domain_trww_sewertype
+nodes,Sewer_Use,INT,SewerStormwater_Nodes,SEWERTYPE,SAN,,domain_trww_sewertype
+nodes,Sewer_Use,OVF,SewerStormwater_Nodes,SEWERTYPE,OVF,,domain_trww_sewertype
+nodes,Sewer_Use,PVT,SewerStormwater_Nodes,SEWERTYPE,UK,,domain_trww_sewertype
+nodes,Sewer_Use,PVTCOM,SewerStormwater_Nodes,SEWERTYPE,COM,,domain_trww_sewertype
+nodes,Sewer_Use,PVTOVF,SewerStormwater_Nodes,SEWERTYPE,OVF,,domain_trww_sewertype
+nodes,Sewer_Use,PVTRCOM,SewerStormwater_Nodes,SEWERTYPE,COM,,domain_trww_sewertype
+nodes,Sewer_Use,PVTSAN,SewerStormwater_Nodes,SEWERTYPE,SAN,,domain_trww_sewertype
+nodes,Sewer_Use,PVTSTM,SewerStormwater_Nodes,SEWERTYPE,STM,,domain_trww_sewertype
+nodes,Sewer_Use,RCOM,SewerStormwater_Nodes,SEWERTYPE,COM,,domain_trww_sewertype
+nodes,Sewer_Use,SAN,SewerStormwater_Nodes,SEWERTYPE,SAN,,domain_trww_sewertype
+nodes,Sewer_Use,STM,SewerStormwater_Nodes,SEWERTYPE,STM,,domain_trww_sewertype
+nodes,Sewer_Use,UND,SewerStormwater_Nodes,SEWERTYPE,UK,,domain_trww_sewertype
+nodes,Status, ,SewerStormwater_Nodes,STATUS_PT,,,
+nodes,Status,ABN,SewerStormwater_Nodes,STATUS_PT,ABND,,
+nodes,Status,PVT,SewerStormwater_Nodes,STATUS_PT,,,
+nodes,Sub_Type, ,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Node_Type,ADC,SewerStormwater_Nodes,MUNI_TYP_P,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Backflow Preventer,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Backwater Valve,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Node_Type,CB,SewerStormwater_Nodes,MUNI_TYP_P,CB,,domain_trww_muni_pt_types
+nodes,Sub_Type,CB 2005,SewerStormwater_Nodes,MUN_SUB_PT,CB,,domain_trww_muni_pt_types
+nodes,Node_Type,CL,SewerStormwater_Nodes,MUNI_TYP_P,CL,,
+nodes,Sub_Type,Crown-A,SewerStormwater_Nodes,MUN_SUB_PT,CRWN-A,,domain_trww_muni_pt_types
+nodes,Sub_Type,Crown-A; FT,SewerStormwater_Nodes,MUN_SUB_PT,CRWN-AFT,,domain_trww_muni_pt_types
+nodes,Sub_Type,Crown-V,SewerStormwater_Nodes,MUN_SUB_PT,CRWN-V,,domain_trww_muni_pt_types
+nodes,Sub_Type,CSO,SewerStormwater_Nodes,MUN_SUB_PT,DP,,domain_trww_muni_pt_types
+nodes,Node_Type,DC,SewerStormwater_Nodes,MUNI_TYP_P,DC,,domain_trww_muni_pt_types
+nodes,Sub_Type,Drop,SewerStormwater_Nodes,MUN_SUB_PT,D,,domain_trww_muni_pt_types
+nodes,Node_Type,EC,SewerStormwater_Nodes,MUNI_TYP_P,EOP,,domain_trww_muni_pt_types
+nodes,Sub_Type,END,SewerStormwater_Nodes,MUN_SUB_PT,EOP,,domain_trww_muni_pt_types
+nodes,Node_Type,EQ,SewerStormwater_Nodes,MUNI_TYP_P,EQ,,domain_trww_muni_pt_types
+nodes,Node_Type,FD,SewerStormwater_Nodes,MUNI_TYP_P,FD,,domain_trww_muni_pt_types
+nodes,Sub_Type,FT,SewerStormwater_Nodes,MUN_SUB_PT,FT,,domain_trww_muni_pt_types
+nodes,Node_Type,HW,SewerStormwater_Nodes,MUNI_TYP_P,HDW,,domain_trww_muni_pt_types
+nodes,Node_Type,IN,SewerStormwater_Nodes,MUNI_TYP_P,IN,Inlet,
+nodes,Node_Type,JCT,SewerStormwater_Nodes,MUNI_TYP_P,JT,,domain_trww_muni_pt_types
+nodes,Node_Type,LC,SewerStormwater_Nodes,MUNI_TYP_P,LC,,domain_trww_muni_pt_types
+nodes,Node_Type,LH,SewerStormwater_Nodes,MUNI_TYP_P,LH,,domain_trww_muni_pt_types
+nodes,Node_Type,LJ,SewerStormwater_Nodes,MUNI_TYP_P,LJ,,domain_trww_muni_pt_types
+nodes,Node_Type,M EQ,SewerStormwater_Nodes,MUNI_TYP_P,EQ,,domain_trww_muni_pt_types
+nodes,Node_Type,M FD,SewerStormwater_Nodes,MUNI_TYP_P,FD,,domain_trww_muni_pt_types
+nodes,Node_Type,MH,SewerStormwater_Nodes,MUNI_TYP_P,MH,,domain_trww_muni_pt_types
+nodes,Node_Type,OF,SewerStormwater_Nodes,MUNI_TYP_P,OF,,domain_trww_muni_pt_types
+nodes,Sub_Type,Other,SewerStormwater_Nodes,MUN_SUB_PT,UK,,domain_trww_muni_pt_types
+nodes,Node_Type,PS,SewerStormwater_Nodes,MUNI_TYP_P,PS,,domain_trww_muni_pt_types
+nodes,Node_Type,RD,SewerStormwater_Nodes,MUNI_TYP_P,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Scupper Drain,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Node_Type,SI,SewerStormwater_Nodes,MUNI_TYP_P,,,domain_trww_muni_pt_types
+nodes,Sub_Type,SSO,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Stream Inflow,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Trap Manhole,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Tyep 4,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type  1,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type  5,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 1,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 1 Modified,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 10,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,TYPE 11,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 11,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 12,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 4,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 5,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Sub_Type,Type 9,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+nodes,Node_Type,VD,SewerStormwater_Nodes,MUNI_TYP_P,,,domain_trww_muni_pt_types
+nodes,Sub_Type,VD,SewerStormwater_Nodes,MUN_SUB_PT,,,domain_trww_muni_pt_types
+pipes,US_Node_ID,,SewerStormwater_Segments,UPST_MANH,,,
+pipes,DS_Node_ID,,SewerStormwater_Segments,DOWN_MANH,,,
+pipes,Height,,SewerStormwater_Segments,PIPE_DIAM,,,
+pipes,Width,,SewerStormwater_Segments,PIPE_WIDTH,,,
+pipes,Critical, ,SewerStormwater_Segments,CRIT_PIPE,,,domain_trww_yn
+pipes,Critical,Critical Modeled,SewerStormwater_Segments,CRIT_PIPE,Y,,domain_trww_yn
+pipes,Material, ,SewerStormwater_Segments,PIPE_MATL,,,domain_trww_pipe_material
+pipes,Material,AC,SewerStormwater_Segments,PIPE_MATL,AC,,domain_trww_pipe_material
+pipes,Material,ACCMP,SewerStormwater_Segments,PIPE_MATL,AC-CMP,,domain_trww_pipe_material
+pipes,Material,BR,SewerStormwater_Segments,PIPE_MATL,BR,,domain_trww_pipe_material
+pipes,Material,BR/SN,SewerStormwater_Segments,PIPE_MATL,BR-SN,,domain_trww_pipe_material
+pipes,Material,CAS,SewerStormwater_Segments,PIPE_MATL,CAS,,domain_trww_pipe_material
+pipes,Material,CMP,SewerStormwater_Segments,PIPE_MATL,CMP,,domain_trww_pipe_material
+pipes,Material,CO/BR,SewerStormwater_Segments,PIPE_MATL,CO/BR,,domain_trww_pipe_material
+pipes,Material,CO/ST,SewerStormwater_Segments,PIPE_MATL,CO/ST,,domain_trww_pipe_material
+pipes,Material,CP,SewerStormwater_Segments,PIPE_MATL,CP,,domain_trww_pipe_material
+pipes,Material,CT,SewerStormwater_Segments,PIPE_MATL,CT,,domain_trww_pipe_material
+pipes,Material,DI,SewerStormwater_Segments,PIPE_MATL,DIP,,domain_trww_pipe_material
+pipes,Material,DIP,SewerStormwater_Segments,PIPE_MATL,DIP,,domain_trww_pipe_material
+pipes,Material,HDPE,SewerStormwater_Segments,PIPE_MATL,HDPE,,domain_trww_pipe_material
+pipes,Material,PE,SewerStormwater_Segments,PIPE_MATL,PE,,domain_trww_pipe_material
+pipes,Material,PP,SewerStormwater_Segments,PIPE_MATL,PP,,domain_trww_pipe_material
+pipes,Material,PSC,SewerStormwater_Segments,PIPE_MATL,PSC,,domain_trww_pipe_material
+pipes,Material,PVC,SewerStormwater_Segments,PIPE_MATL,PVC,,domain_trww_pipe_material
+pipes,Material,RCP,SewerStormwater_Segments,PIPE_MATL,RCP,,domain_trww_pipe_material
+pipes,Material,RPM,SewerStormwater_Segments,PIPE_MATL,RPM,,domain_trww_pipe_material
+pipes,Material,SP,SewerStormwater_Segments,PIPE_MATL,SP,,domain_trww_pipe_material
+pipes,Material,VCP,SewerStormwater_Segments,PIPE_MATL,VCP,,domain_trww_pipe_material
+pipes,Owner, ,SewerStormwater_Segments,OWNER_NAME,,,domain_trww_owners
+pipes,Owner,ACSA,SewerStormwater_Segments,OWNER_NAME,ACSA,,domain_trww_owners
+pipes,Owner,ACSA/PWSA,SewerStormwater_Segments,OWNER_NAME,ACSA/ PWSA,,domain_trww_owners
+pipes,Owner,Allegheny County,SewerStormwater_Segments,OWNER_NAME,ALCO,,domain_trww_owners
+pipes,Owner,Allegheny County Port Authority,SewerStormwater_Segments,OWNER_NAME,ACPA,,domain_trww_owners
+pipes,Owner,Allegheny General Hospital,SewerStormwater_Segments,OWNER_NAME,PINT-AGH,,domain_trww_owners
+pipes,Owner,Aspinwall,SewerStormwater_Segments,OWNER_NAME,ASPI,,domain_trww_owners
+pipes,Owner,Baldwin Borough,SewerStormwater_Segments,OWNER_NAME,BALB,,domain_trww_owners
+pipes,Owner,Baldwin Township,SewerStormwater_Segments,OWNER_NAME,BALT,,domain_trww_owners
+pipes,Owner,Bellevue and Ross,SewerStormwater_Segments,OWNER_NAME,BELL-ROSS,,domain_trww_owners
+pipes,Owner,Bellevue Borough,SewerStormwater_Segments,OWNER_NAME,BELL,,domain_trww_owners
+pipes,Owner,Bellevue Ross PWSA ALCOSAN,SewerStormwater_Segments,OWNER_NAME,,,domain_trww_owners
+pipes,Owner,Borough of Ingram,SewerStormwater_Segments,OWNER_NAME,INGR,,domain_trww_owners
+pipes,Owner,Crafton Borough,SewerStormwater_Segments,OWNER_NAME,CRAF,,domain_trww_owners
+pipes,Owner,CSX Railroad,SewerStormwater_Segments,OWNER_NAME,RAIL-CSX,,domain_trww_owners
+pipes,Owner,Dormont Borough,SewerStormwater_Segments,OWNER_NAME,DORM,,domain_trww_owners
+pipes,Owner,DPW,SewerStormwater_Segments,OWNER_NAME,PITT,,domain_trww_owners
+pipes,Owner,Edgewood Borough,SewerStormwater_Segments,OWNER_NAME,EDGE,,domain_trww_owners
+pipes,Owner,Etna Borough,SewerStormwater_Segments,OWNER_NAME,ETNA,,domain_trww_owners
+pipes,Owner,Fox Chapel,SewerStormwater_Segments,OWNER_NAME,FCHA,,domain_trww_owners
+pipes,Owner,Green Tree Borough,SewerStormwater_Segments,OWNER_NAME,GTRE,,domain_trww_owners
+pipes,Owner,Housing Authority of Pittsburgh,SewerStormwater_Segments,OWNER_NAME,HAPI,,domain_trww_owners
+pipes,Owner,J&L Steel,SewerStormwater_Segments,OWNER_NAME,PIND-JLST,,domain_trww_owners
+pipes,Owner,Lincoln Property Company,SewerStormwater_Segments,OWNER_NAME,PCOM-LPCO,,domain_trww_owners
+pipes,Owner,Morewood Heights Associates,SewerStormwater_Segments,OWNER_NAME,PRES-HA,,domain_trww_owners
+pipes,Owner,Mount Oliver Borough,SewerStormwater_Segments,OWNER_NAME,MOLI,,domain_trww_owners
+pipes,Owner,Mt. Lebanon,SewerStormwater_Segments,OWNER_NAME,MLEB,,domain_trww_owners
+pipes,Owner,Munhall Borough,SewerStormwater_Segments,OWNER_NAME,MUNH,,domain_trww_owners
+pipes,Owner,PA American Water,SewerStormwater_Segments,OWNER_NAME,PAAW,,domain_trww_owners
+pipes,Owner,Penn Hills,SewerStormwater_Segments,OWNER_NAME,PHWP,,domain_trww_owners
+pipes,Owner,PennDOT,SewerStormwater_Segments,OWNER_NAME,PDOT,,domain_trww_owners
+pipes,Owner,Pittsburgh and West Virginia Railroad,SewerStormwater_Segments,OWNER_NAME,RAIL-PWVR,,domain_trww_owners
+pipes,Owner,Pittsburgh Public Schools,SewerStormwater_Segments,OWNER_NAME,PINT-PPS,,domain_trww_owners
+pipes,Owner,Point Park University,SewerStormwater_Segments,OWNER_NAME,PINT-PPU,,domain_trww_owners
+pipes,Owner,PWSA,SewerStormwater_Segments,OWNER_NAME,PWSA,,domain_trww_owners
+pipes,Owner,PWSA to ACSA,SewerStormwater_Segments,OWNER_NAME,PWSA,,domain_trww_owners
+pipes,Owner,PWSA to ACSA Add,SewerStormwater_Segments,OWNER_NAME,PWSA,,domain_trww_owners
+pipes,Owner,PWSA to ACSA Verify,SewerStormwater_Segments,OWNER_NAME,PWSA,,domain_trww_owners
+pipes,Owner,Reserve Township,SewerStormwater_Segments,OWNER_NAME,RESE,,domain_trww_owners
+pipes,Owner,Swissvale Borough,SewerStormwater_Segments,OWNER_NAME,SWIS,,domain_trww_owners
+pipes,Owner,University of Pittsburgh,SewerStormwater_Segments,OWNER_NAME,PINT-PITT,,domain_trww_owners
+pipes,Owner,Unknown,SewerStormwater_Segments,OWNER_NAME,UK,,domain_trww_owners
+pipes,Owner,West Homestead Borough,SewerStormwater_Segments,OWNER_NAME,WHOM,,domain_trww_owners
+pipes,Owner,West Mifflin Borough,SewerStormwater_Segments,OWNER_NAME,WMIF,,domain_trww_owners
+pipes,Owner,Whitehall Borough,SewerStormwater_Segments,OWNER_NAME,WHAL,,domain_trww_owners
+pipes,Owner,Wilkinsburg Borough,SewerStormwater_Segments,OWNER_NAME,WILK,,domain_trww_owners
+pipes,Sewer_Use,ABN,SewerStormwater_Segments,SEWERTYPE,UK,,domain_trww_sewertype
+pipes,Sewer_Use,COM,SewerStormwater_Segments,SEWERTYPE,COM,,domain_trww_sewertype
+pipes,Sewer_Use,FM,SewerStormwater_Segments,SEWERTYPE,FM,,domain_trww_sewertype
+pipes,Sewer_Use,INT,SewerStormwater_Segments,SEWERTYPE,SAN,,domain_trww_sewertype
+pipes,Sewer_Use,OVF,SewerStormwater_Segments,SEWERTYPE,OVF,,domain_trww_sewertype
+pipes,Sewer_Use,PVT,SewerStormwater_Segments,SEWERTYPE,UK,,domain_trww_sewertype
+pipes,Sewer_Use,PVTCOM,SewerStormwater_Segments,SEWERTYPE,COM,,domain_trww_sewertype
+pipes,Sewer_Use,PVTOVF,SewerStormwater_Segments,SEWERTYPE,OVF,,domain_trww_sewertype
+pipes,Sewer_Use,PVTRCOM,SewerStormwater_Segments,SEWERTYPE,COM,,domain_trww_sewertype
+pipes,Sewer_Use,PVTSAN,SewerStormwater_Segments,SEWERTYPE,SAN,,domain_trww_sewertype
+pipes,Sewer_Use,PVTSTM,SewerStormwater_Segments,SEWERTYPE,STM,,domain_trww_sewertype
+pipes,Sewer_Use,RCOM,SewerStormwater_Segments,SEWERTYPE,COM,,domain_trww_sewertype
+pipes,Sewer_Use,SAN,SewerStormwater_Segments,SEWERTYPE,SAN,,domain_trww_sewertype
+pipes,Sewer_Use,STM,SewerStormwater_Segments,SEWERTYPE,STM,,domain_trww_sewertype
+pipes,Sewer_Use,UND,SewerStormwater_Segments,SEWERTYPE,,,domain_trww_sewertype
+pipes,Shape_1, ,SewerStormwater_Segments,PIPE_SHAPE,,,domain_trww_pipe_shape
+pipes,Shape_1,A,SewerStormwater_Segments,PIPE_SHAPE,A,,domain_trww_pipe_shape
+pipes,Shape_1,B,SewerStormwater_Segments,PIPE_SHAPE,B,,domain_trww_pipe_shape
+pipes,Shape_1,C,SewerStormwater_Segments,PIPE_SHAPE,C,,domain_trww_pipe_shape
+pipes,Shape_1,c,SewerStormwater_Segments,PIPE_SHAPE,C,,domain_trww_pipe_shape
+pipes,Shape_1,E,SewerStormwater_Segments,PIPE_SHAPE,E,,domain_trww_pipe_shape
+pipes,Shape_1,O,SewerStormwater_Segments,PIPE_SHAPE,O,,domain_trww_pipe_shape
+pipes,Shape_1,R,SewerStormwater_Segments,PIPE_SHAPE,R,,domain_trww_pipe_shape
+pipes,Shape_1,S,SewerStormwater_Segments,PIPE_SHAPE,S,,domain_trww_pipe_shape
+pipes,Shape_1,U,SewerStormwater_Segments,PIPE_SHAPE,U,,domain_trww_pipe_shape
+pipes,Status, ,SewerStormwater_Segments,STATUS_LN,,,
+pipes,Status,ABN,SewerStormwater_Segments,STATUS_LN,ABND,,
+pipes,Status,PVT,SewerStormwater_Segments,STATUS_LN,,,

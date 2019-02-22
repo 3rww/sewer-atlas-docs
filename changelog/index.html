@@ -8,7 +8,6 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        
         <title>Data Release Change Log - 3RWW SEWER ATLAS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -81,16 +80,16 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+<li >
+    <a href="../services_and_downloads/">Downloads and Services</a>
+</li>
+                                    
 <li class="active">
     <a href="./">Data Release Change Log</a>
 </li>
                                     
 <li >
-    <a href="../semver/">Semantic Versioning</a>
-</li>
-                                    
-<li >
-    <a href="../services_and_downloads/">Downloads and Services</a>
+    <a href="../semver/">Data Versioning Primer</a>
 </li>
                                 </ul>
                             </li>
@@ -103,7 +102,7 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../guide_rsi_trace/">
+                                <a rel="next" href="../services_and_downloads/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -121,6 +120,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#sewer-atlas-data-release-notes">Sewer Atlas Data Release Notes</a></li>
+            <li><a href="#2018-q4-v630">2018-Q4 (v6.3.0)</a></li>
             <li><a href="#2018-q3-v620">2018-Q3 (v6.2.0)</a></li>
             <li><a href="#2018-q1-v610">2018-Q1 (v6.1.0)</a></li>
             <li><a href="#2017-q4-v600">2017-Q4 (v6.0.0)</a></li>
@@ -132,8 +132,31 @@
 
 <h1 id="sewer-atlas-data-release-notes"><strong>Sewer Atlas Data Release Notes</strong></h1>
 <p>This page contains the cumulative data release notes for the Sewer Atlas.</p>
-<h2 id="2018-q3-v620">2018-Q3 (v6.2.0)</h2>
+<p><em>The changelog is maintained on <a href="https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md">Github</a>.</em></p>
+<h2 id="2018-q4-v630">2018-Q4 (v6.3.0)</h2>
 <h3 id="summary">Summary</h3>
+<p>This release focused on continuing to integrate updated data from PWSA.</p>
+<ul>
+<li>portions of the <code>M-47</code> sewershed, a.k.a., 9-Mile Run, within the PWSA service area</li>
+<li>the <code>A-42</code> sewershed, a.k.a., Negley Run.</li>
+</ul>
+<p>With the completion of these two sewersheds, we&rsquo;ve provided coverage for the eastern side of the City of Pittsburgh from river to river. Note the 9-Mile run was also been partially tackled in the 2018-Q3 release (with Swissvale).</p>
+<p>As always, the editing emphasis was on geometry matching and attritbute updates for <em>key fields</em> related to infrastructure dimensionality and typology.</p>
+<h3 id="submitted-data">Submitted Data</h3>
+<p>PWSA&rsquo;s data submission included complete exports of point and polyline datasets, <code>in_node</code> and <code>in_pipe</code>, respectively, as Esri shapefiles. Additionally, thematic extracts of those datasets were provided; e.g., <code>Sewers</code> and <code>Abandoned Sewers</code> were provided representing mutually-exclusive subsets of the <code>in_pipe</code> dataset derived from values in that table&rsquo;s <code>Status</code> field.</p>
+<h3 id="geometry">Geometry</h3>
+<ul>
+<li>Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM).</li>
+</ul>
+<h3 id="attributes">Attributes</h3>
+<p>The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed <a href="../resources/r2018Q4_crosswalk_pwsa.csv">here</a>.</p>
+<h3 id="meta">Meta</h3>
+<h4 id="stormwater-data-integration">Stormwater data integration</h4>
+<p>PWSA&rsquo;s data includes separate stormwater infrastructure. Since the existing schema carried over from the original ACHD data model already accomodated separate stormwater infrastructure records, and stormwater data is of interest, we experimented with incorporating some of those records into the the Sewer Atlas database. The incorporation of this data was limited in geographic scope&mdash;mostly confined to the areas in and around the Summerset development in the 9-Mile Run watershed.</p>
+<p>Those records <em>are</em> provided in the downloadable versions of the Sewer Atlas databases (e.g., FGDB, MPK, GPKG, SHP) but will not appear on the wastewater layers of Sewer Atlas web application (yet; you&rsquo;ll still find all separate stormwater data in the &ldquo;stormwater atlas beta layer&rdquo;). In the downloadable copies, you&rsquo;ll find them classified as <code>STM</code> in the <code>SEWERTYPE</code> field.</p>
+<p>2019 releases will likely contain more of this data at a broader geographic scale.</p>
+<h2 id="2018-q3-v620">2018-Q3 (v6.2.0)</h2>
+<h3 id="summary_1">Summary</h3>
 <p>This release focused on beginning to integrate updated wastewater data from PWSA, along with additional edits for communities in previous releases.</p>
 <ul>
 <li>PWSA: the <code>M-29</code> sewershed, a.k.a., 4-Mile Run.</li>
@@ -141,27 +164,23 @@
 </ul>
 <p>Additionally, stormwater data from PWSA was added into a separate prototype &ldquo;Stormwater Atlas&rdquo; layer, which is available on the Sewer Atlas.</p>
 <p>As always, the editing emphasis was on geometry matching and attritbute updates for <em>key fields</em> related to infrastructure dimensionality and typology.</p>
-<h3 id="submitted-data">Submitted Data</h3>
+<h3 id="submitted-data_1">Submitted Data</h3>
 <p>PWSA&rsquo;s data submission included complete exports of point and polyline datasets, <code>in_node</code> and <code>in_pipe</code>, respectively, as Esri shapefiles. Additionally, thematic extracts of those datasets were provided; e.g., <code>Sewers</code> and <code>Abandoned Sewers</code> were provided representing mutually-exclusive subsets of the <code>in_pipe</code> dataset derived from values in that table&rsquo;s <code>Status</code> field.</p>
 <p>While PWSA&rsquo;s submission included separate stormwater infrastructure, we <em>did not</em> (at this time) integrate it into the the connected geometric network in the Sewer Atlas.</p>
 <p>For Swissvale wastewater infrastructure data, which is maintained by Glenn Engineering, we used data that was submitted for but not incorporated into the 2018Q1 release.</p>
-<h3 id="geometry">Geometry</h3>
-<ul>
-<li>Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM).</li>
-</ul>
-<h3 id="attributes">Attributes</h3>
-<ul>
-<li>The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed <a href="../resources/r2018Q3_crosswalk_pwsa.csv">here</a>.</li>
-<li>The complete field and value mappings table used to translate Glenn Engineering records to the Sewer Atlas schema can be viewed <a href="../resources/r2018Q1_crosswalk_glenneng.csv">here</a>.</li>
-</ul>
-<h3 id="meta">Meta</h3>
+<h3 id="geometry_1">Geometry</h3>
+<p>Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM).</p>
+<h3 id="attributes_1">Attributes</h3>
+<p>The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed <a href="../resources/r2018Q3_crosswalk_pwsa.csv">here</a>.</p>
+<p>The same mapping table used to translate Glenn Engineering records can be viewed <a href="../resources/r2018Q1_crosswalk_glenneng.csv">here</a>.</p>
+<h3 id="meta_1">Meta</h3>
 <h4 id="tooling-development">Tooling development</h4>
 <p>If you&rsquo;re following along, you&rsquo;ll note that we&rsquo;ve skipped 2018-Q2 and that 2018-Q3 is coming a bit late. To support integrating PWSA data into the database, we invested more time in 2018 in building more robust tooling that supports semi-automated editing workflows.</p>
 <h4 id="stormwater-infrastructure-data">Stormwater Infrastructure Data</h4>
 <p>In addition to updating wastewater data, we also extracted separate stormwater infrastructure records from PWSA&rsquo;s submission and hosted those in a separate &ldquo;Stormwater Atlas&rdquo; layer. This data is provided as-is.</p>
 <p>In the future this data is planned to be tightly coupled with the wastewater data to better reflect the real-world connectivity and relationship between the systems. That change will be accompanied by a major update to the database schema as we adapt it to better represent non-wastewater pipe infrastructure.</p>
 <h2 id="2018-q1-v610">2018-Q1 (v6.1.0)</h2>
-<h3 id="summary_1">Summary</h3>
+<h3 id="summary_2">Summary</h3>
 <p>This release is a continuation of 2017Q4 updates using data provided by Glenn Engineering. This release covers these municipalities:</p>
 <ul>
 <li>Aspinwall</li>
@@ -181,18 +200,18 @@
 <p>It also revisted the municipalities from the 2017Q4 release, and tightened up the edits made there.</p>
 <p>As always, our emphasis was on geometry matching and attritbute updates for <em>key fields</em> related to infrastructure dimensionality and typology.</p>
 <p>As with past releases that utilized data from Glenn Engineering, we addressed specific request from data maintainer that the Sewer Atlas use the &ldquo;local infrastructure ID&rdquo; provided in the submission in the Sewer Atlas&rsquo; structure ID field (<code>STRUCT_ID</code>). We conducted in-person review of edits with the data maintainer on 21 March 2018.</p>
-<h3 id="geometry_1">Geometry</h3>
+<h3 id="geometry_2">Geometry</h3>
 <ul>
 <li>Updates reflect major infrastructure upgrades in Trafford, North Versailles/East McKeesport (5th Ave).</li>
 <li>Geometry matching or attribute updates was not explicitly performed on pipes/structures within the RI Extents (referencing November 2017 RI Extent data); note though that in several edge cases where connectivity issues cropped up with submitted data, we did make minor geometry edits merely to ensure geometric network connectivity was maintained.</li>
 </ul>
-<h3 id="attributes_1">Attributes</h3>
+<h3 id="attributes_2">Attributes</h3>
 <ul>
 <li>Correction to ownership: Pipes classified as <code>NVER</code> in the last release were done by mistake. North Versailles Township (<code>NVER</code>) does not own wastewater infrastructure. It is all owned/maintained by the municipal authority (<code>NVTS</code>). This has been corrected.</li>
 <li>Some submitted wastewater data included separate stormwater infrastructure, misclassified as <code>SAN</code>, which came up during review. We reclassified these as <code>STM</code> and changed <code>disabled</code> to <code>false</code>. The records are retained in this way, but won&rsquo;t show on the Sewer Atlas and won&rsquo;t be included in the network trace.</li>
 </ul>
 <h2 id="2017-q4-v600">2017-Q4 (v6.0.0)</h2>
-<h3 id="summary_2">Summary</h3>
+<h3 id="summary_3">Summary</h3>
 <p>The 2017-Q4 update encompassed a major update to the data model, data updates from several community datasets, and one round of review with the source data maintainer, Glenn Engineering.</p>
 <h3 id="model-updates">Model Updates</h3>
 <blockquote>
@@ -221,12 +240,12 @@
 <li>Only one round of review, addressing basic questions; additional review will be conducted as necessary in the next release cycle (2018-Q1)</li>
 <li>Did not rebuild Virtual Laterals for this release; will include in next release (2018-Q1)</li>
 </ul>
-<h4 id="geometry_2">Geometry</h4>
+<h4 id="geometry_3">Geometry</h4>
 <ul>
 <li>Geometry edited to move the Sewer Atlas data coincident with submission in all cases, except for infrastructure within the ALCOSAN RI extents, or connected directly to it.</li>
 <li>No geometry-matching was explicitly performed on pipes/structures within the RI Extents (referencing November 2017 RI Extent data), <em>except</em> for changes related to the general data model update described above (in which case actual values were not changed, only how they were represented).</li>
 </ul>
-<h4 id="attributes_2">Attributes</h4>
+<h4 id="attributes_3">Attributes</h4>
 <ul>
 <li>At the request of the data maintainer, we replaced values stored in the structure ID field (<code>STRUCT_ID</code>) on the Sewer Atlas with local infrastructure IDs, stored in the <code>LOCAL_ID</code> field in the submitted data</li>
 <li>The complete crosswalk of attributes between the source data and the Sewer Atlas database can be found <a href="../resources/r2017Q4_source_lookup.csv">here</a>.</li>
@@ -234,7 +253,7 @@
 <h3 id="next-update-2018-q1">Next Update (2018-Q1)</h3>
 <p>The next update will focus on additional QAQC for some communities edited during 2017-Q4, the remaining datasets provided by Glenn Engineering, and portions of the PWSA service area.</p>
 <h2 id="2017-q3-v520">2017-Q3 (v5.2.0)</h2>
-<h3 id="summary_3">Summary</h3>
+<h3 id="summary_4">Summary</h3>
 <ul>
 <li>Data provided by Glenn Engineering on behalf of Whitaker and Forest Hills; this release focused on updates using this data, as well as several requested data fixes in other locations</li>
 <li>Emphasis on geometry matching and field normalization in key fields</li>
@@ -248,13 +267,13 @@
 </li>
 <li>No geometry matching or attribute updates explicitly performed on pipes/structures within the RI Extents (referencing August 2017 RI Extent data), <em>except</em> for changes related to standardization of ownership values.</li>
 </ul>
-<h3 id="geometry_3">Geometry</h3>
+<h3 id="geometry_4">Geometry</h3>
 <ul>
 <li>Geometry edited to move the Sewer Atlas data coincident with submission in all cases, except for infrastructure within the ALCOSAN RI extents, or connected directly to it. RI extent data from August 2017</li>
 <li>New infrastructure added in both municipalities</li>
 <li>Some corrections to pipe flow direction made in Whitaker, necessitated by newer field-verfied data from Glenn Engineering</li>
 </ul>
-<h3 id="attributes_3">Attributes</h3>
+<h3 id="attributes_4">Attributes</h3>
 <ul>
 <li>Owner field cleaned up to standardize names in the owner field for both segments and nodes</li>
 <li>Pipe dimensions updated</li>
@@ -268,7 +287,7 @@
 <li>Revisited sewer structures and pipes in Collier (first updated in the 2017-Q2 release);  manually updated <code>GEO_TYP_PT</code> and &lsquo;PIPE_DIAM&rsquo; values.</li>
 </ul>
 <h2 id="2017-q2-v513">2017-Q2 (v5.1.3)</h2>
-<h3 id="summary_4">Summary</h3>
+<h3 id="summary_5">Summary</h3>
 <ul>
 <li>Data provided by NIRA on behalf of Collier Township; this release focused on updates with this data only.</li>
 <li>Estimate +90% agreement of submitted data with existing Landbase systems data</li>
@@ -283,7 +302,7 @@
 <li>Clarified most of those locations with NIRA in meeting on May 1 2017. Course of action/resolutions captured in notes layer.</li>
 <li>Second round of edits proceeded based on NIRA instruction. Geometry adjustment of existing pipes made to comply with NIRA data.</li>
 </ul>
-<h3 id="geometry_4">Geometry</h3>
+<h3 id="geometry_5">Geometry</h3>
 <ul>
 <li>Geometry edited to move the sewer atlas data coincident with submission in 99% of cases.  A new set of clarifications are being compiled for review where outstanding questions.</li>
 <li>Most cases did not require any adds or deletes, but just moving the nodes to match and using map topology editing to drag along the lines.</li>
@@ -299,8 +318,8 @@
 </li>
 <li>The owner fields were also not updated or standardized for the large trunk bisecting Collier.  This was not included in the CTMA submission and the current data indicates the nodes are owned by Collier Township and the pipe by South Fayette.</li>
 </ul>
-<p><br><br><hr>
-The changelog is maintained on <a href="https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md">Github</a>.</p></div>
+<p><br><br><hr></p>
+<p>The changelog is maintained on <a href="https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md">Github</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
