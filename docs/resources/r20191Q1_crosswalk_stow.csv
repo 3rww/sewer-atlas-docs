@@ -1,0 +1,51 @@
+source_table,source_field,source_code,target_table,target_field,target_code,target_domain
+nodes,CRIT_STRCT, ,SewerStormwater_Nodes_Prod,CRIT_STRCT,,domain_trww_yn
+nodes,CRIT_STRCT,CRITICAL,SewerStormwater_Nodes_Prod,CRIT_STRCT,Y,domain_trww_yn
+nodes,CRIT_STRCT,NOT CRITICAL,SewerStormwater_Nodes_Prod,CRIT_STRCT,N,domain_trww_yn
+nodes,INVRT_ELV,,SewerStormwater_Nodes_Prod,INVRT_ELV,,
+nodes,INVRT_ELV2,,SewerStormwater_Nodes_Prod,INVRT_ELV2,,
+nodes,MAPSOURCE, ,SewerStormwater_Nodes_Prod,SRC_NOTE,,
+nodes,OWNER_NAME,Stowe Township,SewerStormwater_Nodes_Prod,OWNER_NAME,STOW,
+nodes,SEWERTYPE,CB,SewerStormwater_Nodes_Prod,SEWERTYPE,COM,domain_trww_sewertype
+nodes,SEWERTYPE,SW,SewerStormwater_Nodes_Prod,SEWERTYPE,STM,domain_trww_sewertype
+nodes,SEWERTYPE,XX,SewerStormwater_Nodes_Prod,SEWERTYPE,UK,domain_trww_sewertype
+nodes,SUBTYPE,ACB,SewerStormwater_Nodes_Prod,SUBTYPE_PT,CB,domain_trww_pt_types
+nodes,SUBTYPE,AEP,SewerStormwater_Nodes_Prod,SUBTYPE_PT,AEP,domain_trww_pt_types
+nodes,SUBTYPE,AMH,SewerStormwater_Nodes_Prod,SUBTYPE_PT,AMH,domain_trww_pt_types
+nodes,SUBTYPE,ATC,SewerStormwater_Nodes_Prod,SUBTYPE_PT,ATC,domain_trww_pt_types
+nodes,SUBTYPE,CSO,SewerStormwater_Nodes_Prod,SUBTYPE_PT,CSO,domain_trww_pt_types
+nodes,SUBTYPE,HDW,SewerStormwater_Nodes_Prod,SUBTYPE_PT,HDW,domain_trww_pt_types
+nodes,SUBTYPE,LH,SewerStormwater_Nodes_Prod,SUBTYPE_PT,LH,domain_trww_pt_types
+nodes,SUBTYPE,PS,SewerStormwater_Nodes_Prod,SUBTYPE_PT,PS,domain_trww_pt_types
+nodes,STRUCT_ID,,SewerStormwater_Nodes_Prod,STRUCT_ID,,
+nodes,MH_TOP_ELV,,SewerStormwater_Nodes_Prod,MH_TOP_ELV,,
+nodes,STPMH_XCRD,,SewerStormwater_Nodes_Prod,STPMH_XCRD,,
+nodes,STPMH_YCRD,,SewerStormwater_Nodes_Prod,STPMH_YCRD,,
+nodes,FIELD_ID,,SewerStormwater_Nodes_Prod,FIELD_ID,,
+pipes,CRIT_PIPE, ,SewerStormwater_Segments_Prod,CRIT_PIPE,,domain_trww_yn
+pipes,CRIT_PIPE,CRITICAL,SewerStormwater_Segments_Prod,CRIT_PIPE,Y,domain_trww_yn
+pipes,CRIT_PIPE,NOT CRITICAL,SewerStormwater_Segments_Prod,CRIT_PIPE,N,domain_trww_yn
+pipes,DOWN_MANH, ,SewerStormwater_Segments_Prod,DOWN_MANH,,
+pipes,FIELD_ID,,SewerStormwater_Segments_Prod,FIELD_ID,,
+pipes,OWNER_NAME,Stowe Township,SewerStormwater_Segments_Prod,OWNER_NAME,STOW,
+pipes,PIPE_DIAM,,SewerStormwater_Segments_Prod,PIPE_DIAM,,
+pipes,PIPE_MATL,BR,SewerStormwater_Segments_Prod,PIPE_MATL,BR,domain_trww_pipe_material
+pipes,PIPE_MATL,CMP,SewerStormwater_Segments_Prod,PIPE_MATL,CMP,domain_trww_pipe_material
+pipes,PIPE_MATL,CP,SewerStormwater_Segments_Prod,PIPE_MATL,CP,domain_trww_pipe_material
+pipes,PIPE_MATL,CT,SewerStormwater_Segments_Prod,PIPE_MATL,CT,domain_trww_pipe_material
+pipes,PIPE_MATL,DIP,SewerStormwater_Segments_Prod,PIPE_MATL,DIP,domain_trww_pipe_material
+pipes,PIPE_MATL,PE,SewerStormwater_Segments_Prod,PIPE_MATL,PE,domain_trww_pipe_material
+pipes,PIPE_MATL,PVC,SewerStormwater_Segments_Prod,PIPE_MATL,PVC,domain_trww_pipe_material
+pipes,PIPE_MATL,TCP,SewerStormwater_Segments_Prod,PIPE_MATL,TCP,domain_trww_pipe_material
+pipes,PIPE_MATL,VCP,SewerStormwater_Segments_Prod,PIPE_MATL,VCP,domain_trww_pipe_material
+pipes,PIPE_SHAPE,C,SewerStormwater_Segments_Prod,PIPE_SHAPE,C,domain_trww_pipe_shape
+pipes,PIPE_SHAPE,R,SewerStormwater_Segments_Prod,PIPE_SHAPE,R,domain_trww_pipe_shape
+pipes,PIPE_WIDTH,,SewerStormwater_Segments_Prod,PIPE_WIDTH,,
+pipes,SEWERTYPE,CB,SewerStormwater_Segments_Prod,,COM,domain_trww_sewertype
+pipes,SEWERTYPE,FM,SewerStormwater_Segments_Prod,,FM,domain_trww_sewertype
+pipes,SEWERTYPE,SW,SewerStormwater_Segments_Prod,,STM,domain_trww_sewertype
+pipes,SUBTYPE,COL,SewerStormwater_Segments_Prod,,COL,domain_trww_ln_types
+pipes,SUBTYPE,TRU,SewerStormwater_Segments_Prod,,TRU,domain_trww_ln_types
+pipes,UPST_MANH, ,SewerStormwater_Segments_Prod,UPST_MANH,,
+pipes,SEGMENT_ID,,SewerStormwater_Segments_Prod,SEGMENT_ID,,
+pipes,TREAT_FAC,,SewerStormwater_Segments_Prod,TREAT_FAC,,

@@ -21,7 +21,7 @@ For an overview of the functionality of the Sewer Atlas, with Q/A from users, wa
 ### [Discharge Tracing Guide &rarr;](guide_rsi_trace.md)
 This user guide describes how to use the 3RWW Sewer Atlas in desktop and field workflows for identifying potential discharges into the sewer system.
 
-*Need a specific workflow documented? Let us know at [3rww@civicmapper.com](3rww@civicmapper.com)*
+*Need a specific workflow documented? Let us know at [3rww@civicmapper.com](mailto:3rww@civicmapper.com)*
 
 
 ## Data

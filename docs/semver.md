@@ -2,7 +2,7 @@
 
 Since beginning the quarterly update cycle in 2017Q2, we've used a [*semantic versioning* ("SemVer")](https://semver.org/) approach for tagging each data release&mdash;e.g., *v6.1.0*  for 2018-Q1.
 
-SemVer was originally developed for software versioning as a way to indicate major, minor, and patch changes to software. With the Sewer Atlas, we use it o indicate the nature of changes to both the schema and the data itself.
+SemVer was originally developed for software versioning as a way to indicate major, minor, and patch changes to software. With the Sewer Atlas, we use it to indicate the nature of changes to both the schema and the data itself.
 
 ## The SemVer Concept
 
@@ -13,8 +13,6 @@ The [Semantic Versioning](https://semver.org/) website provides a quick summary:
 > * MAJOR version when you make incompatible API changes,
 > * MINOR version when you add functionality in a backwards-compatible manner, and
 > * PATCH version when you make backwards-compatible bug fixes.
-
-> Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 ## SemVer as adapted for Sewer Atlas data versioning
 
@@ -28,7 +26,7 @@ If the change requires a database migration, it's a major version change.
 
 Most likely, software utilizing the database will need to be adjusted to handle the different data schema (e.g., ensuring that a web map is using the correct column in the table for renderning a label).
 
-### *MINOR version*: when records in the database are added/updated
+### *MINOR version*: when records in the database are added/updated (during a regular quarterly release cycle)
 
 > e.g. 6.**2**.1
 

@@ -215,14 +215,13 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-
-#############
-## CBG
-#############
-
 # Komodo Edit project files
 *.komodoproject
 *.kpf
+
+# vscode
+
+.vscode/
 
 # project working folders
 _src/
