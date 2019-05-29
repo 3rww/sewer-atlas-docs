@@ -1,0 +1,71 @@
+source_table,source_field,source_code,target_table,target_field,target_code,target_domain
+nodes,CALCD_SEWERTYPE,COMBINED SEWER,nodes,SEWERTYPE,COM,domain_trww_sewertype
+nodes,CALCD_SEWERTYPE,SEPARATE STORM,nodes,SEWERTYPE,STM,domain_trww_sewertype
+nodes,CALCD_SEWERTYPE,ssInlet,nodes,SEWERTYPE,STM,domain_trww_sewertype
+nodes,CALCD_SEWERTYPE,ssManhole,nodes,SEWERTYPE,SAN,domain_trww_sewertype
+nodes,CALCD_SEWERTYPE,ssNetworkStructure,nodes,SEWERTYPE,SAN,domain_trww_sewertype
+nodes,CALCD_SEWERTYPE,swDischargePoint,nodes,SEWERTYPE,STM,domain_trww_sewertype
+nodes,CALCD_SEWERTYPE,swInlets,nodes,SEWERTYPE,STM,domain_trww_sewertype
+nodes,CRIT_STRCT,YES,nodes,CRIT_STRCT,Y,domain_trww_yn
+nodes,CRIT_STRCT,Yes,nodes,CRIT_STRCT,Y,domain_trww_yn
+nodes,LIDTOINVI2,,nodes,INVRT_ELV,,
+nodes,LIDTOINVI3,,nodes,INVRT_ELV2,,
+nodes,MH_TOP_EL,,nodes,MH_TOP_ELV,,
+nodes,OWNER_NAME,McKeesRocks,nodes,OWNER_NAME,MROC,domain_trww_owner
+nodes,OWNER_NAME,MckeesRocks,nodes,OWNER_NAME,MROC,domain_trww_owner
+nodes,OWNER_NAME,Stowe,nodes,OWNER_NAME,STOW,domain_trww_owner
+nodes,REL_GRADE,Above,nodes,REL_GRADE,Above,domain_trww_grade
+nodes,REL_GRADE,Below,nodes,REL_GRADE,Below,domain_trww_grade
+nodes,REL_GRADE,Level,nodes,REL_GRADE,Level,domain_trww_grade
+nodes,SRC_FEATURETYPE,ssInlet,nodes,TYPE_PT,CB,domain_trww_pt_types
+nodes,SRC_FEATURETYPE,ssManhole,nodes,TYPE_PT,MH,domain_trww_pt_types
+nodes,SRC_FEATURETYPE,swDischargePoint,nodes,TYPE_PT,DP,domain_trww_pt_types
+nodes,SRC_FEATURETYPE,swInlets,nodes,TYPE_PT,CB,domain_trww_pt_types
+nodes,STRUCTTYPE,Diversion Chamber,nodes,TYPE_PT,CH,domain_trww_pt_types
+nodes,STRUCTTYPE,Pump Station,nodes,TYPE_PT,PS,domain_trww_pt_types
+nodes,STRCT_STAT,Abandoned,nodes,STATUS_PT,ABND,domain_trww_status
+nodes,STRCT_STAT,Active,nodes,STATUS_PT,ACT,domain_trww_status
+pipes,ALC_Conn,,pipes,SRC_POC,,
+pipes,CALCD_SEWERTYPE,COMBINED SEWER,pipes,SEWERTYPE,COM,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,CS,pipes,SEWERTYPE,COM,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,LAT,pipes,TYPE_LN,LAT,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,SEPARATE STORM,pipes,SEWERTYPE,STM,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,SS,pipes,SEWERTYPE,SAN,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,SW,pipes,SEWERTYPE,STM,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,ssGravityMain,pipes,SEWERTYPE,SAN,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,ssOtherGravityMain,pipes,SEWERTYPE,SAN,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,ssPressurizedMain,pipes,SEWERTYPE,FM,domain_trww_sewertype
+pipes,CALCD_SEWERTYPE,swGravityMain,pipes,SEWERTYPE,STM,domain_trww_sewertype
+pipes,DIAMETER,,pipes,PIPE_DIAM,,
+pipes,MATERIAL,BRICK,pipes,PIPE_MATL,BR,domain_trww_pipe_material
+pipes,MATERIAL,CIP,pipes,PIPE_MATL,CIP,domain_trww_pipe_material
+pipes,MATERIAL,CM,pipes,PIPE_MATL,CMP,domain_trww_pipe_material
+pipes,MATERIAL,CMP,pipes,PIPE_MATL,CMP,domain_trww_pipe_material
+pipes,MATERIAL,CONCRETE,pipes,PIPE_MATL,CP,domain_trww_pipe_material
+pipes,MATERIAL,CP,pipes,PIPE_MATL,CP,domain_trww_pipe_material
+pipes,MATERIAL,CPP,pipes,PIPE_MATL,CP,domain_trww_pipe_material
+pipes,MATERIAL,CT,pipes,PIPE_MATL,CT,domain_trww_pipe_material
+pipes,MATERIAL,DIP,pipes,PIPE_MATL,DIP,domain_trww_pipe_material
+pipes,MATERIAL,HDPE,pipes,PIPE_MATL,HDPE,domain_trww_pipe_material
+pipes,MATERIAL,HDPR,pipes,PIPE_MATL,HDPR,domain_trww_pipe_material
+pipes,MATERIAL,OPEN-CHANL,pipes,PIPE_SHAPE,CH,domain_trww_pipe_shape
+pipes,MATERIAL,PSC,pipes,PIPE_MATL,PSC,domain_trww_pipe_material
+pipes,MATERIAL,PVC,pipes,PIPE_MATL,PVC,domain_trww_pipe_material
+pipes,MATERIAL,PVC/VCP,pipes,PIPE_MATL,PVC-VCP,domain_trww_pipe_material
+pipes,MATERIAL,RCP,pipes,PIPE_MATL,RCP,domain_trww_pipe_material
+pipes,MATERIAL,TCP,pipes,PIPE_MATL,TCP,domain_trww_pipe_material
+pipes,MATERIAL,UNK,pipes,PIPE_MATL,UK,domain_trww_pipe_material
+pipes,MATERIAL,VCP,pipes,PIPE_MATL,VCP,domain_trww_pipe_material
+pipes,MATERIAL,VCP-L,pipes,PIPE_MATL,VCP-L,domain_trww_pipe_material
+pipes,MATERIAL,VYLON,pipes,PIPE_MATL,VYLON,domain_trww_pipe_material
+pipes,MATERIAL,hdpe,pipes,PIPE_MATL,HDPE,domain_trww_pipe_material
+pipes,MATERIAL,vcp,pipes,PIPE_MATL,VCP,domain_trww_pipe_material
+pipes,OWNER_NAME,McKeesRocks,pipes,OWNER_NAME,MROC,domain_trww_owner
+pipes,OWNER_NAME,MckeesRocks,pipes,OWNER_NAME,MROC,domain_trww_owner
+pipes,OWNER_NAME,Stowe,pipes,OWNER_NAME,STOW,domain_trww_owner
+pipes,PIPE_GRAD,,pipes,PIPE_GRAD,,
+pipes,PIPE_STAT,Abandoned,pipes,STATUS_LN,ABND,domain_trww_status
+pipes,POC_ALCOSA,,pipes,SRC_POC,,
+pipes,SEWERTYPE,LAT,pipes,TYPE_LN,LAT,domain_trww_sewertype
+pipes,SUBTYPE,Collector,pipes,TYPE_LN,COL,domain_trww_ln_types
+pipes,SUBTYPE,Trunk,pipes,TYPE_LN,TRU,domain_trww_ln_types
