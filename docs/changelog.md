@@ -2,6 +2,106 @@
 
 This page contains the cumulative data release notes for the Sewer Atlas.
 
+*The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).*
+
+## 2019-Q1 (v6.4.0)
+
+### Summary
+
+The 2019 Q1 udpate included updates to coverage for McKees Rocks and Stowe Township. Additionally, some backfilling of PWSA separate stormwater infrastructure data was performed in previously edited areas in the M-47, A-42, and M-29 sewersheds.
+
+As always, the editing emphasis was on geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology.
+
+### McKees Rocks and Stowe Township Updates
+
+Data for McKees Rocks and Stowe was provided by NIRA Engineering.
+
+Stowe data was provided as two flat tables for point and linear features. McKees Rocks data was provided as an Esri File Geodatabase, with distinct feature datasets for Stormwater and Sanitary systems, each containing feature classes further separating components by function (e.g., stormwater inlets, sewer manholes, force mains, gravity mains, etc.)
+
+#### Update Highlights
+
+In McKees Rocks and Stowe, notable differences between existing Sewer Atlas data here (last updated in 2011) and the submitted data were identified along the CSX railroad corridor that bisects McKees Rocks and runs through Stowe. New stormwater infrastructure and improved precision of surrounding wastewater infrastructure locations contributed to these changes.
+
+#### Data Preparation Notes
+
+Prepping the McKees Rocks data for ingest into the Sewer Atlas presented some challenges. The provided data had be heavily conditioned *prior* to our standard editing pre-processing steps (where we crosswalk the schema of provided data to the Sewer Atlas schema). Stowe data did not require this additional step.
+
+The complete field and value mappings table used to translate records to the Sewer Atlas schema can be viewed at these links:
+
+* [McKees Rocks crosswalk](./resources/r20191Q1_crosswalk_mroc.csv)
+* [Stowe crosswalk](./resources/r20191Q1_crosswalk_stow.csv)
+
+Below summarizes some of the challenges of data preparation and editing specifically for McKees Rocks.
+
+##### **System type**
+
+The attribute indicating system type (e.g., separate sanitary, separate storm, combined) was found primarily in the `SEWERTYPE` field and several other fields. It was also de-facto established by feature classes into which data was originally provided. Sometimes this information conflicted. The source data did not make a great distinction between combine and separate sanitary systems (McKees Rocks is largely separate).
+
+To accurately discern system type from the available data, we looked for in four different locations in the provided dataset for that information, falling back as necessary:
+
+> `SEWERTYPE` field > `NETWORK` field > prefix of the name of the feature class (e.g., ss for separate sanitary, sw for stormwater) > feature dataset name (e.g., separate sewer, stormwater)
+
+During editing, we also noted branches of the network that appear to have been mislabeled given the context: e.g., pipes shown as combined sanitary/storm flowing into pipes shown as separate sanitary, or storm flowing into separate sanitary. We confirmed with NIRA  that McKees Rocks has a combined sewer system; this means that the previous data (from 2011) and submitted data was not labeled according the data standards in use at that time.
+
+##### **Local ID numbers**
+
+This information was partially provided in several different fields; it appears to be in flux. We used `FACILITYID` in the source data when available.
+
+#### Editing Notes
+
+In general and consistent with our normal approach, we snapped Sewer Atlas geometries to the provided data.
+
+However, we did note a number of locations where the submitted data did not provide topological connectivity, though the Sewer Atlas did. In those locations we left the Sewer Atlas data as-is. This was prevalent around overflow structures and pump stations, where the convention in the Sewer Atlas is to use schematic representations of connections to ensure that the network is traceable. The provided data does not appear to use that convention.
+
+### PWSA Updates
+
+PWSA's data submission, which was used in the previous two quarterly releases, included complete exports of point and polyline datasets, `in_node` and `in_pipe`, respectively, as Esri shapefiles. Additionally, thematic extracts of those datasets were provided; e.g., `Sewers` and `Abandoned Sewers` were provided representing mutually-exclusive subsets of the `in_pipe` dataset derived from values in that table's `Status` field.
+
+#### Update Highlights
+
+In the M-47, A-42, and M-29 sewersheds within the PWSA service area, we added separate stormwater infrastructure records.
+
+The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q3_crosswalk_pwsa.csv).
+
+### Other Updates
+
+Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM). The RI data will be addressed explicitly in the 2019-Q2 release.
+
+## 2018-Q4 (v6.3.0)
+
+### Summary
+
+This release focused on continuing to integrate updated data from PWSA.
+
+* portions of the `M-47` sewershed, a.k.a., 9-Mile Run, within the PWSA service area
+* the `A-42` sewershed, a.k.a., Negley Run.
+
+With the completion of these two sewersheds, we've provided coverage for the eastern side of the City of Pittsburgh from river to river. Note the 9-Mile run was also been partially tackled in the 2018-Q3 release (with Swissvale).
+
+As always, the editing emphasis was on geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology.
+
+### Submitted Data
+
+PWSA's data submission included complete exports of point and polyline datasets, `in_node` and `in_pipe`, respectively, as Esri shapefiles. Additionally, thematic extracts of those datasets were provided; e.g., `Sewers` and `Abandoned Sewers` were provided representing mutually-exclusive subsets of the `in_pipe` dataset derived from values in that table's `Status` field.
+
+### Geometry
+
+* Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM).
+
+### Attributes
+
+The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q4_crosswalk_pwsa.csv).
+
+### Meta
+
+#### Stormwater data integration
+
+PWSA's data includes separate stormwater infrastructure. Since the existing schema carried over from the original ACHD data model already accomodated separate stormwater infrastructure records, and stormwater data is of interest, we experimented with incorporating some of those records into the the Sewer Atlas database. The incorporation of this data was limited in geographic scope&mdash;mostly confined to the areas in and around the Summerset development in the 9-Mile Run watershed.
+
+Those records *are* provided in the downloadable versions of the Sewer Atlas databases (e.g., FGDB, MPK, GPKG, SHP) but will not appear on the wastewater layers of Sewer Atlas web application (yet; you'll still find all separate stormwater data in the "stormwater atlas beta layer"). In the downloadable copies, you'll find them classified as `STM` in the `SEWERTYPE` field.
+
+2019 releases will likely contain more of this data at a broader geographic scale.
+
 ## 2018-Q3 (v6.2.0)
 
 ### Summary
@@ -25,12 +125,13 @@ For Swissvale wastewater infrastructure data, which is maintained by Glenn Engin
 
 ### Geometry
 
-* Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM).
+Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM).
 
 ### Attributes
 
-* The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q3_crosswalk_pwsa.csv).
-* The complete field and value mappings table used to translate Glenn Engineering records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q1_crosswalk_glenneng.csv).
+The complete field and value mappings table used to translate PWSA records to the Sewer Atlas schema can be viewed [here](./resources/r2018Q3_crosswalk_pwsa.csv).
+
+The same mapping table used to translate Glenn Engineering records can be viewed [here](./resources/r2018Q1_crosswalk_glenneng.csv).
 
 ### Meta
 
@@ -195,4 +296,5 @@ The next update will focus on additional QAQC for some communities edited during
 
 
 <br><br><hr>
+
 The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).
