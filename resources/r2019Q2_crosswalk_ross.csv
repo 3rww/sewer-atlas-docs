@@ -1,0 +1,45 @@
+source_table,source_field,source_code,target_table,target_field,target_code,target_domain
+pipes,MATERIAL,AC,SewerStormwater_Segments_Prod,PIPE_MATL,AC,domain_trww_pipe_material
+pipes,MATERIAL,CIPP,SewerStormwater_Segments_Prod,PIPE_MATL,CIP,domain_trww_pipe_material
+pipes,MATERIAL,CP,SewerStormwater_Segments_Prod,PIPE_MATL,CP,domain_trww_pipe_material
+pipes,MATERIAL,DIP,SewerStormwater_Segments_Prod,PIPE_MATL,DIP,domain_trww_pipe_material
+pipes,MATERIAL,PE,SewerStormwater_Segments_Prod,PIPE_MATL,PE,domain_trww_pipe_material
+pipes,MATERIAL,PVC,SewerStormwater_Segments_Prod,PIPE_MATL,PVC,domain_trww_pipe_material
+pipes,MATERIAL,RCP,SewerStormwater_Segments_Prod,PIPE_MATL,RCP,domain_trww_pipe_material
+pipes,MATERIAL,UNK,SewerStormwater_Segments_Prod,PIPE_MATL,UK,domain_trww_pipe_material
+pipes,MATERIAL,VCP,SewerStormwater_Segments_Prod,PIPE_MATL,VCP,domain_trww_pipe_material
+pipes,MAINSHAPE,Circular,SewerStormwater_Segments_Prod,PIPE_SHAPE,C,domain_trww_pipe_shape
+nodes,DISCHRGTYP,Outfall,SewerStormwater_Segments_Prod,MUNI_TYP_P,OF,domain_trww_pt_types
+nodes,INLETTYPE,Catchbasin,SewerStormwater_Segments_Prod,MUNI_TYP_P,CB,domain_trww_pt_types
+pipes,WATERTYPE,Combined,SewerStormwater_Segments_Prod,SEWERTYPE,COM,domain_trww_system_type
+pipes,WATERTYPE,Sewage,SewerStormwater_Segments_Prod,SEWERTYPE,SAN,domain_trww_system_type
+nodes,ACTIVEFLAG,,SewerStormwater_Segments_Prod,ACTIVEFLAG,,domain_trww_yn
+pipes,ACTIVEFLAG,,SewerStormwater_Segments_Prod,ACTIVEFLAG,,domain_trww_yn
+pipes,TOMH, ,SewerStormwater_Segments_Prod,DOWN_MANH,,
+nodes,INVERT,,SewerStormwater_Segments_Prod,INVERT_ELV,,
+pipes,MAINTBY,,SewerStormwater_Segments_Prod,MAINTAINED,,
+pipes,DIAMETER,,SewerStormwater_Segments_Prod,PIPE_DIAM,,
+nodes,FACILITYID, ,SewerStormwater_Segments_Prod,STRUCT_ID,,
+pipes,FACILITYID, ,SewerStormwater_Segments_Prod,SEGMENT_ID,,
+nodes,LOCDESC,,SewerStormwater_Segments_Prod,SRC_NOTE,,
+nodes,INLETTYPE,Closed Lid Manhole,SewerStormwater_Nodes_Prod,MUNI_TYP_P,MH,domain_trww_pt_types
+nodes,INLETTYPE,Other,SewerStormwater_Nodes_Prod,MUNI_TYP_P,ZZ,domain_trww_pt_types
+nodes,INLETTYPE,Unknown,SewerStormwater_Nodes_Prod,MUNI_TYP_P,UK,domain_trww_pt_types
+nodes,MHTYPE,OTH,SewerStormwater_Nodes_Prod,MUNI_TYP_P,ZZ,domain_trww_pt_types
+nodes,MHTYPE,STD,SewerStormwater_Nodes_Prod,MUNI_TYP_P,STD,domain_trww_pt_types
+nodes,MHTYPE,UNK,SewerStormwater_Nodes_Prod,MUNI_TYP_P,UK,domain_trww_pt_types
+nodes,STRUCTTYPE,Headwall,SewerStormwater_Nodes_Prod,SUBTYPE_PT,HDW,domain_trww_pt_types
+nodes,STRUCTTYPE,"Headwall, Inflow",SewerStormwater_Nodes_Prod,SUBTYPE_PT,HDW,domain_trww_pt_types
+nodes,STRUCTTYPE,Junction Chamber,SewerStormwater_Nodes_Prod,SUBTYPE_PT,JT,domain_trww_pt_types
+nodes,TRWW_SRC,Sanitary_Sewer_Manholes,SewerStormwater_Nodes_Prod,TYPE_PT,MH,domain_trww_pt_types
+nodes,TRWW_SRC,Storm_Discharge_Points,SewerStormwater_Nodes_Prod,TYPE_PT,OF,domain_trww_pt_types
+nodes,TRWW_SRC,Storm_Inlets,SewerStormwater_Nodes_Prod,TYPE_PT,CB,domain_trww_pt_types
+nodes,TRWW_SRC,Storm_Manholes,SewerStormwater_Nodes_Prod,TYPE_PT,MH,domain_trww_pt_types
+nodes,TRWW_SRC,Storm_Network_Structures,SewerStormwater_Nodes_Prod,TYPE_PT,ZZ,domain_trww_pt_types
+pipes,FROMMH,,SewerStormwater_Nodes_Prod,UPST_MANH,,
+pipes,SEWERTYPE,COM,SewerStormwater_Segments_Prod,SEWERTYPE,COM,domain_trww_system_type
+pipes,SEWERTYPE,STM,SewerStormwater_Segments_Prod,SEWERTYPE,STM,domain_trww_system_type
+pipes,SEWERTYPE,SAN,SewerStormwater_Segments_Prod,SEWERTYPE,SAN,domain_trww_system_type
+nodes,SEWERTYPE,COM,SewerStormwater_Nodes_Prod,SEWERTYPE,COM,domain_trww_system_type
+nodes,SEWERTYPE,STM,SewerStormwater_Nodes_Prod,SEWERTYPE,STM,domain_trww_system_type
+nodes,SEWERTYPE,SAN,SewerStormwater_Nodes_Prod,SEWERTYPE,SAN,domain_trww_system_type

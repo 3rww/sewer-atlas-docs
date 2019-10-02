@@ -1,0 +1,16 @@
+source_table,source_field,source_code,target_table,target_field,target_code,target_domain
+nodes,OWNER_NAME,Girty's Run,nodes,OWNER_NAME,GRJS,domain_trww_owner
+nodes,OWNER_NAME,GirtysRun,nodes,OWNER_NAME,GRJS,domain_trww_owner
+nodes,OWNER_NAME,GRJSA,nodes,OWNER_NAME,GRJS,domain_trww_owner
+nodes,OWNER_NAME,Shaler Township,nodes,OWNER_NAME,SHAL,domain_trww_owner
+nodes,SEWERTYPE,SS,nodes,SEWERTYPE,SAN,domain_trww_system_type
+nodes,STRUCT_ID,,nodes,STRUCT_ID,,
+nodes,STRUCT_TYP,Lamphole,nodes,SUBTYPE_PT,LH,domain_trww_pt_types
+nodes,STRUCT_TYP,Manhole,nodes,TYP_PT,MH,domain_trww_pt_types
+pipes,DOWN_MANH, ,pipes,DOWN_MANH,,
+pipes,OWNER_NAME,GirtysRun,pipes,OWNER_NAME,GRJS,domain_trww_owner
+pipes,OWNER_NAME,O'HaraTownship,pipes,OWNER_NAME,OHAR,domain_trww_owner
+pipes,OWNER_NAME,Shaler Township,pipes,OWNER_NAME,SHAL,domain_trww_owner
+pipes,SEGMENT_ID,,pipes,SEGMENT_ID,,
+pipes,SEWERTYPE,SS,pipes,SEWERTYPE,SAN,domain_trww_system_type
+pipes,UPST_MANH,,pipes,UPST_MANH,,
