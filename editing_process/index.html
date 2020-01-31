@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>3RWW Sewer Atlas:<br> **Advanced Network Trace Analysis Guide** - 3RWW SEWER ATLAS</title>
+        <title>Editing and QAQC Process Overview - 3RWW SEWER ATLAS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -76,7 +76,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -88,8 +88,8 @@
     <a href="../changelog/">Data Release Change Log</a>
 </li>
                                     
-<li >
-    <a href="../editing_process/">Editing and QAQC Process Overview</a>
+<li class="active">
+    <a href="./">Editing and QAQC Process Overview</a>
 </li>
                                     
 <li >
@@ -105,6 +105,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../changelog/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../semver/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -113,20 +123,43 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#3rww-sewer-atlas-advanced-network-trace-analysis-guide">3RWW Sewer Atlas: Advanced Network Trace Analysis Guide</a></li>
-            <li><a href="#first">First...</a></li>
-            <li><a href="#download-the-results">Download the results</a></li>
+        <li class="main active"><a href="#editing-and-qaqc-process-overview">Editing and QAQC Process Overview</a></li>
+            <li><a href="#editing">Editing</a></li>
+            <li><a href="#qaqc">QAQC</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="3rww-sewer-atlas-advanced-network-trace-analysis-guide">3RWW Sewer Atlas:<br> <strong>Advanced Network Trace Analysis Guide</strong></h1>
-<p><em>This guide describes how to parse, summarize, and chart results of the network trace analysis tool in a spreadsheet</em></p>
-<h2 id="first">First&hellip;</h2>
-<p>Ensure you&rsquo;re comfortable with network tracing tool, as described <a href="./#step-3-trace-the-sewer-network">here</a>.</p>
-<p><em><img alt="animation: quick overview animation of tool operation and results" src="../img/rsiguide/RSIGuide_trace_fast.gif" /></em></p>
-<p>Run a trace and wait for the results to load.</p>
-<h2 id="download-the-results">Download the results</h2></div>
+<h1 id="editing-and-qaqc-process-overview">Editing and QAQC Process Overview</h1>
+<p>The Sewer Atlas database is updated on an ongoing basis, with (approximately) quarterly updates made available for download and published as web map services.</p>
+<p>The editing process entails four general steps:</p>
+<ul>
+<li><strong>pre-processing</strong>: source data, which is of various qualities, consistencies, and formats, is extracted, transformed, and loaded into a set of tables designed to transfer  record and attributes-level changes to the database directly.</li>
+<li><strong>editing</strong>: the Sewer Atlas database is updated to match the source data</li>
+<li><strong>QA/QC</strong>: check that edits are comprehensive, conflicts are resolved, and network connectivity has been maintained</li>
+<li><strong>post-processing</strong>: a snapshot of the database is exported and transformed into formats for download and publication as web services</li>
+</ul>
+<p>This page highlights the some of the steps in that process.</p>
+<h2 id="editing">Editing</h2>
+<p>When editing the Sewer Atlas data, we follow several general rules:</p>
+<ul>
+<li>Editing entails moving the Sewer Atlas geometry to match the source data geometry</li>
+<li>Unless: matching the source data <em>exactly</em> would break the geometric network topology, in which case we balance geometric precision with network-correctness</li>
+<li>Never delete segments/nodes, only <em>disable</em> them</li>
+<li>Unless: the segments/nodes are verified as erroneous by the data source maintainer</li>
+<li>When working through conflicts, defer to data authorities in this order:</li>
+<li>ALCOSAN datasets (e.g., RI) <strong>&gt;</strong> Municipal Source Dataset <strong>&gt;</strong> Existing Sewer Atlas</li>
+</ul>
+<h2 id="qaqc">QAQC</h2>
+<p>Our QAQC process emphasizes a few things:</p>
+<h3 id="overall-completeness-of-edits">Overall completeness of edits</h3>
+<p>As a first pass at QAQC, we compare the source tables to the editing database on geometry simply to identify any areas we might have missed.</p>
+<h3 id="connectivity">Connectivity</h3>
+<p>We run a series of upstream traces from strategic points on the network (e.g., the ALCOSAN plant) to help identify any areas on the network that may have been disconnected during editing.</p>
+<h3 id="missingempty-attributes">Missing/empty attributes</h3>
+<p>Occasionally, our conflation process does not work; we use a map with labels and symbology designed to call out edited features with attributes that didn’t transfer from the source.</p>
+<h3 id="conflict-resolution">Conflict Resolution</h3>
+<p>If needed, we bring up with the data source maintainer ay conflicts between the source and editing database that have no obvious solution. Typically, the course of action is fairly clear, but occassionally it isn&rsquo;t. We flag those without a clear resolution as <em>Issues</em>, which appear in a layer shown on the Sewer Atlas Data Status Dashboard.</p></div>
         </div>
 
         <footer class="col-md-12">

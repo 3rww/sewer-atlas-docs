@@ -89,6 +89,10 @@
 </li>
                                     
 <li >
+    <a href="../editing_process/">Editing and QAQC Process Overview</a>
+</li>
+                                    
+<li >
     <a href="../semver/">Data Versioning Primer</a>
 </li>
                                 </ul>
@@ -134,7 +138,7 @@
 <p><em>Updated 21 December 2018</em></p>
 <h1 id="background">BACKGROUND</h1>
 <p>3 Rivers Wet Weather (3RWW) hosts the Sewer Atlas, a web map for the visualization of and interaction with regional sewer network data in the ALCOSAN service area. It is the successor to Landbase Systems&rsquo; &ldquo;WebMap&rdquo;. The Sewer Atlas is an evolving product, with plans to iteratively roll out improvements to both the web mapping application and the underlying regional sewer network data.</p>
-<p>The regional sewer network data shown on the Sewer Atlas web map (v 1.2 at the time of this document&rsquo;s release) is derived from the same data used in the One Overall Map: the 2011 data created by Landbase Systems for 3 Rivers Wet Weather. With the exception of an attempted update of the new regional sewer network dataset in 2014, no changes had been made to this data until August 2016.</p>
+<p>The regional sewer network data shown on the Sewer Atlas web map is derived from the same data used in the One Overall Map: the 2011 data created by Landbase Systems for 3 Rivers Wet Weather. With the exception of an attempted update of the new regional sewer network dataset in 2014, no changes had been made to this data until August 2016.</p>
 <h2 id="the-need-for-a-data-maintenance-strategy">THE NEED FOR A DATA MAINTENANCE STRATEGY</h2>
 <p>Currently, a number of organizations are working with regional sewer network data. The figure below describes very generally how some of these organizations are using regional sewer network data and/or contributing to it:</p>
 <table>
@@ -175,7 +179,7 @@ to:</p>
 <li>facilitating ongoing/continuous municipal updates to maintain overall data accuracy and precision, allowing for increased confidence in the results of system analysis</li>
 <li>updating missing pipe attributes as in the data to support CDM Smith&rsquo;s flow capacity modeling work</li>
 <li>ensuring that new field data collected by AECOM for ALCOSAN&rsquo;s regionalization efforts integrates with  existing regional sewer network data (i.e., maintain topological connectivity of the data) from municipalities and agencies</li>
-<li>addressing the existing legacy data model from LBS&rsquo; WebMap/OneOverall Map, which has fallen into  disrepair, and recognizing that a NASSCO standards-compliant data model will better support long-term sewer network data maintenance efforts and modeling requirements.</li>
+<li>addressing the existing legacy data model from LBS&rsquo; WebMap/OneOverall Map, which has fallen into disrepair, and recognizing that a NASSCO standards-compliant data model will better support long-term sewer network data maintenance efforts and modeling requirements.</li>
 </ul>
 <p>With multiple organizations working with and improving the accuracy and precision of regional sewer network data, there is a clear need for a coordinated, accessible data curation and maintenance strategy that will enable the efficient maintenance of regional sewer network data into the future.</p>
 <h1 id="strategy">STRATEGY</h1>
@@ -304,8 +308,8 @@ capability to do one or the other of these methods. The draft diagram below begi
 updated using these workflows.</p>
 <h3 id="regionalization-data-exchange">REGIONALIZATION DATA EXCHANGE</h3>
 <p>For the ALCOSAN Regionalization project specifically:
-<em>   AECOM SendFile
-</em>   ArcGIS Online, via a group, if possible</p>
+*   AECOM SendFile
+*   ArcGIS Online, via a group, if possible</p>
 <h2 id="data-curation-and-integration">DATA CURATION AND INTEGRATION</h2>
 <p>The act of data curation itself is the key piece to the overall data maintenance and curation strategy, as it ensures
 that new data is maintained to standards and that the chain of decision-making regarding data change is maintained
@@ -433,8 +437,8 @@ made, any lingering questions or follow up required.</p>
 of dataset ready for end-user consumption. The creation of each release will be automatically pushed to
 endpoints for consumption in GIS and web mapping applications, and static file download. This includes (but is
 not limited to):
-<em>   ArcGIS Server Feature Services (vector data)
-</em>   File Geodatabase (topology/geometric network-enabled) and shapefiles for static file download
+*   ArcGIS Server Feature Services (vector data)
+*   File Geodatabase (topology/geometric network-enabled) and shapefiles for static file download
 *   Pre-rendered ArcGIS Server Tile Map Service (raster tiles, for Sewer Atlas cartography)
 Each release will also come with Release Notes. This will in include a high level summary of what changed from the
 previous release. The full record of commit messages (from #2 above) will be referenced in these notes.</p>
@@ -478,8 +482,8 @@ and keeping record of where the assumptions were applied</li>
 <h3 id="results-lessons">RESULTS / LESSONS</h3>
 <p>CDM and CivicMapper coordinated the update; the work of updating the dataset was completed within one week.</p>
 <p>This test case demonstrates that:
-<em>   quick data update turnarounds are easily within reach when the need is clearly defined, allowing time and effort to be focused (in this case, the focus was on just the pipe diameter attribute)
-</em>   incremental updates can be completed concurrently with larger data update efforts, without affecting localized data updates:
+*   quick data update turnarounds are easily within reach when the need is clearly defined, allowing time and effort to be focused (in this case, the focus was on just the pipe diameter attribute)
+*   incremental updates can be completed concurrently with larger data update efforts, without affecting localized data updates:
     * e.g., This update did not, for example, include the pipe attribute and location updates made by AECOM for the ongoing regionalization project, as those updates were not yet ready for distribution (and were not provided). However, when that data is ready, it can easily be integrated.
 *   the use of similar tools by the source data maintainers (municipalities/consultants working within the Girty&rsquo;s Run sewersheds are using the same tools 3RWW/CivicMapper are using) makes updates to the regional dataset work smoothly</p>
 <p>Importantly, this update process validated 3RWW and CivicMapper&rsquo;s curation-based approach to data maintenance
