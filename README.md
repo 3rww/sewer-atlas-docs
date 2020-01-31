@@ -43,7 +43,7 @@ The `yaml` file at the root of the project articulates how the table of contents
 
 ## Build for Deployment (3RWW)
 
-From the command line, navigate to the directory  and enter:
+From the command line, navigate to the directory and enter:
 `mkdocs build`
 
 This will generate all the files needed to serve up the full static help doucmentation site.

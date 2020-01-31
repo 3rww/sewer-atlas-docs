@@ -4,6 +4,38 @@ This page contains the cumulative data release notes for the Sewer Atlas.
 
 *The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).*
 
+## 2019-Q2 (v6.5.0)
+
+### Summary
+
+The 2019 Q2 udpate included updates to coverage for Shaler Township, Ross Township, and the PWSA service area.
+
+As always, the editing emphasis was on geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology.
+
+### Ross
+
+Ross data was provided in two file geodatabases: one for separate stormwater infrastructure, and one for wastewater (separate and combined) infrastructure. Each geodatabase contained feature classes prefixed with the system type (storm or sewer).
+
+* The owner field for Ross contained numeric values; though these values appear to correlate with owner names on corresponding features in the Sewer Atlas (e.g., 1 in source data == "ROSS" in target), we did not explicitly pull these over during editing
+* System (storm, sanitary) and type (manhole, outfall, etc.) information was inferred from the names of the point feature classes, as the data model did not always explicity contain that information in dedicated system or type fields.
+* We pre-calculated a `SEWERTYPE` field on our composite source data, inferring this data from the source file geodatabase names and source feature class names
+
+> [Ross crosswalk](./resources/r2019Q2_crosswalk_ross.csv)
+
+### Shaler
+
+The schema of the Shaler data appears to be derived from the original One Overall Map model. However, only a small subset of the fields were provided.
+
+> [Shaler crosswalk](./resources/r2019Q2_crosswalk_shal.csv)
+
+### PWSA
+
+PWSA's data submission, which was used in several previous quarterly releases, included complete exports of point and polyline datasets, `in_node` and `in_pipe`, respectively, as Esri shapefiles. Additionally, thematic extracts of those datasets were provided; e.g., `Sewers` and `Abandoned Sewers` were provided representing mutually-exclusive subsets of the `in_pipe` dataset derived from values in that table's `Status` field.
+
+Updated coverage in the Sewer Atlas for the PWSA service area now includes to all sewersheds from the City's eastern border between the Allegheny and Monongahela west to the Point. This also includes separate stormwater infrastructure data.
+
+> [PWSA crosswalk](./resources/r2018Q3_crosswalk_pwsa.csv)
+
 ## 2019-Q1 (v6.4.0)
 
 ### Summary
@@ -65,7 +97,7 @@ The complete field and value mappings table used to translate PWSA records to th
 
 ### Other Updates
 
-Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM). The RI data will be addressed explicitly in the 2019-Q2 release.
+Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM). The RI data will be addressed explicitly in a later release.
 
 ## 2018-Q4 (v6.3.0)
 

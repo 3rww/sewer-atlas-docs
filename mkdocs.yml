@@ -11,6 +11,7 @@ nav:
 - Data:
     - Downloads and Services: services_and_downloads.md
     - Data Release Change Log: changelog.md
+    - Editing and QAQC Process Overview: editing_process.md
     - Data Versioning Primer: semver.md    
 markdown_extensions:
     - smarty
