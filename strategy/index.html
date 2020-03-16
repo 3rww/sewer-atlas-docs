@@ -9,99 +9,86 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Sewer Atlas Data Curation and Maintenance Strategy - 3RWW SEWER ATLAS</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../extra.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="..">3RWW SEWER ATLAS</a>
-                </div>
+                <a class="navbar-brand" href="..">3RWW SEWER ATLAS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="..">Overview</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Overview</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../help_rsi/">Contents</a>
+<li>
+    <a href="../help_rsi/" class="dropdown-item">Contents</a>
 </li>
                                     
-<li >
-    <a href="../help_rsi_ui/">Interface</a>
+<li>
+    <a href="../help_rsi_ui/" class="dropdown-item">Interface</a>
 </li>
                                     
-<li >
-    <a href="../help_rsi_tasks/">Common Tasks</a>
+<li>
+    <a href="../help_rsi_tasks/" class="dropdown-item">Common Tasks</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../guide_rsi_trace/">Discharge Analysis</a>
+<li>
+    <a href="../guide_rsi_trace/" class="dropdown-item">Discharge Analysis</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../services_and_downloads/">Downloads and Services</a>
+<li>
+    <a href="../services_and_downloads/" class="dropdown-item">Downloads and Services</a>
 </li>
                                     
-<li >
-    <a href="../changelog/">Data Release Change Log</a>
+<li>
+    <a href="../changelog/" class="dropdown-item">Data Release Change Log</a>
 </li>
                                     
-<li >
-    <a href="../editing_process/">Editing and QAQC Process Overview</a>
+<li>
+    <a href="../editing_process/" class="dropdown-item">Editing and QAQC Process Overview</a>
 </li>
                                     
-<li >
-    <a href="../semver/">Data Versioning Primer</a>
+<li>
+    <a href="../semver/" class="dropdown-item">Data Versioning Primer</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -111,28 +98,94 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#sewer-atlas-data-curation-and-maintenance-strategy">Sewer Atlas Data Curation and Maintenance Strategy</a></li>
-        <li class="main "><a href="#background">BACKGROUND</a></li>
-            <li><a href="#the-need-for-a-data-maintenance-strategy">THE NEED FOR A DATA MAINTENANCE STRATEGY</a></li>
-            <li><a href="#specific-needs-and-considerations">SPECIFIC NEEDS AND CONSIDERATIONS</a></li>
-        <li class="main "><a href="#strategy">STRATEGY</a></li>
-            <li><a href="#principles">PRINCIPLES</a></li>
-            <li><a href="#data-exchange-curation-and-distribution-logistics">DATA EXCHANGE, CURATION, AND DISTRIBUTION LOGISTICS</a></li>
-            <li><a href="#data-outreachexchange-methods">DATA OUTREACH/EXCHANGE METHODS</a></li>
-            <li><a href="#data-curation-and-integration">DATA CURATION AND INTEGRATION</a></li>
-            <li><a href="#data-submission-tracking">DATA SUBMISSION TRACKING</a></li>
-            <li><a href="#data-evaluation">DATA EVALUATION</a></li>
-            <li><a href="#data-integration-editing">DATA INTEGRATION (EDITING)</a></li>
-            <li><a href="#change-management">CHANGE MANAGEMENT</a></li>
-        <li class="main "><a href="#short-and-long-term-data-storage-and-management">SHORT AND LONG-TERM DATA STORAGE AND MANAGEMENT</a></li>
-        <li class="main "><a href="#implementation-test-cases">IMPLEMENTATION // TEST CASES</a></li>
-            <li><a href="#test-case-a-system-wide-attribute-update-example-pipe-diameter">TEST CASE A: SYSTEM-WIDE ATTRIBUTE UPDATE EXAMPLE (PIPE DIAMETER)</a></li>
-            <li><a href="#test-case-b-data-submission-evaluation-swissvale">TEST CASE B: DATA SUBMISSION EVALUATION (SWISSVALE)</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#sewer-atlas-data-curation-and-maintenance-strategy" class="nav-link">Sewer Atlas Data Curation and Maintenance Strategy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#background" class="nav-link">BACKGROUND</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-need-for-a-data-maintenance-strategy" class="nav-link">THE NEED FOR A DATA MAINTENANCE STRATEGY</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specific-needs-and-considerations" class="nav-link">SPECIFIC NEEDS AND CONSIDERATIONS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#strategy" class="nav-link">STRATEGY</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#principles" class="nav-link">PRINCIPLES</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-exchange-curation-and-distribution-logistics" class="nav-link">DATA EXCHANGE, CURATION, AND DISTRIBUTION LOGISTICS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-outreachexchange-methods" class="nav-link">DATA OUTREACH/EXCHANGE METHODS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-curation-and-integration" class="nav-link">DATA CURATION AND INTEGRATION</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-submission-tracking" class="nav-link">DATA SUBMISSION TRACKING</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-evaluation" class="nav-link">DATA EVALUATION</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-integration-editing" class="nav-link">DATA INTEGRATION (EDITING)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#change-management" class="nav-link">CHANGE MANAGEMENT</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#short-and-long-term-data-storage-and-management" class="nav-link">SHORT AND LONG-TERM DATA STORAGE AND MANAGEMENT</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#implementation-test-cases" class="nav-link">IMPLEMENTATION // TEST CASES</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#test-case-a-system-wide-attribute-update-example-pipe-diameter" class="nav-link">TEST CASE A: SYSTEM-WIDE ATTRIBUTE UPDATE EXAMPLE (PIPE DIAMETER)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#test-case-b-data-submission-evaluation-swissvale" class="nav-link">TEST CASE B: DATA SUBMISSION EVALUATION (SWISSVALE)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="sewer-atlas-data-curation-and-maintenance-strategy">Sewer Atlas Data Curation and Maintenance Strategy</h1>
 <p><em>Updated 21 December 2018</em></p>
@@ -506,6 +559,7 @@ network database. The test only involved conducting the evaluation, not integrat
 help build a case for the the data source maintainers to move to the regional data model-or at the very
 least, adopt some of the standards of the data model (e.g., domains for key fields).</li>
 </ul></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -519,19 +573,19 @@ least, adopt some of the standards of the data model (e.g., domains for key fiel
         <script src="../js/base.js" defer></script>
         <script src="../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
@@ -542,12 +596,12 @@ least, adopt some of the standards of the data model (e.g., domains for key fiel
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">

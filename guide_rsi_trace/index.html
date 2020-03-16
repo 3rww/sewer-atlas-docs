@@ -9,109 +9,96 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Discharge Analysis - 3RWW SEWER ATLAS</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../extra.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="..">3RWW SEWER ATLAS</a>
-                </div>
+                <a class="navbar-brand" href="..">3RWW SEWER ATLAS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="..">Overview</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Overview</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../help_rsi/">Contents</a>
+<li>
+    <a href="../help_rsi/" class="dropdown-item">Contents</a>
 </li>
                                     
-<li >
-    <a href="../help_rsi_ui/">Interface</a>
+<li>
+    <a href="../help_rsi_ui/" class="dropdown-item">Interface</a>
 </li>
                                     
-<li >
-    <a href="../help_rsi_tasks/">Common Tasks</a>
+<li>
+    <a href="../help_rsi_tasks/" class="dropdown-item">Common Tasks</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">Discharge Analysis</a>
+<li>
+    <a href="./" class="dropdown-item active">Discharge Analysis</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../services_and_downloads/">Downloads and Services</a>
+<li>
+    <a href="../services_and_downloads/" class="dropdown-item">Downloads and Services</a>
 </li>
                                     
-<li >
-    <a href="../changelog/">Data Release Change Log</a>
+<li>
+    <a href="../changelog/" class="dropdown-item">Data Release Change Log</a>
 </li>
                                     
-<li >
-    <a href="../editing_process/">Editing and QAQC Process Overview</a>
+<li>
+    <a href="../editing_process/" class="dropdown-item">Editing and QAQC Process Overview</a>
 </li>
                                     
-<li >
-    <a href="../semver/">Data Versioning Primer</a>
+<li>
+    <a href="../semver/" class="dropdown-item">Data Versioning Primer</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../help_rsi_tasks/">
+                            <li class="nav-item">
+                                <a rel="prev" href="../help_rsi_tasks/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../services_and_downloads/">
+                            <li class="nav-item">
+                                <a rel="next" href="../services_and_downloads/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -121,28 +108,96 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#3rww-sewer-atlas-discharge-tracing-guide">3RWW Sewer Atlas: Discharge Tracing Guide</a></li>
-            <li><a href="#the-atlas-interface">The Atlas Interface</a></li>
-        <li class="main "><a href="#step-1-get-to-your-location-of-interest-on-the-map">Step 1. Get to your location of interest on the map</a></li>
-            <li><a href="#method-1-use-the-my-location-widget">Method 1: Use the My Location widget</a></li>
-            <li><a href="#method-2-enter-the-address">Method 2: Enter the address</a></li>
-            <li><a href="#method-3-enter-the-wastewater-structure-id">Method 3: Enter the Wastewater Structure ID</a></li>
-        <li class="main "><a href="#step-2-view-and-interact-with-sewer-data">Step 2. View and Interact with Sewer Data</a></li>
-            <li><a href="#wastewater-infrastructure-layers">Wastewater Infrastructure Layers</a></li>
-            <li><a href="#get-the-xy-coordinates-of-a-specific-wastewater-structure">Get the X/Y coordinates of a specific wastewater structure</a></li>
-        <li class="main "><a href="#step-3-trace-the-sewer-network">Step 3. Trace the Sewer Network</a></li>
-        <li class="main "><a href="#step-4-identify-sample-points-upstream">Step 4. Identify sample points upstream</a></li>
-            <li><a href="#upstream-wastewater-structures-and-pipes">Upstream wastewater structures and pipes</a></li>
-            <li><a href="#virtual-laterals_1">Virtual Laterals</a></li>
-        <li class="main "><a href="#step-5-printing">Step 5. Printing</a></li>
-        <li class="main "><a href="#supporting-functionality">Supporting Functionality</a></li>
-            <li><a href="#the-base-map-and-other-supplementary-map-data">The Base Map and other supplementary map data</a></li>
-            <li><a href="#other-reference-layers">Other reference layers</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#3rww-sewer-atlas-discharge-tracing-guide" class="nav-link">3RWW Sewer Atlas: Discharge Tracing Guide</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-atlas-interface" class="nav-link">The Atlas Interface</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#step-1-get-to-your-location-of-interest-on-the-map" class="nav-link">Step 1. Get to your location of interest on the map</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#method-1-use-the-my-location-widget" class="nav-link">Method 1: Use the My Location widget</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#method-2-enter-the-address" class="nav-link">Method 2: Enter the address</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#method-3-enter-the-wastewater-structure-id" class="nav-link">Method 3: Enter the Wastewater Structure ID</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#step-2-view-and-interact-with-sewer-data" class="nav-link">Step 2. View and Interact with Sewer Data</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#wastewater-infrastructure-layers" class="nav-link">Wastewater Infrastructure Layers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#get-the-xy-coordinates-of-a-specific-wastewater-structure" class="nav-link">Get the X/Y coordinates of a specific wastewater structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#step-3-trace-the-sewer-network" class="nav-link">Step 3. Trace the Sewer Network</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#step-4-identify-sample-points-upstream" class="nav-link">Step 4. Identify sample points upstream</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#upstream-wastewater-structures-and-pipes" class="nav-link">Upstream wastewater structures and pipes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#virtual-laterals_1" class="nav-link">Virtual Laterals</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#step-5-printing" class="nav-link">Step 5. Printing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#supporting-functionality" class="nav-link">Supporting Functionality</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-base-map-and-other-supplementary-map-data" class="nav-link">The Base Map and other supplementary map data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#other-reference-layers" class="nav-link">Other reference layers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="3rww-sewer-atlas-discharge-tracing-guide">3RWW Sewer Atlas:<br> <strong>Discharge Tracing Guide</strong></h1>
 <p><em><img alt="animation: quick overview animation of tool operation and results" src="../img/rsiguide/RSIGuide_trace_fast.gif" /></em></p>
@@ -168,10 +223,10 @@
 <h2 id="method-1-use-the-my-location-widget">Method 1: Use the <strong>My Location</strong> widget</h2>
 <p><em>&hellip;when using mobile devices in the field</em></p>
 <p><em><img alt="Animation: Using the My Location Button" src="../img/rsiguide/RSIGuide_Locate.gif" /></em></p>
-<p>The <strong>My Location</strong> button will automatically map <strong><em>your physical location</em></strong>. This is useful if you are using a mobile device in the field, and need to quickly figure out what infrastructure is nearby your location.</p>
+<p>The <strong>My Location*<em> button will automatically map </em></strong>your physical location***. This is useful if you are using a mobile device in the field, and need to quickly figure out what infrastructure is nearby your location.</p>
 <p><em>Note: this works only if your web  browser and/or device has the necessary geo-location capabilities enabled. These capabilities vary by device; tablets and smartphones typically have this capability. The web browser on your device may prompt you to allow the Sewer Atlas to access your device&rsquo;s location:</em></p>
 <p><em><img alt="image: location prompt" src="../img/rsiguide/RSIGuide_Locate_prompt.png" /></em></p>
-<p><em>By selecting <strong>Allow</strong>, the Atlas will shift the map to your location.</em></p>
+<p><em>By selecting </em><em>Allow</em><em>, the Atlas will shift the map to your location.</em></p>
 <h2 id="method-2-enter-the-address">Method 2: Enter the address</h2>
 <p>If you have the address of complaint, you can enter it into the The <a href="../help_rsi_tasks/#searching-for-locations">Search widget</a>, located in the upper left hand corner of the map window.</p>
 <ul>
@@ -302,6 +357,7 @@
 <h2 id="other-reference-layers">Other reference layers</h2>
 <p>Clicking the <strong>Map Layers</strong> widget in the <strong>Information Window</strong> displays all layers available to be  shown on the map. These can individually be turned on or off; transparency can also be adjusted.</p>
 <p><em><img alt="image: layer list" src="../img/rsiguide/RSIGuide_layers2.png" /></em></p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -315,19 +371,19 @@
         <script src="../js/base.js" defer></script>
         <script src="../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
@@ -338,12 +394,12 @@
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
