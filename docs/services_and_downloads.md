@@ -1,6 +1,6 @@
 # Sewer Atlas Data Downloads and Services
 
-*Note: The Sewer Atlas' composite regional wastewater infrastructure dataset is not publicly available. If you would like to request access to this data, please contact [Annie Quinn @ 3 Rivers Wet Weather](mailto:aquinn@3rww.org).*
+*Note: The Sewer Atlas' composite regional wastewater infrastructure dataset is available to contributing muncipalities and authorities; it is only available to other individuals and organizations upon request. If you would like to request access to this data, please contact [Annie Quinn @ 3 Rivers Wet Weather](mailto:aquinn@3rww.org).*
 
 ## Downloads
 
@@ -28,4 +28,3 @@ If you are a 3RWW MDS user would like access to this ArcGIS Online group, please
 ### via MDS
 
 Web geodata services endpoints&mdash;links to the live data through OGC-compliant service endpoints&mdash;are currently not available via 3RWW's MDS Single Sign-On system. We plan to make them available in the future with that user login system.
-

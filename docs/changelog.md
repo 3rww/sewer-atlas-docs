@@ -4,6 +4,21 @@ This page contains the cumulative data release notes for the Sewer Atlas.
 
 *The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).*
 
+## 2019-Q4 (v6.6.0)
+
+### Summary
+
+The 2019 Q4 udpate completed the update of PWSA coverage within the Sewer Atlas. This includes separate stormwater infrastructure.
+
+Edits emphasized geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology. Once edits were complete, we additionally double-checked network topology across the entire system, and batch-updated infrastructure status (i.e., abandoned) as it related to network tracing.
+
+### PWSA
+
+A fresh submission from PWSA (current through October 2019) was used for this latest release. It included complete exports of point and polyline datasets, `in_node` and `in_pipe`, respectively, as Esri shapefiles. These layers included all nodes and pipes as they are exported from PWSA's InfoAsset Manager (IAM) software and contain abandoned features as well as point features such as reducers and lateral connections (these are typically removed from the primary sewer layers already provided). Additionally, subsets of those two datasets were provided; e.g., `Sewers` and `Abandoned Sewers` were provided representing mutually-exclusive subsets of the `in_pipe` dataset derived from values in that table's `Status` field.
+
+As PWSA's IAM database does not model network connectivity the same way the Sewer Atlas database does, we focused on testing network connectivity during the QAQC process. This was necessary specifically around the overflows and outfalls in the vicinity of ALCOSAN interceptors: while in the Sewer Atlas the overflow is represented with *virtual* network segments and nodes, that is not the case in PWSA's IAM database. To balance these approaches, we updated locations for non-virtual nodes and segments to match PWSA's data while preserving the network connectivity with the Sewer Atlas's existing virtual nodes and segments.
+
+
 ## 2019-Q2 (v6.5.0)
 
 ### Summary
