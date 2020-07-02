@@ -122,6 +122,10 @@
             
             <li class="nav-item" data-level="1"><a href="#sewer-atlas-data-release-notes" class="nav-link">Sewer Atlas Data Release Notes</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#2020-q2-v670" class="nav-link">2020-Q2 (v6.7.0)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#2019-q4-v660" class="nav-link">2019-Q4 (v6.6.0)</a>
               <ul class="nav flex-column">
               </ul>
@@ -168,15 +172,36 @@
 <h1 id="sewer-atlas-data-release-notes"><strong>Sewer Atlas Data Release Notes</strong></h1>
 <p>This page contains the cumulative data release notes for the Sewer Atlas.</p>
 <p><em>The changelog is maintained on <a href="https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md">Github</a>.</em></p>
-<h2 id="2019-q4-v660">2019-Q4 (v6.6.0)</h2>
+<h2 id="2020-q2-v670">2020-Q2 (v6.7.0)</h2>
 <h3 id="summary">Summary</h3>
+<p>The 2020 Q2 udpate completed the integration of ALCOSAN&rsquo;s detailed RI dataset into the Sewer Atlas. It also cleaned up type and status fields for features across the dataset, and incorporated database GUID values from PWSA&rsquo;s IAM</p>
+<p>Edits emphasized geometry matching and attritbute updates for <em>key fields</em> related to infrastructure dimensionality and typology. Once edits were complete, we additionally double-checked network topology across the entire system.</p>
+<h3 id="alcosan-ri">ALCOSAN RI</h3>
+<p>A data export from ALCOSAN&rsquo;s Info Asset Manager was provided in March 2020. It included coverage for the entire ALCOSAN service area; for this update it was filtered so that only those segments and nodes of the network that were updated through ALCOSAN&rsquo;s RI program were used to update the Sewer Atlas.</p>
+<p>Most of the features (~80%) already aligned geographically with those in the Sewer Atlas; in those cases we automaticaly transfered updated attributes from the source tables to the target tables for matching geometries. For the remaining features we manually matched geometry and then automatically transferred attributes.</p>
+<p>All ALCOSAN RI features updated in the Sewer Atlas include the GUID from ALCOSAN&rsquo;s Info Asset Manager software.</p>
+<p>One issue of pipe directionality for RI infrastructure affecting Crafton, Ingram, and PWSA was the focus of a review with ALCOSAN&rsquo;s point of contact; this issue was logged and requires further. resolution.</p>
+<h3 id="pwsa">PWSA</h3>
+<p>All PWSA-owned features were updated to ensure they included the GUID from PWSA&rsquo;s Info Asset Manager software.</p>
+<h3 id="other">Other</h3>
+<p>This round of edits also cleaned up non-standard field values across the entire Sewer Atlas database in the following fields:</p>
+<ul>
+<li><code>SEWERTYPE</code></li>
+<li><code>PIPETYPE</code></li>
+<li><code>TYPE_LN</code></li>
+<li><code>STATUS_LN</code></li>
+<li><code>STATUS_PT</code></li>
+</ul>
+<p>This work included changing empty strings to NULL and renaming non-standard values to match their domain equivalent.</p>
+<h2 id="2019-q4-v660">2019-Q4 (v6.6.0)</h2>
+<h3 id="summary_1">Summary</h3>
 <p>The 2019 Q4 udpate completed the update of PWSA coverage within the Sewer Atlas. This includes separate stormwater infrastructure.</p>
 <p>Edits emphasized geometry matching and attritbute updates for <em>key fields</em> related to infrastructure dimensionality and typology. Once edits were complete, we additionally double-checked network topology across the entire system, and batch-updated infrastructure status (i.e., abandoned) as it related to network tracing.</p>
-<h3 id="pwsa">PWSA</h3>
+<h3 id="pwsa_1">PWSA</h3>
 <p>A fresh submission from PWSA (current through October 2019) was used for this latest release. It included complete exports of point and polyline datasets, <code>in_node</code> and <code>in_pipe</code>, respectively, as Esri shapefiles. These layers included all nodes and pipes as they are exported from PWSA&rsquo;s InfoAsset Manager (IAM) software and contain abandoned features as well as point features such as reducers and lateral connections (these are typically removed from the primary sewer layers already provided). Additionally, subsets of those two datasets were provided; e.g., <code>Sewers</code> and <code>Abandoned Sewers</code> were provided representing mutually-exclusive subsets of the <code>in_pipe</code> dataset derived from values in that table&rsquo;s <code>Status</code> field.</p>
 <p>As PWSA&rsquo;s IAM database does not model network connectivity the same way the Sewer Atlas database does, we focused on testing network connectivity during the QAQC process. This was necessary specifically around the overflows and outfalls in the vicinity of ALCOSAN interceptors: while in the Sewer Atlas the overflow is represented with <em>virtual</em> network segments and nodes, that is not the case in PWSA&rsquo;s IAM database. To balance these approaches, we updated locations for non-virtual nodes and segments to match PWSA&rsquo;s data while preserving the network connectivity with the Sewer Atlas&rsquo;s existing virtual nodes and segments.</p>
 <h2 id="2019-q2-v650">2019-Q2 (v6.5.0)</h2>
-<h3 id="summary_1">Summary</h3>
+<h3 id="summary_2">Summary</h3>
 <p>The 2019 Q2 udpate included updates to coverage for Shaler Township, Ross Township, and the PWSA service area.</p>
 <p>As always, the editing emphasis was on geometry matching and attritbute updates for <em>key fields</em> related to infrastructure dimensionality and typology.</p>
 <h3 id="ross">Ross</h3>
@@ -194,14 +219,14 @@
 <blockquote>
 <p><a href="../resources/r2019Q2_crosswalk_shal.csv">Shaler crosswalk</a></p>
 </blockquote>
-<h3 id="pwsa_1">PWSA</h3>
+<h3 id="pwsa_2">PWSA</h3>
 <p>PWSA&rsquo;s data submission, which was used in several previous quarterly releases, included complete exports of point and polyline datasets, <code>in_node</code> and <code>in_pipe</code>, respectively, as Esri shapefiles. Additionally, thematic extracts of those datasets were provided; e.g., <code>Sewers</code> and <code>Abandoned Sewers</code> were provided representing mutually-exclusive subsets of the <code>in_pipe</code> dataset derived from values in that table&rsquo;s <code>Status</code> field.</p>
 <p>Updated coverage in the Sewer Atlas for the PWSA service area now includes to all sewersheds from the City&rsquo;s eastern border between the Allegheny and Monongahela west to the Point. This also includes separate stormwater infrastructure data.</p>
 <blockquote>
 <p><a href="../resources/r2018Q3_crosswalk_pwsa.csv">PWSA crosswalk</a></p>
 </blockquote>
 <h2 id="2019-q1-v640">2019-Q1 (v6.4.0)</h2>
-<h3 id="summary_2">Summary</h3>
+<h3 id="summary_3">Summary</h3>
 <p>The 2019 Q1 udpate included updates to coverage for McKees Rocks and Stowe Township. Additionally, some backfilling of PWSA separate stormwater infrastructure data was performed in previously edited areas in the M-47, A-42, and M-29 sewersheds.</p>
 <p>As always, the editing emphasis was on geometry matching and attritbute updates for <em>key fields</em> related to infrastructure dimensionality and typology.</p>
 <h3 id="mckees-rocks-and-stowe-township-updates">McKees Rocks and Stowe Township Updates</h3>
@@ -237,7 +262,7 @@
 <h3 id="other-updates">Other Updates</h3>
 <p>Geometry matching or attribute updates were not explicitly performed on pipes/structures within the RI Extents (referencing currently available RI Extent data provided via ArcGIS Server feature services by AECOM). The RI data will be addressed explicitly in a later release.</p>
 <h2 id="2018-q4-v630">2018-Q4 (v6.3.0)</h2>
-<h3 id="summary_3">Summary</h3>
+<h3 id="summary_4">Summary</h3>
 <p>This release focused on continuing to integrate updated data from PWSA.</p>
 <ul>
 <li>portions of the <code>M-47</code> sewershed, a.k.a., 9-Mile Run, within the PWSA service area</li>
@@ -259,7 +284,7 @@
 <p>Those records <em>are</em> provided in the downloadable versions of the Sewer Atlas databases (e.g., FGDB, MPK, GPKG, SHP) but will not appear on the wastewater layers of Sewer Atlas web application (yet; you&rsquo;ll still find all separate stormwater data in the &ldquo;stormwater atlas beta layer&rdquo;). In the downloadable copies, you&rsquo;ll find them classified as <code>STM</code> in the <code>SEWERTYPE</code> field.</p>
 <p>2019 releases will likely contain more of this data at a broader geographic scale.</p>
 <h2 id="2018-q3-v620">2018-Q3 (v6.2.0)</h2>
-<h3 id="summary_4">Summary</h3>
+<h3 id="summary_5">Summary</h3>
 <p>This release focused on beginning to integrate updated wastewater data from PWSA, along with additional edits for communities in previous releases.</p>
 <ul>
 <li>PWSA: the <code>M-29</code> sewershed, a.k.a., 4-Mile Run.</li>
@@ -283,7 +308,7 @@
 <p>In addition to updating wastewater data, we also extracted separate stormwater infrastructure records from PWSA&rsquo;s submission and hosted those in a separate &ldquo;Stormwater Atlas&rdquo; layer. This data is provided as-is.</p>
 <p>In the future this data is planned to be tightly coupled with the wastewater data to better reflect the real-world connectivity and relationship between the systems. That change will be accompanied by a major update to the database schema as we adapt it to better represent non-wastewater pipe infrastructure.</p>
 <h2 id="2018-q1-v610">2018-Q1 (v6.1.0)</h2>
-<h3 id="summary_5">Summary</h3>
+<h3 id="summary_6">Summary</h3>
 <p>This release is a continuation of 2017Q4 updates using data provided by Glenn Engineering. This release covers these municipalities:</p>
 <ul>
 <li>Aspinwall</li>
@@ -314,7 +339,7 @@
 <li>Some submitted wastewater data included separate stormwater infrastructure, misclassified as <code>SAN</code>, which came up during review. We reclassified these as <code>STM</code> and changed <code>disabled</code> to <code>false</code>. The records are retained in this way, but won&rsquo;t show on the Sewer Atlas and won&rsquo;t be included in the network trace.</li>
 </ul>
 <h2 id="2017-q4-v600">2017-Q4 (v6.0.0)</h2>
-<h3 id="summary_6">Summary</h3>
+<h3 id="summary_7">Summary</h3>
 <p>The 2017-Q4 update encompassed a major update to the data model, data updates from several community datasets, and one round of review with the source data maintainer, Glenn Engineering.</p>
 <h3 id="model-updates">Model Updates</h3>
 <blockquote>
@@ -356,7 +381,7 @@
 <h3 id="next-update-2018-q1">Next Update (2018-Q1)</h3>
 <p>The next update will focus on additional QAQC for some communities edited during 2017-Q4, the remaining datasets provided by Glenn Engineering, and portions of the PWSA service area.</p>
 <h2 id="2017-q3-v520">2017-Q3 (v5.2.0)</h2>
-<h3 id="summary_7">Summary</h3>
+<h3 id="summary_8">Summary</h3>
 <ul>
 <li>Data provided by Glenn Engineering on behalf of Whitaker and Forest Hills; this release focused on updates using this data, as well as several requested data fixes in other locations</li>
 <li>Emphasis on geometry matching and field normalization in key fields</li>
@@ -390,7 +415,7 @@
 <li>Revisited sewer structures and pipes in Collier (first updated in the 2017-Q2 release);  manually updated <code>GEO_TYP_PT</code> and &lsquo;PIPE_DIAM&rsquo; values.</li>
 </ul>
 <h2 id="2017-q2-v513">2017-Q2 (v5.1.3)</h2>
-<h3 id="summary_8">Summary</h3>
+<h3 id="summary_9">Summary</h3>
 <ul>
 <li>Data provided by NIRA on behalf of Collier Township; this release focused on updates with this data only.</li>
 <li>Estimate +90% agreement of submitted data with existing Landbase systems data</li>
