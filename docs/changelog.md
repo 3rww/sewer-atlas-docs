@@ -4,6 +4,40 @@ This page contains the cumulative data release notes for the Sewer Atlas.
 
 *The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).*
 
+## 2020-Q2 (v6.7.0)
+
+### Summary
+
+The 2020 Q2 udpate completed the integration of ALCOSAN's detailed RI dataset into the Sewer Atlas. It also cleaned up type and status fields for features across the dataset, and incorporated database GUID values from PWSA's IAM
+
+Edits emphasized geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology. Once edits were complete, we additionally double-checked network topology across the entire system.
+
+### ALCOSAN RI
+
+A data export from ALCOSAN's Info Asset Manager was provided in March 2020. It included coverage for the entire ALCOSAN service area; for this update it was filtered so that only those segments and nodes of the network that were updated through ALCOSAN's RI program were used to update the Sewer Atlas.
+
+Most of the features (~80%) already aligned geographically with those in the Sewer Atlas; in those cases we automaticaly transfered updated attributes from the source tables to the target tables for matching geometries. For the remaining features we manually matched geometry and then automatically transferred attributes.
+
+All ALCOSAN RI features updated in the Sewer Atlas include the GUID from ALCOSAN's Info Asset Manager software.
+
+One issue of pipe directionality for RI infrastructure affecting Crafton, Ingram, and PWSA was the focus of a review with ALCOSAN's point of contact; this issue was logged and requires further. resolution.
+
+### PWSA
+
+All PWSA-owned features were updated to ensure they included the GUID from PWSA's Info Asset Manager software.
+
+### Other
+
+This round of edits also cleaned up non-standard field values across the entire Sewer Atlas database in the following fields:
+
+* `SEWERTYPE`
+* `PIPETYPE`
+* `TYPE_LN`
+* `STATUS_LN`
+* `STATUS_PT`
+
+This work included changing empty strings to NULL and renaming non-standard values to match their domain equivalent.
+
 ## 2019-Q4 (v6.6.0)
 
 ### Summary
