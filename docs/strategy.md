@@ -6,9 +6,9 @@
 
 3 Rivers Wet Weather (3RWW) hosts the Sewer Atlas, a web map for the visualization of and interaction with regional sewer network data in the ALCOSAN service area. It is the successor to Landbase Systems' "WebMap". The Sewer Atlas is an evolving product, with plans to iteratively roll out improvements to both the web mapping application and the underlying regional sewer network data.
 
-The regional sewer network data shown on the Sewer Atlas web map (v 1.2 at the time of this document's release) is derived from the same data used in the One Overall Map: the 2011 data created by Landbase Systems for 3 Rivers Wet Weather. With the exception of an attempted update of the new regional sewer network dataset in 2014, no changes had been made to this data until August 2016.
+The regional sewer network data shown on the Sewer Atlas web map is derived from the same data used in the One Overall Map: the 2011 data created by Landbase Systems for 3 Rivers Wet Weather. With the exception of an attempted update of the new regional sewer network dataset in 2014, no changes had been made to this data until August 2016.
 
-##	THE NEED FOR A DATA MAINTENANCE STRATEGY
+## THE NEED FOR A DATA MAINTENANCE STRATEGY
 
 Currently, a number of organizations are working with regional sewer network data. The figure below describes very generally how some of these organizations are using regional sewer network data and/or contributing to it:
 
@@ -29,11 +29,11 @@ to:
 * facilitating ongoing/continuous municipal updates to maintain overall data accuracy and precision, allowing for increased confidence in the results of system analysis
 * updating missing pipe attributes as in the data to support CDM Smith's flow capacity modeling work
 * ensuring that new field data collected by AECOM for ALCOSAN's regionalization efforts integrates with  existing regional sewer network data (i.e., maintain topological connectivity of the data) from municipalities and agencies
-*	addressing the existing legacy data model from LBS' WebMap/OneOverall Map, which has fallen into  disrepair, and recognizing that a NASSCO standards-compliant data model will better support long-term sewer network data maintenance efforts and modeling requirements.
+* addressing the existing legacy data model from LBS' WebMap/OneOverall Map, which has fallen into disrepair, and recognizing that a NASSCO standards-compliant data model will better support long-term sewer network data maintenance efforts and modeling requirements.
 
 With multiple organizations working with and improving the accuracy and precision of regional sewer network data, there is a clear need for a coordinated, accessible data curation and maintenance strategy that will enable the efficient maintenance of regional sewer network data into the future.
 
-#	STRATEGY
+# STRATEGY
 
 To support the continued evolution of the regional sewer network dataset, 3RWW has formalized its curation and maintenance strategy for maintaining regional sewer network data.
 

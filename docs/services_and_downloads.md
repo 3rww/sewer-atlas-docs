@@ -6,7 +6,6 @@
 
 For registered 3RWW MDS users, all Sewer Atlas data is available for download in multiple GIS formats on the [MDS Downloads page](http://mds.3riverswetweather.org/downloads.aspx). This includes:
 
-* Geopackage
 * Open FileGDB-spec file geodatabase (includes a geometric network class that supports tracing in Esri ArcGIS Desktop)
 * Esri Shapefile
 
@@ -16,6 +15,7 @@ Additionaly, two map packages (`.mpk`) files for ArcGIS Desktop are available:
 * data linked to the live ArcGIS Server endpoints (same as used by the Sewer Atlas)
 
 (Need another format? Let us know at [3rww@civicmapper.com](mailto:3rww@civicmapper.com))
+
 
 ## Web Services
 

@@ -32,7 +32,11 @@ As a first pass at QAQC, we compare the source tables to the editing database on
 
 ### Connectivity
 
-We run a series of upstream traces from strategic points on the network (e.g., the ALCOSAN plant) to help identify any areas on the network that may have been disconnected during editing.
+All updates prioritize maintainging the topological intergrity of the network model for reliable inter- and intra-municipal tracing. Even when the submitted data is not topologically clean (and it often isn't), the Sewer Atlas maintains the topology and connectivity that is *implied* in the data submission.
+
+After the incorporation of municipal data, topology checks on the Sewer Atlas are largely handled by implementing Esri's *Geometric Network* data type, through which the topological rules required for maintaining the needed connectivity are implemented, and errors are identified on network build.
+
+As a final check, upstream tracing from the ALCOSAN plant is performed iteratively to identify and correct any remaining disconnected areas of the network that the geometric network topology rules do not account for.
 
 ### Missing/empty attributes
 

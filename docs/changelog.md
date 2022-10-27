@@ -4,6 +4,96 @@ This page contains the cumulative data release notes for the Sewer Atlas.
 
 *The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).*
 
+## 2022-Q3 (v6.8.0)
+
+### Summary
+
+The 2022 Q2 release includes updates to a dozen municipalities whose submissions indicated a large number of system changes, as well as hotfixes in locations of interest to the ongoing Consent Order Agreement (COA) due-diligence process.
+
+Edits emphasized geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology, primarily focusing on locations where edits would update the representation of network connectivity. Once edits were complete, we additionally double-checked network topology, system types, and ownership across the entire system.
+
+Finally, this release is the first to be published with separate stormater infrastructure data that has been incorporated to-date.
+
+### Municipalities Edited 
+
+Data submissions from the following municipalities were used to update the Sewer Atlas for this release:
+
+* Shaler
+* Plum
+* Monroeville
+* Penn
+* North Huntingdon
+* Trafford
+* North Versailles
+* Wilmerding
+* Wall
+* East McKeesport
+* Turtle Creek
+* East Pittsburgh
+* Chalfant
+* Wilkins
+* Churchill
+* Forest Hills
+* Crafton
+* Ingram
+* Carnegie
+* South Fayette
+
+### Municipalities Reviewed
+
+In addition to the municipalities listed above, we reviewed a number of municipal data submissions in Chartiers Creek basin, comparing them to existing Sewer Atlas data:
+
+* Collier
+* Kennedy
+* Robinson
+* Bridgeville
+* Scott
+* Heidelberg
+* Rosslyn Farms
+* Thornburg
+* Oakdale
+* McDonald
+
+Updates from these municipalities will be incorporated into the Sewer Atlas in a future release.
+
+### Consent Decree-Related Fixes
+
+In addition to the municipal data submission-driven editing work, the latest release includes edits made as a result of review undertaken as part of the due diligence process for the municipal COAs.
+
+These edits tended to focus around cleaning up the representation of connections to outfalls, points of connection, and flow monitors. Of note, this work also included corrections to connectivity upstream of the following points of connection:
+
+* T-05
+* O-15
+
+### QAQC Across the network
+
+#### Field Value Clean-Up
+
+This round of edits also cleaned up missing and non-standard field values across the entire Sewer Atlas database in the following fields:
+
+* `SEWERTYPE`: filled in blanks based on the municipal submission, and/or updated based on Exhibit A/B inclusion.
+* `OWNER_NAME`: filled in using contextual data, e.g., `SRC_*` fields from the original OOM data model
+* `TYPE_PT`, `SUBTYPE_PT`: cleaned up to match the established field domains, which are based on ALCOSAN's Info Asset Management data schema.
+
+Additionally, we took a pass through all of the main fields
+
+* changing empty strings to NULL and renaming non-standard values to match their domain equivalent.
+
+#### Connectivity Checks
+
+As with all previous updates, this update prioritized maintainging the topological intergrity of the network model for reliable inter- and intra-municipal tracing.Even when the submitted data is not topologically clean (and it often isn't), the Sewer Atlas maintains the topology and connectivity that is *implied* in the data submission.
+
+After the incorporation of municipal data, topology checks on the Sewer Atlas are largely handled by implementing Esri's *Geometric Network* data type, through which the topological rules required for maintaining the needed connectivity are implemented, and errors identified on network build.
+
+As a final check, upstream tracing from the ALCOSAN plant is performed iteratively to identify and correct any remaining disconnected areas of the network that the geometric network topology rules do not account for. For this release, in a limited number of situations the following additional correctsion were made in order to maintain connectivity:
+
+* Nodes marked as Abandoned by PWSA and, consequently, disabled from network trace, were in fact necessary for maintaining trace connectivity. To maintain connectivity in the Sewer Atlas, these nodes were re-enabled but still marked as Abandonded. During the next round of edits, we will verify with PWSA about how best to handle this kind of situation.
+* Junctions between pipe segements not represented with a node in the municipal submission (point geometry) are automatically given a network junction node. However, in some cases the municipal submission also does not provide a break in one ore more the the lines at that junction. In those case we add the break.
+
+### A note on future releases
+
+Going forward from this release, the updates to the Sewer Atlas data will be pushed out at a higher frequency with smaller coverages to support the needs of the COA review process.
+
 ## 2020-Q2 (v6.7.0)
 
 ### Summary
