@@ -4,11 +4,30 @@ This page contains the cumulative data release notes for the Sewer Atlas.
 
 *The changelog is maintained on [Github](https://github.com/3rww/sewer-atlas-docs/edit/master/docs/changelog.md).*
 
+## 2023-Q2 (v6.9.0)
+
+### Summary
+
+The 2023 Q2 release is a maintenance release that included edits for a handful of municipalities with new muncipal data submissions, as well as a pass through the PWSA service area with their latest available data.
+
+As always, edits emphasized geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology; ALCOSAN RI infrastructure was treated as "caution tape" even when municipal submissions suggested differences
+
+Once edits were complete, we additionally double-checked network topology and system types across the entire system.
+
+### Municipalities Edited 
+
+Data submissions from the following municipalities were used to update the Sewer Atlas for this release:
+
+* Munhall: complete update, with notable changes to geometry
+* Monroeville: focused updates to account for changes in the latest municipal data submission
+* Green Tree: complete update, with an emphasis on ensuring the SEWERTYPE field was completed for all municipal-owned assets within the boundary.
+* PWSA: rolling update, with an emphasis on stormwater infrastructure added to the PWSA's IAM database since our last release.
+
 ## 2022-Q3 (v6.8.0)
 
 ### Summary
 
-The 2022 Q2 release includes updates to a dozen municipalities whose submissions indicated a large number of system changes, as well as hotfixes in locations of interest to the ongoing Consent Order Agreement (COA) due-diligence process.
+The 2022 Q3 release includes updates to a dozen municipalities whose submissions indicated a large number of system changes, as well as hotfixes in locations of interest to the ongoing Consent Order Agreement (COA) due-diligence process.
 
 Edits emphasized geometry matching and attritbute updates for *key fields* related to infrastructure dimensionality and typology, primarily focusing on locations where edits would update the representation of network connectivity. Once edits were complete, we additionally double-checked network topology, system types, and ownership across the entire system.
 
